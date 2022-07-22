@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Buttons</title>
+	<link media="all" rel="stylesheet" href="assets/css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="assets/css/timepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/datepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/select.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<section class="module-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-md-6 mb-xl-5 mb-3">
+							<span class="form-label">Big button</span>
+							<button type="button" class="btn btn-outline-primary w-100 rounded-pill btn-lg">Default</button>
+						</div>
+						<div class="col-xl-3 col-md-6 mb-5">
+							<span class="form-label">&nbsp;</span>
+							<button type="button" class="btn btn-outline-primary w-100 rounded-pill btn-lg" disabled>Disabled</button>
+						</div>
+					</div>
+					<div class="row mb-5">
+						<div class="col-xl-6 mb-7">
+							<span class="form-label">standard button</span>
+							<div class="row">
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-primary">Default</button>
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-primary" disabled>Disabled</button>
+								</div>
+								<div class="col-4 d-xl-block d-none">
+									&nbsp;
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-danger">Default</button>
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-danger" disabled>Disabled</button>
+								</div>
+								<div class="col-4 d-xl-block d-none">
+									&nbsp;
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-secondary">Default</button>
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-secondary" disabled>Disabled</button>
+								</div>
+								<div class="col-4 d-xl-block d-none">
+									&nbsp;
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-outline-secondary">Default</button>
+								</div>
+								<div class="col-xl-4 col-sm-6 col-12 mb-4">
+									<button type="button" class="btn btn-outline-secondary" disabled>Disabled</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<span class="form-label">modal close</span>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					<div class="row mb-5">
+						<div class="col-lg-2 mb-3">
+							<div class="graph danger">
+								<svg width="120" height="120" class="graph-circle">
+									<circle cx="60" cy="60" r="57" class="graph-circle-back"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="320"/>
+								</svg>
+								<span class="graph-num">20%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph danger sm">
+								<svg width="100" height="100" class="graph-circle">
+									<circle cx="50" cy="50" r="47" class="graph-circle-back"/>
+									<circle cx="50" cy="50" r="47" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="320"/>
+								</svg>
+								<span class="graph-num">20%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph">
+								<svg width="120" height="120" class="graph-circle">
+									<circle cx="60" cy="60" r="57" class="graph-circle-back"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="132"/>
+								</svg>
+								<span class="graph-num">80%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph sm">
+								<svg width="100" height="100" class="graph-circle">
+									<circle cx="50" cy="50" r="47" class="graph-circle-back"/>
+									<circle cx="50" cy="50" r="47" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="132"/>
+								</svg>
+								<span class="graph-num">80%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph success">
+								<svg width="120" height="120" class="graph-circle">
+									<circle cx="60" cy="60" r="57" class="graph-circle-back"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="0"/>
+								</svg>
+								<span class="graph-num text-white">100%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph success sm">
+								<svg width="100" height="100" class="graph-circle">
+									<circle cx="50" cy="50" r="47" class="graph-circle-back"/>
+									<circle cx="50" cy="50" r="47" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="0"/>
+								</svg>
+								<span class="graph-num text-white">100%</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 mb-3">
+							<div class="graph danger">
+								<svg width="120" height="120" class="graph-circle half-circle">
+									<path d="M0 60a60 60 0 1 1 120 0h-6a53.996 53.996 0 0 0-15.816-38.184 54.002 54.002 0 0 0-88.073 17.52A54 54 0 0 0 6 60H0Z" fill="#F7F8F9"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="360"/>
+								</svg>
+								<span class="graph-num">20%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph">
+								<svg width="120" height="120" class="graph-circle half-circle">
+									<path d="M0 60a60 60 0 1 1 120 0h-6a53.996 53.996 0 0 0-15.816-38.184 54.002 54.002 0 0 0-88.073 17.52A54 54 0 0 0 6 60H0Z" fill="#F7F8F9"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="320"/>
+								</svg>
+								<span class="graph-num">60%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph success">
+								<svg width="120" height="120" class="graph-circle half-circle">
+									<path d="M0 60a60 60 0 1 1 120 0h-6a53.996 53.996 0 0 0-15.816-38.184 54.002 54.002 0 0 0-88.073 17.52A54 54 0 0 0 6 60H0Z" fill="#F7F8F9"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="300"/>
+								</svg>
+								<span class="graph-num">100%</span>
+							</div>
+						</div>
+						<div class="col-lg-2 mb-3">
+							<div class="graph success">
+								<svg width="120" height="120" class="graph-circle half-circle">
+									<path d="M0 60a60 60 0 1 1 120 0h-6a53.996 53.996 0 0 0-15.816-38.184 54.002 54.002 0 0 0-88.073 17.52A54 54 0 0 0 6 60H0Z" fill="#F7F8F9"/>
+									<circle cx="60" cy="60" r="57" class="graph-circle-front" stroke-dasharray="380" stroke-dashoffset="260"/>
+								</svg>
+								<span class="graph-num">160%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-bg">
+				<img src="assets/img/footer-bg.svg" alt="image description">
+			</div>
+			<div class="footer-tile bg-white">
+				<div class="container">
+					<div class="row upper-footer">
+						<div class="col-xl-6 col-lg-5">
+							<div class="footer-block">
+								<a href="#" class="footer-logo">
+									<img src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+								</a>
+								<p>Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</p>
+								<ul class="socials">
+									<li>
+										<a href="#" target="_blank">
+											<svg width="12" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#facebook"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="24" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#twitter"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="23" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#linkedin"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="20" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#instagram"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="row">
+								<div class="col-lg-6 col-md-5 mb-md-0 mb-5">
+									<h4 class="footer-title">Useful Links</h4>
+									<ul class="footer-list">
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Services</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-7">
+									<h4 class="footer-title">Get in Touch</h4>
+									<ul class="footer-contact">
+										<li>
+											<svg class="icon" width="20" height="20">
+												<use xlink:href="assets/img/sprite-icons.svg#subtract"/>
+											</svg>
+											<div>
+												<span class="d-block fw-medium text-muted">Everynook</span>
+												<a href="https://goo.gl/maps/gSfNiLD9kwhipUn26" target="_blank">9175 Guilford Road, Suite 209, <br> Columbia, Maryland 21046</a>
+											</div>
+										</li>
+										<li>
+											<svg class="icon" width="22" height="22">
+												<use xlink:href="assets/img/sprite-icons.svg#phone"/>
+											</svg>
+											<a href="tel:8885026080">(888) 502-6080</a>
+										</li>
+										<li>
+											<svg class="icon" width="21" height="16">
+												<use xlink:href="assets/img/sprite-icons.svg#mail"/>
+											</svg>
+											<a href="mailto:info@everynook.com">info@everynook.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="under-footer">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. © 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+						<span class="copyright">&copy; 2021 EveryNook, LLC. All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	<script src="assets/js/jquery.main.js" defer></script>
+</body>
+
+</html>

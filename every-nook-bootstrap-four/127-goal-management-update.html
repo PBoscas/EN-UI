@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-menu-sliding">
+			<div class="sliding-inner">
+				<a href="#" class="btn-back">
+					<span class="label-title">Hide panel</span>
+					<svg class="ico" width="24" height="20">
+						<use xlink:href="assets/img/sprite-icons.svg#arrow-hide" />
+					</svg>
+				</a>
+				<ul class="nav-menu-list">
+					<li class="active">
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#itinerary-home" />
+								</svg>
+							</span>
+							<span class="text">Itinerary Home</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Itinerary Home</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="17" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#create-tour" />
+								</svg>
+							</span>
+							<span class="text">Create A New Tour</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Create A New Tour</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#previous-tours" />
+								</svg>
+							</span>
+							<span class="text">Previous Tours</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Previous Tours</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#compare" />
+								</svg>
+							</span>
+							<span class="text">Best And Worst</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Best And Worst</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="20" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#comparison" />
+								</svg>
+							</span>
+							<span class="text">Comparison</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Comparison</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#switch-subject" />
+								</svg>
+							</span>
+							<span class="text">Switch Subject</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Switch Subject</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main id="main">
+			<section class="tile-section">
+				<div class="container container__container-flexibly">
+					<div class="settings-section-head">
+						<div class="breadcrumb-wrap">
+							<a href="#" class="back-arrow">
+								<svg width="8" height="10">
+									<use xlink:href="assets/img/sprite-icons.svg#chevron-back" />
+								</svg>
+							</a>
+							<ol class="breadcrumbs">
+								<li class="breadcrumb-item"><a href="#">Proeprties</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Offers</li>
+							</ol>
+						</div>
+					</div>
+					<div class="page-head mb-3">
+						<h4 class="page-head__title headline-title">Your Goals</h4>
+						<div class="page-head__inner-text text-xl">
+							<p>Below are visual representations of the market impact of Covid-19 policies and consumer practices on [Howard County] in [Maryland]. We are using housing data from the previous three years to demonstrate the real world implications of social distancing policies and consumer sentiment.</p>
+						</div>
+						<div class="page-head__btn-holder">
+							<a href="#" class="btn btn-primary primary-outline">Set A New Goal</a>
+						</div>
+					</div>
+					<div class="sort-bar-panel">
+						<div class="sort-bar-row first-row">
+							<div class="item-wrap-thead bg-navy-dark">
+								<span class="h5">Goals</span>
+							</div>
+						</div>
+						<div class="sort-bar-row">
+							<div class="item-wrap-thead">
+								<div class="custom-select-drop">
+									<select class="selectpicker">
+										<option disabled selected>Current Year</option>
+										<option>Listings</option>
+										<option>Buyers</option>
+										<option>Active</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="sort-bar-row">
+							<div class="item-wrap-thead">
+								<div class="custom-select-drop">
+									<select class="selectpicker">
+										<option disabled selected>Sort By</option>
+										<option>Listings</option>
+										<option>Buyers</option>
+										<option>Active</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="sort-bar-row">
+							<div class="item-wrap-thead">
+								<div class="custom-select-drop">
+									<select class="selectpicker">
+										<option disabled selected>Type</option>
+										<option>Listings</option>
+										<option>Buyers</option>
+										<option>Active</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goal-management-table">
+						<div class="goal-management-table__item">
+							<div class="goal-management-tile">
+								<div class="goal-management-tile__head-wrap">
+									<div class="goal-management-tile__head-wrap__headline">
+										<h5 class="goal-management-tile__head-wrap__title h5-text">Total Units Sold <span class="text-gray">in</span> 2020</h5>
+										<span class="goal-management-tile__head-wrap__status">
+											<span class="status-label text-success">Active</span>
+											<span class="text-primary">My Really Big Goal</span>
+										</span>
+									</div>
+									<div class="buttons-option">
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title=" View details">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#go-back-arrow" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Edit">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Refresh">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#refresh" />
+												</svg>
+											</span>
+										</button>
+										<div class="btn-action-holder">
+											<button class="action-button danger-action dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Delete">
+													<svg class="action-button__icon" width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+													</svg>
+												</span>
+											</button>
+											<div class="dropdown-action-holder">
+												<div class="drop-options-mmenu">
+													<ul class="option-drop-list">
+														<li><a href="#">Archive</a></li>
+														<li>
+															<a href="#">Permenently Delete</a>
+															<ul class="option-drop-list">
+																<li><span class="text">Are You Sure?</span></li>
+																<li><a href="#" class="is-yes-link">Yes</a></li>
+																<li><a href="#" class="is-no-link">NO!!</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="text-gray">Cancel</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goal-management-tile__text-wrap">
+									<p>You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal.</p>
+								</div>
+								<div class="goal-management-tile__row">
+									<div class="goal-state">
+										<div class="numbers-wrap">
+											<h4 class="numbers-wrap__num">35</h4>
+											<span class="numbers-wrap__num-total h7">55</span>
+										</div>
+										<span>Units Sold</span>
+									</div>
+									<div class="goal-management-tile__row__items row">
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">224</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">142</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="goal-management-tile__row__graph">
+										<div class="chart-circle-wrap">
+											<svg width="95" height="95" class="chart-circle">
+												<circle cx="47.5" cy="47.5" r="45" class="chart-circle__back" />
+												<circle cx="47.5" cy="47.5" r="45" class="chart-circle__front" stroke-dasharray="380" stroke-dashoffset="200" />
+											</svg>
+											<h4 class="percentage">64%</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="goal-management-table__item">
+							<div class="goal-management-tile">
+								<div class="goal-management-tile__head-wrap">
+									<div class="goal-management-tile__head-wrap__headline">
+										<h5 class="goal-management-tile__head-wrap__title h5-text">Listing Units Sold <span class="text-gray">in</span> 2021</h5>
+										<span class="goal-management-tile__head-wrap__status">
+											<span class="status-label text-danger">Archived</span>
+											<span class="text-primary">Trying To Sell A Lot of Listings</span>
+										</span>
+									</div>
+									<div class="buttons-option">
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title=" View details">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#go-back-arrow" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Edit">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Refresh">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#refresh" />
+												</svg>
+											</span>
+										</button>
+										<div class="btn-action-holder">
+											<button class="action-button danger-action dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Delete">
+													<svg class="action-button__icon" width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+													</svg>
+												</span>
+											</button>
+											<div class="dropdown-action-holder">
+												<div class="drop-options-mmenu">
+													<ul class="option-drop-list">
+														<li><a href="#">Archive</a></li>
+														<li>
+															<a href="#">Permenently Delete</a>
+															<ul class="option-drop-list">
+																<li><span class="text">Are You Sure?</span></li>
+																<li><a href="#" class="is-yes-link">Yes</a></li>
+																<li><a href="#" class="is-no-link">NO!!</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="text-gray">Cancel</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goal-management-tile__text-wrap">
+									<p>You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal.</p>
+								</div>
+								<div class="goal-management-tile__row">
+									<div class="goal-state">
+										<div class="numbers-wrap">
+											<h4 class="numbers-wrap__num">35</h4>
+											<span class="numbers-wrap__num-total h7">55</span>
+										</div>
+										<span>Units Sold</span>
+									</div>
+									<div class="goal-management-tile__row__items row">
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">42</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">224</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">142</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="goal-management-tile__row__graph">
+										<div class="chart-circle-wrap">
+											<svg width="95" height="95" class="chart-circle">
+												<circle cx="47.5" cy="47.5" r="45" class="chart-circle__back" />
+												<circle cx="47.5" cy="47.5" r="45" class="chart-circle__front" stroke-dasharray="380" stroke-dashoffset="128" />
+											</svg>
+											<h4 class="percentage">90%</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="goal-management-table__item">
+							<div class="goal-management-tile">
+								<div class="goal-management-tile__head-wrap">
+									<div class="goal-management-tile__head-wrap__headline">
+										<h5 class="goal-management-tile__head-wrap__title h5-text">Average Buyer Representation Price <span class="text-gray">in</span> 2020</h5>
+										<span class="goal-management-tile__head-wrap__status">
+											<span class="status-label text-success">Active</span>
+											<span class="text-primary">My buyer price average</span>
+										</span>
+									</div>
+									<div class="buttons-option">
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title=" View details">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#go-back-arrow" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Edit">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Refresh">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#refresh" />
+												</svg>
+											</span>
+										</button>
+										<div class="btn-action-holder">
+											<button class="action-button danger-action dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Delete">
+													<svg class="action-button__icon" width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+													</svg>
+												</span>
+											</button>
+											<div class="dropdown-action-holder">
+												<div class="drop-options-mmenu">
+													<ul class="option-drop-list">
+														<li><a href="#">Archive</a></li>
+														<li>
+															<a href="#">Permenently Delete</a>
+															<ul class="option-drop-list">
+																<li><span class="text">Are You Sure?</span></li>
+																<li><a href="#" class="is-yes-link">Yes</a></li>
+																<li><a href="#" class="is-no-link">NO!!</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="text-gray">Cancel</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goal-management-tile__text-wrap">
+									<p>You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal.</p>
+								</div>
+								<div class="goal-management-tile__row">
+									<div class="goal-management-tile__row__items row">
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Goal Price</span>
+													<span class="item-list__quantity text-dark">$550,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Avg.</span>
+													<span class="item-list__quantity text-dark">$420,000</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Closed Sales</span>
+													<span class="item-list__quantity text-dark">32</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Sales Pace</span>
+													<span class="item-list__quantity text-dark">50</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">New Price Needed</span>
+													<span class="item-list__quantity text-dark">$630,000</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="goal-management-tile__row__graph">
+										<div class="chart-circle-wrap hemicycle">
+											<svg width="100" height="100" class="chart-hemicycle">
+												<g fill-opacity="0" stroke-width="8">
+													<path d="M5 50a45 45 0 1 1 90 0" stroke="#EFF1F3" />
+													<path class="progress" d="M5 50a45 45 0 1 1 90 0" stroke="#FA4B5F" stroke-dasharray="142" stroke-dashoffset="100" />
+												</g>
+											</svg>
+											<span class="pointer-icon" style="transform: translateY(0) translateX(-50%) rotate(-35deg);">
+												<img src="assets/img/chart-pointer.svg" alt>
+											</span>
+											<h4 class="percentage">27%</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="goal-management-table__item">
+							<div class="goal-management-tile">
+								<div class="goal-management-tile__head-wrap">
+									<div class="goal-management-tile__head-wrap__headline">
+										<h5 class="goal-management-tile__head-wrap__title h5-text">Gross Commissions Earned <span class="text-gray">in</span> 2020</h5>
+										<span class="goal-management-tile__head-wrap__status">
+											<span class="status-label text-success">Active</span>
+											<span class="text-primary">Tally my money</span>
+										</span>
+									</div>
+									<div class="buttons-option">
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title=" View details">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#go-back-arrow" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Edit">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Refresh">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#refresh" />
+												</svg>
+											</span>
+										</button>
+										<div class="btn-action-holder">
+											<button class="action-button danger-action dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Delete">
+													<svg class="action-button__icon" width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+													</svg>
+												</span>
+											</button>
+											<div class="dropdown-action-holder">
+												<div class="drop-options-mmenu">
+													<ul class="option-drop-list">
+														<li><a href="#">Archive</a></li>
+														<li>
+															<a href="#">Permenently Delete</a>
+															<ul class="option-drop-list">
+																<li><span class="text">Are You Sure?</span></li>
+																<li><a href="#" class="is-yes-link">Yes</a></li>
+																<li><a href="#" class="is-no-link">NO!!</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="text-gray">Cancel</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goal-management-tile__text-wrap">
+									<p>You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal.</p>
+								</div>
+								<div class="goal-management-tile__row">
+									<div class="goal-management-tile__row__items row">
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Commission Goal</span>
+													<span class="item-list__quantity text-dark">$120,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Earned To Date</span>
+													<span class="item-list__quantity text-dark">$60,000</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">$100,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Average Commission</span>
+													<span class="item-list__quantity text-dark">$8,250</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Commission Needed</span>
+													<span class="item-list__quantity text-dark">$20,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Units Needed</span>
+													<span class="item-list__quantity text-dark">2.5</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="goal-management-tile__row__graph">
+										<div class="chart-circle-wrap hemicycle">
+											<svg width="100" height="100" class="chart-hemicycle">
+												<g fill-opacity="0" stroke-width="8">
+													<path d="M5 50a45 45 0 1 1 90 0" stroke="#EFF1F3" />
+													<path class="progress" d="M5 50a45 45 0 1 1 90 0" stroke="#5EC5FF" stroke-dasharray="142" stroke-dashoffset="60" />
+												</g>
+											</svg>
+											<span class="pointer-icon" style="transform: translateY(0) translateX(-50%) rotate(20deg);">
+												<img src="assets/img/chart-pointer.svg" alt>
+											</span>
+											<h4 class="percentage">64%</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="goal-management-table__item">
+							<div class="goal-management-tile">
+								<div class="goal-management-tile__head-wrap">
+									<div class="goal-management-tile__head-wrap__headline">
+										<h5 class="goal-management-tile__head-wrap__title h5-text">Gross Commissions Earned <span class="text-gray">in</span> 2020</h5>
+										<span class="goal-management-tile__head-wrap__status">
+											<span class="status-label text-success">Active</span>
+											<span class="text-primary">Tally my money</span>
+										</span>
+									</div>
+									<div class="buttons-option">
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title=" View details">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#go-back-arrow" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Edit">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+												</svg>
+											</span>
+										</button>
+										<button class="action-button">
+											<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Refresh">
+												<svg class="action-button__icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#refresh" />
+												</svg>
+											</span>
+										</button>
+										<div class="btn-action-holder">
+											<button class="action-button danger-action dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="action-button__tooltip-holder tooltip-options" data-toggle="tooltip" data-html="true" title="Delete">
+													<svg class="action-button__icon" width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+													</svg>
+												</span>
+											</button>
+											<div class="dropdown-action-holder">
+												<div class="drop-options-mmenu">
+													<ul class="option-drop-list">
+														<li><a href="#">Archive</a></li>
+														<li>
+															<a href="#">Permenently Delete</a>
+															<ul class="option-drop-list">
+																<li><span class="text">Are You Sure?</span></li>
+																<li><a href="#" class="is-yes-link">Yes</a></li>
+																<li><a href="#" class="is-no-link">NO!!</a></li>
+															</ul>
+														</li>
+														<li><a href="#" class="text-gray">Cancel</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="goal-management-tile__text-wrap">
+									<p>You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. So far you have sold 35 units, or 64% of your goal. You need 20 more units sold to meet your goal. You set a goal of 55 units for 2020. So far you have sold 35 units, or 64% of your goal.</p>
+								</div>
+								<div class="goal-management-tile__row">
+									<div class="goal-management-tile__row__items row">
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Commission Goal</span>
+													<span class="item-list__quantity text-dark">$120,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Earned To Date</span>
+													<span class="item-list__quantity text-dark">$60,000</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Current Pace</span>
+													<span class="item-list__quantity text-dark">$100,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Average Commission</span>
+													<span class="item-list__quantity text-dark">$8,250</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-4">
+											<ul class="item-list">
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Commission Needed</span>
+													<span class="item-list__quantity text-dark">$20,000</span>
+												</li>
+												<li class="item-list__item">
+													<span class="item-list__text-value text-body">Units Needed</span>
+													<span class="item-list__quantity text-dark">2.5</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="goal-management-tile__row__graph">
+										<div class="chart-circle-wrap hemicycle">
+											<svg width="95" height="95" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 47.5C5.45325e-07 41.2622 1.22862 35.0855 3.61572 29.3225C6.00282 23.5596 9.50165 18.3232 13.9124 13.9124C18.3232 9.50164 23.5596 6.00282 29.3225 3.61572C35.0855 1.22862 41.2622 -8.17987e-07 47.5 0C53.7378 8.17988e-07 59.9145 1.22863 65.6775 3.61572C71.4404 6.00282 76.6768 9.50165 81.0876 13.9124C85.4984 18.3232 88.9972 23.5596 91.3843 29.3225C93.7714 35.0855 95 41.2622 95 47.5L47.5 47.5L0 47.5Z" fill="#1ACA8E" />
+											</svg>
+											<h4 class="percentage">100%</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination-holder">
+						<ul class="pagination border-pagination white-bg">
+							<li class="page-item first">
+								<a class="page-link" href="#" aria-label="Previous">
+									<svg width="11" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-double-left" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item previous">
+								<a class="page-link" href="#" aria-label="Previous">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-left" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item active"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item next">
+								<a class="page-link" href="#" aria-label="Next">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-right" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item last">
+								<a class="page-link" href="#" aria-label="Next">
+									<svg width="11" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-double-right" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	</div>
+</body>
+
+</html>

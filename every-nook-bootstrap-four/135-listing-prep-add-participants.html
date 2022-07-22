@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-menu-sliding">
+			<div class="sliding-inner">
+				<a href="#" class="btn-back">
+					<span class="label-title">Hide panel</span>
+					<svg class="ico" width="24" height="20">
+						<use xlink:href="assets/img/sprite-icons.svg#arrow-hide" />
+					</svg>
+				</a>
+				<ul class="nav-menu-list">
+					<li class="active">
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#list-icon" />
+								</svg>
+							</span>
+							<span class="text">Button 1</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 1</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#tag-fill" />
+								</svg>
+							</span>
+							<span class="text">Button 2</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 2</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#loupe" />
+								</svg>
+							</span>
+							<span class="text">Button 3</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 3</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#houses-plus" />
+								</svg>
+							</span>
+							<span class="text">Button 4</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 4</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main id="main">
+			<section class="overview-hero-section overview-hero-section__tile-section">
+				<div class="container container__container-flexibly">
+					<ul class="breadcrumbs">
+						<li><a href="#">Properties</a></li>
+						<li class="breadcrumbs-active"><a href="#">Add A New Listing</a></li>
+					</ul>
+					<h1 class="headline-title">Choose Your Participants</h1>
+				</div>
+				<div class="bg-stretch">
+					<img src="assets/img/bg07.svg" alt="image description">
+				</div>
+			</section>
+			<section class="offer-section">
+				<div class="container container__container-flexibly">
+					<div class="property-summary-wrap">
+						<div class="property-info-holder__inner-info d-xl-none d-block mb-3">
+							<div class="property-info-holder__inner-info__item">
+								<h4 class="property-info-holder__headtitle">819 Ashmor Drive</h4>
+								<h5 class="property-info-holder__title h5">Grand Rapids, MN 55744</h5>
+							</div>
+						</div>
+						<div class="property-summary-wrap__container-wrap">
+							<div class="property-summary-wrap__visual border-map">
+								<img class="property-summary-wrap__visual__img" src="assets/img/img-map-03.jpg" srcset="assets/img/img-map-03@2x.jpg 2x" alt="image description">
+							</div>
+							<div class="property-summary-wrap__holder">
+								<div class="property-info-holder__inner-info d-xl-block d-none mb-3">
+									<div class="property-info-holder__inner-info__item">
+										<h4 class="property-info-holder__headtitle d-inline">819 Ashmor Drive</h4>
+										<h5 class="property-info-holder__title h5 d-inline">Grand Rapids, MN 55744</h5>
+									</div>
+								</div>
+								<ul class="field-list">
+									<li>
+										<strong>Owner Name(S)</strong>
+										<span>Sheila T. Dill</span>
+										<span>Ronald R. Dill</span>
+									</li>
+									<li>
+										<strong>Primary Structure Built</strong>
+										<span>1987</span>
+									</li>
+									<li>
+										<strong>Levels</strong>
+										<span>2</span>
+									</li>
+									<li>
+										<strong>Primary Structure Built</strong>
+										<span>1987</span>
+									</li>
+									<li>
+										<strong>USE</strong>
+										<span>Residential</span>
+									</li>
+									<li>
+										<strong>Above Grade Living Area</strong>
+										<span>2,185</span>
+									</li>
+									<li>
+										<strong>Basement</strong>
+										<span>Yes</span>
+									</li>
+									<li>
+										<strong>Above Grade Living Area</strong>
+										<span>2,185</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<form class="offer-form">
+						<div class="offer-form__item">
+							<div class="offer-info align-items-start">
+								<svg class="offer-info__icon mr-md-3" width="50" height="50">
+									<use xlink:href="assets/img/sprite-icons.svg#agent-pics-secondary" />
+								</svg>
+								<div class="offer-info__content">
+									<h4 class="text-nunito">Choose Your Participants</h4>
+									<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor rhoncus dignissim. Proin volutpat faucibus felis, in accumsan quam venenatis at. Nullam eget lacus nec purus sagittis vehicula sit amet sed ipsum.</p>
+								</div>
+							</div>
+							<div class="participants-holder">
+								<div class="participants-holder__item">
+									<h5 class="participants-holder__title h5">Collaborators</h5>
+									<div class="participants-form-holder row">
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="label-form text-secondary required-label">Collaborator Role</label>
+												<div class="form-group">
+													<div class="custom-select-drop">
+														<select class="selectpicker">
+															<option disabled selected>Please Select</option>
+															<option>Select #1</option>
+															<option>Select #2</option>
+															<option>Select #3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-5 col-lg-6">
+											<div class="form-group">
+												<label class="label-form text-secondary required-label">Choose Collaborator</label>
+												<div class="dropdown">
+													<input type="text" data-toggle="dropdown" class="dropdown-toggle form-control" placeholder="Please Choose">
+													<div class="dropdown-menu dropdown-menu-full ">
+														<a href="#" data-toggle="modal" data-target="#collaborators-add-modal" class="add-new-item">
+															<div class="add-new-item__wrap-icon bg-primary">
+																<svg class="add-new-item__wrap-icon__icon" width="30" height="30">
+																	<use xlink:href="assets/img/sprite-icons.svg#plus-ico" />
+																</svg>
+															</div>
+															<div class="add-new-item__description">
+																<span class="add-new-item__text">Need to Add A New Contact?</span>
+																<div class="add-new-item__btn-holder">
+																	<span class="btn btn-primary">Add New</span>
+																</div>
+															</div>
+														</a>
+														<div class="drop-listing">
+															<div class="drop-listing__item">
+																<div class="drop-listing__visual drop-listing__visual__avatar">
+																	<img src="assets/img/img151.jpg" srcset="assets/img/img151@2x.jpg 2x" alt="image description">
+																</div>
+																<div class="drop-listing__description">
+																	<div class="drop-listing__description__info">
+																		<span class="drop-listing__text">Harry A. Thomas</span>
+																		<strong class="text-sidewalk">Keller Williams</strong>
+																	</div>
+																	<div class="drop-listing__btn-holder">
+																		<button class="btn btn-midnight">Select</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-3 ">
+											<span class="label-form d-xl-block d-none mb-0">&nbsp;</span>
+											<div class="participants-holder__btn-holder">
+												<a href="#" data-toggle="modal" data-target="#client-modal" class="btn btn-smoky">Add Collaborator</a>
+											</div>
+										</div>
+									</div>
+									<div class="participants-view-form-holder">
+										<ul class="participant-cards">
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Broker</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+														<img class="agents-tile__avatar__img" src="assets/img/img142.jpg" srcset="assets/img/img142@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Catherine R Carson</h6>
+															<h6 class="agents-tile__inner__position h7">Long & Foster</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+														<div class="options-block">
+															<div class="options-block__primary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="View profile">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#user-ico" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="view criteria">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#search" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="ignore">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button more-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+															<div class="options-block__secondary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send message">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send text">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="call">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#phone-call" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button close-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Listing Agent</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+														<img class="agents-tile__avatar__img" src="assets/img/img197.jpg" srcset="assets/img/img197@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Norma M. Hannah</h6>
+															<h6 class="agents-tile__inner__position h7">Re/Max Indepenedent Brokerage</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+														<div class="options-block">
+															<div class="options-block__primary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="View profile">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#user-ico" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="view criteria">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#search" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="ignore">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button more-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+															<div class="options-block__secondary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send message">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send text">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="call">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#phone-call" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button close-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Co-Listing Agent</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+														<img class="agents-tile__avatar__img" src="assets/img/img148.jpg" srcset="assets/img/img148@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Diane G Cole</h6>
+															<h6 class="agents-tile__inner__position h7">Re/Max Elite</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+														<div class="options-block">
+															<div class="options-block__primary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="View profile">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#user-ico" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="view criteria">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#search" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="ignore">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button more-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+															<div class="options-block__secondary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send message">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send text">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="call">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#phone-call" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button close-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Co-Listing Agent</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+														<img class="agents-tile__avatar__img" src="assets/img/img148.jpg" srcset="assets/img/img148@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Diane G Cole</h6>
+															<h6 class="agents-tile__inner__position h7">Re/Max Elite</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+														<div class="options-block">
+															<div class="options-block__primary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="View profile">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#user-ico" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="view criteria">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#search" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="ignore">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button more-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+															<div class="options-block__secondary-expanded">
+																<ul class="options-links">
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send message">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="Send text">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button tooltip-large" data-toggle="tooltip" title="call">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#phone-call" />
+																			</svg>
+																		</button>
+																	</li>
+																	<li class="options-links__item">
+																		<button class="options-links__button close-options tooltip-large" data-toggle="tooltip" title="more options">
+																			<svg class="options-links__button__icon" width="30" height="30">
+																				<use xlink:href="assets/img/sprite-icons.svg#union" />
+																			</svg>
+																		</button>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="participants-holder__item">
+									<h5 class="participants-holder__title h5">Clients</h5>
+									<div class="participants-form-holder row">
+										<div class="col-xl-3 col-lg-6">
+											<div class="form-group">
+												<label class="label-form text-secondary required-label">Client Role</label>
+												<div class="form-group">
+													<div class="custom-select-drop">
+														<select class="selectpicker">
+															<option disabled selected>Please Select</option>
+															<option>Select #1</option>
+															<option>Select #2</option>
+															<option>Select #3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-5 col-lg-6">
+											<div class="form-group">
+												<label class="label-form text-secondary required-label">Choose Client</label>
+												<div class="dropdown">
+													<input type="text" data-toggle="dropdown" class="dropdown-toggle form-control" placeholder="Please Choose">
+													<div class="dropdown-menu dropdown-menu-full ">
+														<a href="#" data-toggle="modal" data-target="#clients-add-modal" class="add-new-item">
+															<div class="add-new-item__wrap-icon bg-primary">
+																<svg class="add-new-item__wrap-icon__icon" width="30" height="30">
+																	<use xlink:href="assets/img/sprite-icons.svg#plus-ico" />
+																</svg>
+															</div>
+															<div class="add-new-item__description">
+																<span class="add-new-item__text">Need to Add A New Contact?</span>
+																<div class="add-new-item__btn-holder">
+																	<span class="btn btn-primary">Add New</span>
+																</div>
+															</div>
+														</a>
+														<div class="drop-listing">
+															<div class="drop-listing__item">
+																<div class="drop-listing__visual drop-listing__visual__avatar">
+																	<img src="assets/img/img155.jpg" srcset="assets/img/img155@2x.jpg 2x" alt="image description">
+																</div>
+																<div class="drop-listing__description">
+																	<div class="drop-listing__description__info">
+																		<span class="drop-listing__text">Samuel R. Dundie</span>
+																		<strong class="text-sidewalk">Keller Williams</strong>
+																	</div>
+																	<div class="drop-listing__btn-holder">
+																		<button class="btn btn-midnight">Select</button>
+																	</div>
+																</div>
+															</div>
+															<div class="drop-listing__item">
+																<div class="drop-listing__visual drop-listing__visual__avatar">
+																	<svg class="drop-listing__visual__icon" width="30" height="30">
+																		<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+																	</svg>
+																</div>
+																<div class="drop-listing__description">
+																	<div class="drop-listing__description__info">
+																		<span class="drop-listing__text">Samus O’Shaughnessy</span>
+																		<strong class="text-sidewalk">Re/Max</strong>
+																	</div>
+																	<div class="drop-listing__btn-holder">
+																		<button class="btn btn-midnight">Select</button>
+																	</div>
+																</div>
+															</div>
+															<div class="drop-listing__item">
+																<div class="drop-listing__visual drop-listing__visual__avatar">
+																	<img src="assets/img/img156.jpg" srcset="assets/img/img156@2x.jpg 2x" alt="image description">
+																</div>
+																<div class="drop-listing__description">
+																	<div class="drop-listing__description__info">
+																		<span class="drop-listing__text">Samus O’Shaughnessy</span>
+																		<strong class="text-sidewalk">Long & Foster</strong>
+																	</div>
+																	<div class="drop-listing__btn-holder">
+																		<button class="btn btn-midnight">Select</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4 col-lg-3 ">
+											<span class="label-form d-xl-block d-none mb-0">&nbsp;</span>
+											<div class="participants-holder__btn-holder">
+												<a href="#" data-toggle="modal" data-target="#client-modal" class="btn btn-smoky">Add Client</a>
+											</div>
+										</div>
+									</div>
+									<div class="participants-view-form-holder">
+										<ul class="participant-cards">
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Broker</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Please Select From Above</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li class="participant-cards__item">
+												<h6 class="agents-tile__title h7 text-nunito status status-red mb-2">Listing Agent</h6>
+												<div class="agents-tile">
+													<div class="agents-tile__avatar">
+													</div>
+													<div class="agents-tile__inner">
+														<div class="agents-tile__inner__tile-holder">
+															<h6 class="agents-tile__inner__title h7">Please Select From Above</h6>
+														</div>
+														<svg class="agents-tile__icon-decor" width="50" height="50">
+															<use xlink:href="assets/img/sprite-icons.svg#sale-house" />
+														</svg>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">Change Buyer</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Remove Buyer</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="offer-form__item offer-form__border-item">
+							<div class="buttons-item">
+								<div class="buttons-item__item participants-holder__btn-holder">
+									<button class="btn btn-smoky">Start Over</button>
+								</div>
+								<div class="buttons-item__item participants-holder__btn-holder">
+									<button class="btn btn-primary arrow-right">
+										Next
+										<span class="ico-arrow">
+											<svg width="18" height="14">
+												<use xlink:href="assets/img/sprite-icons.svg#arrow-next" />
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional-info">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. &copy; 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+		<div class="modal fade" id="client-modal" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title modal-title__decor">Add Client</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<svg aria-hidden="true" width="22" height="22">
+								<use xlink:href="assets/img/sprite-icons.svg#close-ico-flat" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body pb-4">
+						<form class="participants-form">
+							<div class="form-group form-group__file">
+								<div class="image-upload-wrap">
+									<div class="image-upload-wrap__img-file">
+										<svg class="image-upload-wrap__img-file__icon" width="50" height="50">
+											<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+										</svg>
+									</div>
+									<input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*">
+								</div>
+								<div class="file-upload-content">
+									<img class="file-upload-image" src="#" alt="your image">
+									<button type="button" onclick="removeUpload()" class="remove-image">
+										<svg width="25" height="25">
+											<use xlink:href="assets/img/sprite-icons.svg#delete-circle" />
+										</svg>
+									</button>
+								</div>
+								<button class="file-upload-btn file-upload-btn__title-text" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add A Picture</button>
+							</div>
+							<div class="form-group">
+								<label class="label-form  required-label">first name</label>
+								<input type="text" class="form-control" placeholder="Type First Name Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form  required-label">last name</label>
+								<input type="text" class="form-control" placeholder="Type Last Name Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form text-secondary required-label">Email address</label>
+								<input type="email" class="form-control email" placeholder="Type Email Address Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form required-label">phone number</label>
+								<input type="tel" class="form-control phone" placeholder="Type Phone Number Here" maxlength="15">
+							</div>
+							<div class="form-btn">
+								<button type="button" class="btn btn-smoky">Complete</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="participant-modal" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title modal-title__decor">Add Participant</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<svg aria-hidden="true" width="22" height="22">
+								<use xlink:href="assets/img/sprite-icons.svg#close-ico-flat" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body pb-4">
+						<form class="participants-form">
+							<div class="form-group form-group__file">
+								<div class="image-upload-wrap">
+									<div class="image-upload-wrap__img-file">
+										<svg class="image-upload-wrap__img-file__icon" width="50" height="50">
+											<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+										</svg>
+									</div>
+									<input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*">
+								</div>
+								<div class="file-upload-content">
+									<img class="file-upload-image" src="#" alt="your image">
+									<button type="button" onclick="removeUpload()" class="remove-image">
+										<svg width="25" height="25">
+											<use xlink:href="assets/img/sprite-icons.svg#delete-circle" />
+										</svg>
+									</button>
+								</div>
+								<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add A Picture</button>
+							</div>
+							<div class="form-group">
+								<label class="label-form  required-label">first name</label>
+								<input type="text" class="form-control" placeholder="Type First Name Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form  required-label">last name</label>
+								<input type="text" class="form-control" placeholder="Type First Name Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form text-secondary required-label">Email address</label>
+								<input type="email" class="form-control email" placeholder="Type First Name Here">
+							</div>
+							<div class="form-group">
+								<label class="label-form required-label">phone number</label>
+								<input type="tel" class="form-control phone" placeholder="Type First Name Here" maxlength="15">
+							</div>
+							<div class="form-btn">
+								<button type="button" class="btn btn-primary" disabled>Complete</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="collaborators-add-modal" role="dialog">
+			<div class="modal-dialog lg-modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title modal-title__decor">Add A Collaborator</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<svg aria-hidden="true" width="25" height="25">
+								<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body pb-4">
+						<form class="participants-form">
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">first name</label>
+										<input type="text" class="form-control" placeholder="Type First Name Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Last Name</label>
+										<input type="text" class="form-control" placeholder="Type Last Name Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Email address</label>
+										<input type="email" class="form-control email" placeholder="Type Email Address Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">phone number</label>
+										<input type="tel" class="form-control phone" placeholder="Type Phone Number Here" maxlength="15" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Collaborator Role</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Please Select</option>
+												<option>Item 1</option>
+												<option>item 2</option>
+												<option>Item 3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<span class="form-title">
+											<label class="label-form text-secondary">Add your Team Logo</label>
+										</span>
+										<div class="image-loader">
+											<div class="input-file-wrap">
+												<div class="dropzone-place">
+													<span class="dropzone-place__text">Drag & Drop <br> an Image</span>
+													<img src="assets/img/ico-upload.svg" width="40" alt="image description">
+												</div>
+												<span class="text-note">- OR -</span>
+												<button class="btn btn-grayish-navy">Upload Picture</button>
+												<input type="file">
+											</div>
+											<div class="image-preview" style="display: none;">
+												<div class="image-preview__uploaded-img">
+													<img src="#" alt="image description">
+												</div>
+												<div class="image-preview__wrap">
+													<div class="image-preview__img">
+													</div>
+													<span class="text-note">Final Result</span>
+													<button class="btn bg-dark text-white">Save Profile Picture</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="participants-form__buttons-wrap buttons-item">
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-white text-navy-dark" data-dismiss="modal">Cancel</button>
+								</div>
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-dark">Complete</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="clients-add-modal" role="dialog">
+			<div class="modal-dialog lg-modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title modal-title__decor">Add A Client</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<svg aria-hidden="true" width="25" height="25">
+								<use xlink:href="assets/img/sprite-icons.svg#close-ico-bold" />
+							</svg>
+						</button>
+					</div>
+					<div class="modal-body pb-4">
+						<form class="participants-form">
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">first name</label>
+										<input type="text" class="form-control" placeholder="Type First Name Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Last Name</label>
+										<input type="text" class="form-control" placeholder="Type Last Name Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Email address</label>
+										<input type="email" class="form-control email" placeholder="Type Email Address Here" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">phone number</label>
+										<input type="tel" class="form-control phone" placeholder="Type Phone Number Here" maxlength="15" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Lead Generated By</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Please Select</option>
+												<option>Item 1</option>
+												<option>item 2</option>
+												<option>Item 3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<div class="label-wrap">
+											<label class="label-form text-secondary required-label mb-0">Lead Generation Date</label>
+											<span class="questions-tooltip  tooltip-secondary" data-toggle="tooltip" data-html="true" title="Does your offer escalate/increase if there are higher competing offers?">?</span>
+										</div>
+										<input type="text" class="form-control datepicker" placeholder="Please Select" required>
+									</div>
+								</div>
+								<div class="col-xl-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Lead Source</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Please Select</option>
+												<option>Item 1</option>
+												<option>item 2</option>
+												<option>Item 3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group">
+										<span class="form-title">
+											<label class="label-form text-secondary">Add your Team Logo</label>
+										</span>
+										<div class="image-loader">
+											<div class="input-file-wrap">
+												<div class="dropzone-place">
+													<span class="dropzone-place__text">Drag & Drop <br> an Image</span>
+													<img src="assets/img/ico-upload.svg" width="40" alt="image description">
+												</div>
+												<span class="text-note">- OR -</span>
+												<button class="btn btn-grayish-navy">Upload Picture</button>
+												<input type="file">
+											</div>
+											<div class="image-preview" style="display: none;">
+												<div class="image-preview__uploaded-img">
+													<img src="#" alt="image description">
+												</div>
+												<div class="image-preview__wrap">
+													<div class="image-preview__img">
+													</div>
+													<span class="text-note">Final Result</span>
+													<button class="btn bg-dark text-white">Save Profile Picture</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="participants-form__buttons-wrap buttons-item">
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-white text-navy-dark" data-dismiss="modal">Cancel</button>
+								</div>
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-dark">Complete</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

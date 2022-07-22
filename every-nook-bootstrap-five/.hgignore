@@ -1,0 +1,6 @@
+syntax: glob
+node_modules
+source
+markup-template/tips.scss
+markup-template/build
+markup-template/package-lock.json

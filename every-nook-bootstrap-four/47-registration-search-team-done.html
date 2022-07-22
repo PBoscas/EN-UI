@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list">
+							<li>
+								<a class="nav-link active" href="#">
+									<span class="nav-ico">
+										<svg width="23" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#home-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Home</span>
+								</a>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#users-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Clients</span>
+								</a>
+								<div class="drop-hover-menu">
+									<ul class="drop-menu-list">
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-users.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-users-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Your Clients</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-managment.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-managment-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Transaction Managment</span>
+											</a>
+											<div class="drop-options">
+												<ul>
+													<li><a href="#">Archived Transactions</a></li>
+													<li class="active"><a href="#">Manage Current</a></li>
+													<li><a href="#">Preferences</a></li>
+													<li><a href="#">Other Options</a></li>
+												</ul>
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-financial.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-financial-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Financial</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-listing-active.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-listing.svg" alt="image description">
+												</span>
+												<span class="drop-text">Listing & Contract Prep</span>
+											</a>
+											<div class="drop-options">
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-tours.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-tours-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Tour Itinerary</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#new-tour" />
+										</svg>
+									</span>
+									<span class="nav-text">Tours</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#statistics-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Statistics</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#pages-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Pages</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="18" height="18">
+									<use xlink:href="assets/img/sprite-icons.svg#search-icon" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="20" height="20">
+									<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img14.jpg" srcset="assets/img/img14@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="tools-hero-section">
+				<div class="tools-hero-section__wrap pt-4 pb-3">
+					<div class="container">
+						<ol class="breadcrumbs">
+							<li class="breadcrumb-item"><a href="#">Registration</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Real Estate Agent</li>
+						</ol>
+						<h2 class="headline-title">Join The Community</h2>
+					</div>
+				</div>
+				<div class="tools-progress-wrap">
+					<div class="container">
+						<div class="progress-wrap">
+							<div class="progress-wrap__inner">
+								<div class="progress-slider">
+									<!-- 			<div class="progress-arrow progress-arrow__prev">
+										<button class="progress-arrow__btn">
+											<svg width="25" height="25">
+												<use xlink:href="assets/img/sprite-icons.svg#arrow-dark-left"></use>
+											</svg>
+											<span class="progress-arrow__text">Previous</span>
+										</button>
+									</div> -->
+									<div class="progress-slider__item first-item">
+										<a href="#" class="progress-slider__link">
+											<span class="progress-slider__ico">
+												<img src="assets/img/ico-basic.svg" alt="image description">
+											</span>
+											<span class="progress-slider__title">Basic Details</span>
+										</a>
+									</div>
+									<div class="progress-slider__item hide-mobile">
+										<a href="#" class="progress-slider__link">
+											<span class="progress-slider__ico">
+												<svg width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#check-success" />
+												</svg>
+											</span>
+											<span class="progress-slider__title">Rooms</span>
+										</a>
+									</div>
+									<div class="progress-slider__item hide-mobile">
+										<a href="#" class="progress-slider__link">
+											<span class="progress-slider__ico">
+												<svg width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#alert-circle" />
+												</svg>
+											</span>
+											<span class="progress-slider__title">Parking</span>
+										</a>
+									</div>
+									<div class="progress-slider__item hide-mobile">
+										<a href="#" class="progress-slider__link">
+											<span class="progress-slider__ico">
+												<img src="assets/img/circle-blue.svg" alt="image description">
+											</span>
+											<span class="progress-slider__title">Exterior</span>
+										</a>
+									</div>
+									<div class="progress-slider__item hide-mobile inactive">
+										<a href="#" class="progress-slider__link">
+											<span class="progress-slider__ico">
+												<img src="assets/img/circle-gray.svg" alt="image description">
+											</span>
+											<span class="progress-slider__title">Neighborhood</span>
+										</a>
+									</div>
+									<div class="progress-arrow progress-arrow__next">
+										<button class="progress-arrow__btn">
+											<svg width="25" height="25">
+												<use xlink:href="assets/img/sprite-icons.svg#arrow-dark-right" />
+											</svg>
+											<span class="progress-arrow__text">Next</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="progress-wrap__button-wrap">
+								<div class="progress-wrap__btn-holder">
+									<button class="btn btn-outline-gray">Previous Step</button>
+								</div>
+								<div class="progress-wrap__btn-holder">
+									<button class="btn btn-light-gray">Save And Continue</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="registration-team-section step-section">
+				<div class="registration-team-section__container container">
+					<div class="registration-team-section__title-wrap">
+						<h4 class="step-title">
+							<span class="step-title__text bg-danger-color">Step 2</span>
+						</h4>
+						<h2>Confirm Team Members</h2>
+					</div>
+					<div class="registration-team-section__text-wrap">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem. Etiam sed mauris sed ex tempus porttitor. </p>
+					</div>
+					<div class="team-note">
+						<span class="team-note__img">
+							<img src="assets/img/img87.svg" width="100" alt="image description">
+						</span>
+						<div class="team-note__content">
+							<h4 class="team-note__title">Know of a missing team member?</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit <a href="#" class="team-note__link">click here</a>.</p>
+						</div>
+					</div>
+					<div class="results-table-wrap">
+						<div class="results-table-wrap__head">
+							<div class="results-table-wrap__title">
+								<h4>Team Results</h4>
+								<span class="results-table-wrap__ico">
+									<img src="assets/img/ico-group.svg" alt="image description">
+								</span>
+								<span class="results-table-wrap__status">8 Members</span>
+							</div>
+						</div>
+						<div class="table-responsive-scroll">
+							<table class="team-table-wrap members-table-wrap" data-page-length="4">
+								<thead>
+									<tr>
+										<th>Team Info</th>
+										<th>&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SJ">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="CK">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Cosmo Kramer</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="LG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Larry Gregopolous</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sally George</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover">
+														<img src="assets/img/img96.jpg" srcset="assets/img/img96@2x.jpg 2x" width="60" alt="image description">
+													</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Daniel Melcher</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SJ">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="CK">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Cosmo Kramer</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="LG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Larry Gregopolous</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sally George</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover">
+														<img src="assets/img/img96.jpg" srcset="assets/img/img96@2x.jpg 2x" width="60" alt="image description">
+													</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Daniel Melcher</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SJ">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="CK">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Cosmo Kramer</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="LG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Larry Gregopolous</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SG">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sally George</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover">
+														<img src="assets/img/img96.jpg" srcset="assets/img/img96@2x.jpg 2x" width="60" alt="image description">
+													</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Daniel Melcher</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="team-info-wrap">
+												<div class="agent-desc result-desc">
+													<span class="agent-desc__img-agent img-letter thumb-cover" data-parent="SS">&nbsp;</span>
+													<div class="agent-desc__info">
+														<h6 class="h7">Sarah Sidiridis</h6>
+														<span class="text-secondary">Keller Williams Integrity</span>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="action-holder">
+							<button class="btn btn-primary">Save And Continue</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	</div>
+</body>
+
+</html>

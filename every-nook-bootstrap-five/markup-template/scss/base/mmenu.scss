@@ -1,0 +1,315 @@
+.mm-menu_autoheight:not(.mm-menu_offcanvas) {
+	position: static;
+}
+
+.mm-navbar_sticky {
+	@include media("<desktop") {
+		position: static;
+	}
+}
+
+.mm-btn_prev {
+	width: 25px;
+
+	@include media("<desktop") {
+		margin-right: 15px;
+	}
+
+	&::before {
+		width: 20px;
+		left: 15px;
+		top: 20px;
+		bottom: inherit;
+		height: 20px;
+		border: none;
+		background-image: url('../img/chevron-left-gray.svg');
+		transform: rotate(0);
+
+		@include media("<desktop") {
+			left: 0;
+		}
+	}
+}
+
+.mm-navbar__btn:not(.mm-hidden)+.mm-navbar__title:last-child {
+	padding: 0;
+}
+
+.mm-btn_next {
+	&::after {
+		width: 20px;
+		height: 20px;
+		top: 5px;
+		right: 0;
+		bottom: inherit;
+		left: inherit;
+		right: 0;
+		border: none;
+		background-image: url('../img/chevron-right-gray.svg');
+		transform: rotate(0);
+
+		@include media("<desktop") {
+			right: 0;
+		}
+	}
+}
+
+.mm-panels {
+	@include media("<desktop") {
+		background: #181e39;
+	}
+
+	.mm-panel {
+		@include media("<desktop") {
+			background: #181e39;
+		}
+
+		&:first-child {
+			.mm-navbar {
+				display: none;
+			}
+		}
+
+		&:not(:first-child) {
+			.mm-listview {
+				padding-left: 40px;
+
+				@include media("<desktop") {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+.mm-navbar {
+	background: none;
+	border: none;
+	color: #A3A5B0;
+
+	&__title {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		max-width: 100%;
+		text-align: left;
+		padding: 22px 0 0 0 !important;
+
+		@include media("<desktop") {
+			max-width: 100%;
+			padding: 15px 0 10px 0 !important;
+			justify-content: flex-start;
+		}
+
+		>span {
+			white-space: normal;
+		}
+
+		&:hover {
+			.label-title {
+				color: #1AACFF;
+			}
+
+			.ellipse-ico {
+				background: #1AACFF;
+
+				svg {
+					fill: white;
+				}
+			}
+		}
+	}
+}
+
+.mm-menu_autoheight:not(.mm-menu_offcanvas) {
+	position: absolute;
+
+	@include media("<desktop") {
+		position: relative;
+	}
+}
+
+.mm-wrapper {
+	overflow-x: unset;
+}
+
+.mm-listview {
+	@include media(">=desktop") {
+		padding: 15px 18px 20px;
+	}
+}
+
+.mm-listitem_selected {
+	>.mm-listitem__text {
+		@include media("<desktop") {
+			background: #2F344C;
+		}
+	}
+}
+
+.mm-listitem {
+	@include media(">=desktop") {
+		border-radius: 10px;
+	}
+
+	&:hover {
+		@include media("<desktop") {
+			background: none;
+		}
+
+		.label-title {
+			color: #1AACFF;
+		}
+
+		.ellipse-ico {
+			background: #1AACFF;
+
+			svg {
+				fill: white;
+			}
+		}
+	}
+
+	&::after {
+		display: none;
+	}
+
+	a {
+		display: flex;
+		transition: all .35s ease;
+
+		&.sub-link {
+			padding: 2px 0 2px 60px;
+
+			.dot {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #D1EEFF;
+				margin-right: 10px;
+				flex-shrink: 0;
+				transition: all .35s ease;
+			}
+
+			.menu-item__inner {
+				.label-title {
+					margin-bottom: 0;
+				}
+			}
+
+			&:hover {
+				.dot {
+					background: #1AACFF;
+				}
+			}
+		}
+	}
+
+	&:not(:first-child) {
+		margin-top: 6px;
+	}
+
+	&__btn {
+		padding: 0;
+
+		.label-title {
+			font-weight: 900;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: -0.00125em;
+			text-transform: uppercase;
+			color: #181E39;
+			padding: 0 !important;
+		}
+	}
+
+	&__text {
+		display: flex;
+		align-items: flex-start;
+		padding: 7px 10px;
+
+		@include media("<desktop") {
+			padding: 7px 10px 7px 40px;
+		}
+	}
+
+	.ellipse-ico {
+		transition: all .35s ease;
+		width: 30px;
+		height: 30px;
+		background: #D1EEFF;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		padding: 0;
+		margin-right: 20px;
+
+		svg {
+			transition: all .35s ease;
+		}
+	}
+}
+
+.mm-panel {
+	border-color: #E6E7EC;
+	background: white;
+	border: none;
+
+	@include media(">=desktop") {
+		overflow: auto;
+		overflow-x: hidden;
+		overflow-y: hidden;
+	}
+
+	&::after {
+		display: none;
+	}
+
+	.label-title {
+		font-weight: 900;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: -0.00125em;
+		text-transform: uppercase;
+		color: #181E39;
+		padding: 0 !important;
+		transition: all .35s ease;
+		margin-bottom: 5px;
+
+		@include media("<desktop") {
+			color: $white;
+		}
+	}
+
+	.ellipse-ico {
+		transition: all .35s ease;
+		width: 30px;
+		height: 30px;
+		background: #D1EEFF;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		padding: 0;
+		margin-right: 20px;
+
+		svg {
+			transition: all .35s ease;
+		}
+	}
+}
+
+.mm-menu_tip-top {
+	&::before {
+		display: none;
+	}
+}
+
+.mm-panels {
+	@include media("<desktop") {
+		position: static;
+	}
+}

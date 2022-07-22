@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Create Members (Step 1)</title>
+	<link media="all" rel="stylesheet" href="assets/css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="assets/css/timepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/datepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/select.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header-wrapper">
+					<a href="#" class="logo">
+						<img class="logo__desktop" src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+						<img class="logo__mobile" src="assets/img/logo-mobile.svg" width="34" height="33" alt="EveryNook">
+					</a>
+					<div class="main-menu">
+						<nav class="nav">
+							<ul>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#wrench"/>
+										</svg>
+										<span>Tools</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Manage Your Goals</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+														</svg>
+													</span>
+													<span>Shared Goals</span>
+													<span class="subtitle">View goals shared in the community, your brokerage or your team, if applicable.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#community2"/>
+																	</svg>
+																</span>
+																<span>Community Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#building2"/>
+																	</svg>
+																</span>
+																<span>Brokerage Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+																	</svg>
+																</span>
+																<span>Team Goals</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#plus"/>
+														</svg>
+													</span>
+													<span>Add A New Goal</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart2"/>
+										</svg>
+										<span>Insights</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+														</svg>
+													</span>
+													<span>Your Business Insights</span>
+													<span class="subtitle">Analytical breakdown of your sales trends, achievments and forecast of your future performance.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul class="sub-list">
+														<li>
+															<a href="#">Production Insights</a>
+														</li>
+														<li>
+															<a href="#">Your Awards</a>
+														</li>
+														<li>
+															<a href="#">Ranking</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#building2"/>
+														</svg>
+													</span>
+													<span>Brokerage Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community2"/>
+														</svg>
+													</span>
+													<span>Team Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#pin"/>
+														</svg>
+													</span>
+													<span>Area Insights</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media"/>
+										</svg>
+										<span>Collaboration</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Agent Collaboration</span>
+													<span class="subtitle">Share your experiences with other agents in the community and showcase your favorite peers.</span>
+												</a>
+												<ul class="sub-list">
+													<li>
+														<a href="#">Reviews</a>
+													</li>
+													<li>
+														<a href="#">Endorsements</a>
+													</li>
+													<li>
+														<a href="#">Favorites</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Invite Other Agents</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<ul class="navbar-users">
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 4C1 2.34315 2.34315 1 4 1H19C20.6569 1 22 2.34315 22 4V16H4C2.34315 16 1 14.6569 1 13V4Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path class="fill" d="M14.3308 20.9979L10.9998 18C9.79981 16.92 13.8331 15.55 15.9998 15V20.2546C15.9998 21.1204 14.9744 21.5771 14.3308 20.9979Z" fill="#AAB0BB"/>
+										<rect x="5" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+										<rect x="10" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+										<rect x="15" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messages settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL Messages (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Messages</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1127_15913" fill="white">
+											<path d="M8.5 18C9.875 18 11 17.1 11 16H6C6 17.1 7.125 18 8.5 18Z"/>
+										</mask>
+										<path class="fill" d="M11 16H14C14 14.3431 12.6569 13 11 13V16ZM6 16V13C4.34315 13 3 14.3431 3 16H6ZM8.5 21C10.8726 21 14 19.347 14 16H8C8 15.468 8.27792 15.1608 8.39154 15.0699C8.50218 14.9814 8.54819 15 8.5 15V21ZM11 13H6V19H11V13ZM3 16C3 19.347 6.12744 21 8.5 21V15C8.45181 15 8.49782 14.9814 8.60846 15.0699C8.72208 15.1608 9 15.468 9 16H3Z" fill="#AAB0BB" mask="url(#path-1-inside-1_1127_15913)"/>
+										<path d="M14 6.50018V9.58596C14 10.1164 14.2107 10.6251 14.5858 11.0002L15.2286 10.3574L14.5858 11.0002L16 12.4144L16 14.0002H1V12.4144L2.41421 11.0002C2.78929 10.6251 3 10.1164 3 9.58596V6.50018C3 3.8889 4.75475 1.77958 7.21551 1.17691C8.07302 1.00807 8.92691 1.0081 9.78451 1.17691C12.2453 1.77959 14 3.8889 14 6.50018Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL NOTIFICATIONS (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Notifications</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="assets/img/img-user02.png" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+								</button>
+								<div class="dropdown-menu">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option-userpic">
+												<img src="assets/img/img-user02.png" height="40" width="40" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+											</div>
+											<div class="profile-option-info">
+												<h6 class="fw-bold f-ubuntu">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#dashboard"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Dashboard</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#settings"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#log-out"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="section">
+				<div class="container container-sm">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Teams</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Add A Team</li>
+						</ol>
+					</nav>
+					<div class="page-header">
+						<h1 class="page-header-title title-1 f-ubuntu fw-bold">Add Team Members</h1>
+						<div class="step-row">
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<span class="step-row-title">Step 2 | Invite Members</span>
+						</div>
+					</div>
+					<div class="module-content">
+						<form action>
+							<div class="form-explanation mb-4">
+								<h4 class="text-uppercase mb-1">Agents You’ve Worked With</h4>
+								<p class="text-secondary">Paragraph Text - Roboto 14 px Regular - #848898 Sed suscipit,
+									velit a malesuada viverra, ipsum odio aliquam leo, ac pretium sapien nisl in tellus.
+									Pellentesque sed nibh feugiat, rutrum risus a, finibus metus. Sed hendrerit ullamcorper
+									velit, ut rutrum purus egestas at. Nulla semper sem non tincidunt volutpat. Cras finibus
+									non leo sagittis vehicula. </p>
+							</div>
+							<div class="headline-unit">
+								<div class="headline-unit-title selections">
+									<button class="selections-btn">Select All</button>
+									<button class="selections-btn">Clear All</button>
+								</div>
+							</div>
+							<div class="member-row row mb-3">
+								<div class="col-12 mb-3">
+									<div class="member-card card-tile">
+										<div class="agent-info">
+											<div class="agent-info-avatar rounded-circle">
+												<img class="img-cover" src="assets/img/userpic-17.jpg" srcset="assets/img/userpic-17@2x.jpg 2x" alt="image description">
+											</div>
+											<div class="agent-info-inner text-dark-70">
+												<span class="label-tag bg-secondary mb-2">CO-Listing Agent</span>
+												<h4 class="mb-0"><a href="#" class="link">Alexander McFadden</a></h4>
+												<a href="#" class="link">Keller Williams Integrity</a>
+											</div>
+										</div>
+										<div class="direction-info">
+											<span class="label-tag mb-2">Transaction</span>
+											<div class="d-flex">
+												<div class="direction-info-img">
+													<img class="img-fluid" src="assets/img/img-house-sm-01.jpg" srcset="assets/img/img-house-sm-01@2x.jpg 2x" alt="image description">
+												</div>
+												<div class="direction-info-inner">
+													<span class="direction-info-title">
+														<span class="h4 m-0">123 Main Street</span>
+														<span>Sarasota, FL 32093</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="add-button">
+											<input type="checkbox">
+											<span>
+												<svg class="icon" width="30" height="30">
+													<use xlink:href="assets/img/sprite-icons.svg#user-add"/>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 mb-3">
+									<div class="member-card card-tile">
+										<div class="agent-info">
+											<div class="agent-info-avatar rounded-circle">
+												<img class="img-fluid" src="assets/img/userpic-18.jpg" srcset="assets/img/userpic-18@2x.jpg 2x" alt="image description">
+											</div>
+											<div class="agent-info-inner text-dark-70">
+												<span class="label-tag bg-secondary mb-2">CO-Listing Agent</span>
+												<h4 class="mb-0"><a href="#" class="link">Joaquin J Taylor</a></h4>
+												<a href="#" class="link">Mode O Real Estate</a>
+											</div>
+										</div>
+										<div class="direction-info">
+											<span class="label-tag mb-2">Transaction</span>
+											<div class="d-flex">
+												<div class="direction-info-img">
+													<img class="img-fluid" src="assets/img/img-house-sm-02.jpg" srcset="assets/img/img-house-sm-02@2x.jpg 2x" alt="image description">
+												</div>
+												<div class="direction-info-inner">
+													<span class="direction-info-title">
+														<span class="h4 m-0">3534 Patterson Road</span>
+														<span>Sarasota, FL 32093</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="add-button">
+											<input type="checkbox">
+											<span>
+												<svg class="icon" width="30" height="30">
+													<use xlink:href="assets/img/sprite-icons.svg#user-add"/>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 mb-3">
+									<div class="member-card card-tile">
+										<div class="agent-info">
+											<div class="agent-info-avatar rounded-circle">
+												<img class="img-cover" src="assets/img/userpic-07.jpg" srcset="assets/img/userpic-07@2x.jpg 2x" alt="image description">
+											</div>
+											<div class="agent-info-inner text-dark-70">
+												<span class="label-tag bg-secondary mb-2">CO-Listing Agent</span>
+												<h4 class="mb-0"><a href="#" class="link">Diane M Ramirez</a></h4>
+												<a href="#" class="link">The Record Shops at TSS</a>
+											</div>
+										</div>
+										<div class="direction-info">
+											<span class="label-tag mb-2">Transaction</span>
+											<div class="d-flex">
+												<div class="direction-info-img">
+													<img class="img-cover" src="assets/img/img-house-sm-02.jpg" srcset="assets/img/img-house-sm-02@2x.jpg 2x" alt="image description">
+												</div>
+												<div class="direction-info-inner">
+													<span class="direction-info-title">
+														<span class="h4 m-0">3615 Green Hill Road</span>
+														<span>Springdale, AR, 72764</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="add-button">
+											<input type="checkbox">
+											<span>
+												<svg class="icon" width="30" height="30">
+													<use xlink:href="assets/img/sprite-icons.svg#user-add"/>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 mb-3">
+									<div class="member-card card-tile">
+										<div class="agent-info">
+											<div class="agent-info-avatar rounded-circle">
+												<img class="img-cover" src="assets/img/userpic-08.jpg" srcset="assets/img/userpic-08@2x.jpg 2x" alt="image description">
+											</div>
+											<div class="agent-info-inner text-dark-70">
+												<span class="label-tag bg-secondary mb-2">CO-Listing Agent</span>
+												<h4 class="mb-0"><a href="#" class="link">Curtis J Smith</a></h4>
+												<a href="#" class="link">The Record Shops at TSS</a>
+											</div>
+										</div>
+										<div class="direction-info">
+											<span class="label-tag mb-2">Transaction</span>
+											<div class="d-flex">
+												<div class="direction-info-img">
+													<img class="img-fluid" src="assets/img/img-house-sm-02.jpg" srcset="assets/img/img-house-sm-02@2x.jpg 2x" alt="image description">
+												</div>
+												<div class="direction-info-inner">
+													<span class="direction-info-title">
+														<span class="h4 m-0">3744 Cherry Ridge Drive</span>
+														<span>Roseville, MI 48066</span>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="add-button">
+											<input type="checkbox">
+											<span>
+												<svg class="icon" width="30" height="30">
+													<use xlink:href="assets/img/sprite-icons.svg#user-add"/>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btns-unit d-grid gap-1 d-md-flex justify-content-md-end">
+								<button class="btn btn-link border-0 btn-lg order-md-0 order-2" type="button">Skip For
+									Now</button>
+								<button class="btn btn-outline-primary rounded-pill btn-lg" type="button">Continue</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-bg">
+				<img src="assets/img/footer-bg.svg" alt="image description">
+			</div>
+			<div class="footer-tile bg-white">
+				<div class="container">
+					<div class="row upper-footer">
+						<div class="col-xl-6 col-lg-5">
+							<div class="footer-block">
+								<a href="#" class="footer-logo">
+									<img src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+								</a>
+								<p>Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</p>
+								<ul class="socials">
+									<li>
+										<a href="#" target="_blank">
+											<svg width="12" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#facebook"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="24" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#twitter"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="23" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#linkedin"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="20" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#instagram"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="row">
+								<div class="col-lg-6 col-md-5 mb-md-0 mb-5">
+									<h4 class="footer-title">Useful Links</h4>
+									<ul class="footer-list">
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Services</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-7">
+									<h4 class="footer-title">Get in Touch</h4>
+									<ul class="footer-contact">
+										<li>
+											<svg class="icon" width="20" height="20">
+												<use xlink:href="assets/img/sprite-icons.svg#subtract"/>
+											</svg>
+											<div>
+												<span class="d-block fw-medium text-muted">Everynook</span>
+												<a href="https://goo.gl/maps/gSfNiLD9kwhipUn26" target="_blank">9175 Guilford Road, Suite 209, <br> Columbia, Maryland 21046</a>
+											</div>
+										</li>
+										<li>
+											<svg class="icon" width="22" height="22">
+												<use xlink:href="assets/img/sprite-icons.svg#phone"/>
+											</svg>
+											<a href="tel:8885026080">(888) 502-6080</a>
+										</li>
+										<li>
+											<svg class="icon" width="21" height="16">
+												<use xlink:href="assets/img/sprite-icons.svg#mail"/>
+											</svg>
+											<a href="mailto:info@everynook.com">info@everynook.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="under-footer">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. © 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+						<span class="copyright">&copy; 2021 EveryNook, LLC. All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	<script src="assets/js/jquery.main.js" defer></script>
+</body>
+
+</html>

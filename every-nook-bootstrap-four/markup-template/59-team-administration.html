@@ -1,0 +1,668 @@
+//= template/head-meta.html
+<title>Every Nook - Join Requests</title>
+//= template/head-link.html
+
+<body class="bg-light">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list">
+							<li>
+								<a class="nav-link active" href="#">
+									<span class="nav-ico">
+										<svg width="23" height="22">
+											<use xlink:href="img/sprite-icons.svg#home-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Home</span>
+								</a>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#users-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Clients</span>
+								</a>
+								<div class="drop-hover-menu">
+									<ul class="drop-menu-list">
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-users.svg" alt="image description">
+													<img class="ico active" src="img/ico-users-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Your Clients</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-managment.svg" alt="image description">
+													<img class="ico active" src="img/ico-managment-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Transaction Managment</span>
+											</a>
+											<div class="drop-options">
+												<ul>
+													<li><a href="#">Archived Transactions</a></li>
+													<li class="active"><a href="#">Manage Current</a></li>
+													<li><a href="#">Preferences</a></li>
+													<li><a href="#">Other Options</a></li>
+												</ul>
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus
+															varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-financial.svg" alt="image description">
+													<img class="ico active" src="img/ico-financial-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Financial</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-listing-active.svg" alt="image description">
+													<img class="ico active" src="img/ico-listing.svg" alt="image description">
+												</span>
+												<span class="drop-text">Listing & Contract Prep</span>
+											</a>
+											<div class="drop-options">
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus
+															varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-tours.svg" alt="image description">
+													<img class="ico active" src="img/ico-tours-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Tour Itinerary</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="img/sprite-icons.svg#new-tour"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Tours</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#statistics-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Statistics</span>
+								</a>
+							</li>
+							<li class="active">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="24">
+											<use xlink:href="img/sprite-icons.svg#pages-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Pages</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="18" height="18">
+									<use xlink:href="img/sprite-icons.svg#search-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="img/sprite-icons.svg#message-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this
+														time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="img/sprite-icons.svg#notification-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this
+														time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="20" height="20">
+									<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									<img src="img/img14.jpg" srcset="img/img14@2x.jpg" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#share"></use>
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#logout"></use>
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-menu-sliding">
+			<div class="sliding-inner">
+				<a href="#" class="btn-back">
+					<span class="label-title">Hide panel</span>
+					<svg class="ico" width="24" height="20">
+						<use xlink:href="img/sprite-icons.svg#arrow-hide"></use>
+					</svg>
+				</a>
+				<ul class="nav-menu-list">
+					<li class="active">
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Account Settings</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Account Settings</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Create A New Tour</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Status</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Password</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Password</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Notifications</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Notifications</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Requests</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Requests</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Security</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Security</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<img class="ico active" src="img/ico-square-blue.svg" alt="image description">
+								<img class="ico inactive" src="img/ico-square.svg" alt="image description">
+							</span>
+							<span class="text">Privacy</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Privacy</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main id="main">
+			<section class="administration">
+				<div class="container container__container-flexibly">
+					<div class="breadcrumb-wrap">
+						<a href="#" class="back-arrow">
+							<svg width="8" height="10">
+								<use xlink:href="img/sprite-icons.svg#chevron-back"></use>
+							</svg>
+						</a>
+						<ol class="breadcrumbs">
+							<li class="breadcrumb-item"><a href="#">Pages</a></li>
+							<li class="breadcrumb-item active" aria-current="page">My Preferences</li>
+						</ol>
+					</div>
+
+					<div class="main-content-wrap">
+						<aside class="sidebar administration-sidebar">
+							<div class="administration-wrap">
+								<h4 class="administration-title">Team Options</h4>
+								<div class="accordion administration-accordion" id="accordionExample">
+									<div class="card">
+										<a href="#!" class="card-item">
+											<div class="ico-accordion">
+												<img src="img/ico-active-member.svg" alt="image description">
+											</div>
+											<span class="text">Active Members</span>
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="#!" class="card-item">
+											<div class="ico-accordion">
+												<img src="img/ico-pending-invitations.svg" alt="image description">
+											</div>
+											<span class="text">Pending Invitations</span>
+										</a>
+									</div>
+
+									<div class="card">
+										<a href="#!" class="card-item active">
+											<div class="ico-accordion">
+												<img src="img/ico-join-requests-white.svg" alt="image description">
+											</div>
+											<span class="text">Join Requests</span>
+										</a>
+									</div>
+
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<button class="btn-accordion collapsed" type="button" data-toggle="collapse"
+												data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+												<span class="ico-accordion">
+													<img src="img/ico-add-member.svg" alt="image description">
+												</span>
+												<span class="text">Add Member</span>
+											</button>
+										</div>
+
+										<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+											<div class="card-body">
+												<ul class="card-list">
+													<li class="card-list-item">
+														<a href="#!" class="card-list-link">
+															<span class="card-list-ico">
+																<img src="img/ico-individual-add.svg" alt="image description">
+															</span>
+															<span class="card-list-text">Individual Add</span>
+														</a>
+													</li>
+													<li class="card-list-item">
+														<a href="#!" class="card-list-link">
+															<span class="card-list-ico">
+																<img src="img/ico-bulk-add.svg" alt="image description">
+															</span>
+															<span class="card-list-text">Bulk Add</span>
+														</a>
+													</li>
+													<li class="card-list-item">
+														<a href="#!" class="card-list-link">
+															<span class="card-list-ico">
+																<img src="img/ico-add-member.svg" alt="image description">
+															</span>
+															<span class="card-list-text">Add Member</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+						<div class="main-content">
+							<div class="administration-nav">
+								<div class="member">
+									<input type="checkbox" class="checkbox" id="some1" data-check-pattern="[name^='some-key']" />
+									<strong>Team Member</strong>
+								</div>
+								<a href="#!" class="filter">Filter</a>
+								<a href="#!" class="sort">Sort</a>
+							</div>
+							<ul class="administration-list">
+								<li>
+									<input type="checkbox" class="checkbox" name="checkbox_2" id="checkbox_2" />
+									<label for="checkbox_2">
+										<span class="content">
+											<span class="icon">
+												SJ
+											</span>
+											<span class="info">
+												<strong>Sarah Jones</strong>
+												<span>Agent</span>
+											</span>
+										</span>
+									</label>
+									<div class="icons">
+										<a href="#!"><img src="img/ico-done-white.svg" alt="image description"></a>
+										<a href="#!"><img src="img/ico-view-white.svg" alt="image description"></a>
+										<a href="#!" class="tooltip" title="Remove This Member"><img src="img/ico-delete-white.svg"
+												alt="image description"></a>
+									</div>
+								</li>
+
+								<li>
+									<input type="checkbox" class="checkbox" name="checkbox_3" id="checkbox_3" />
+									<label for="checkbox_3">
+										<span class="content">
+											<span class="icon">
+												SJ
+											</span>
+											<span class="info">
+												<strong>Sarah Jones</strong>
+												<span>Staff</span>
+											</span>
+										</span>
+									</label>
+									<div class="icons">
+										<a href="#!"><img src="img/ico-done-white.svg" alt="image description"></a>
+										<a href="#!"><img src="img/ico-view-white.svg" alt="image description"></a>
+										<a href="#!" class="tooltip" title="Remove This Member"><img src="img/ico-delete-white.svg"
+												alt="image description"></a>
+									</div>
+								</li>
+
+								<li>
+									<input type="checkbox" class="checkbox" name="scheckbox_4" id="checkbox_4" />
+									<label for="checkbox_4">
+										<span class="content">
+											<span class="icon">
+												SJ
+											</span>
+											<span class="info">
+												<strong>Sarah Jones</strong>
+												<span>Team Leader</span>
+											</span>
+										</span>
+									</label>
+									<div class="icons">
+										<a href="#!"><img src="img/ico-done-white.svg" alt="image description"></a>
+										<a href="#!"><img src="img/ico-view-white.svg" alt="image description"></a>
+										<a href="#!" class="tooltip" title="Remove This Member"><img src="img/ico-delete-white.svg"
+												alt="image description"></a>
+									</div>
+								</li>
+
+								<li>
+									<input type="checkbox" class="checkbox" name="checkbox_5" id="checkbox_5" />
+									<label for="checkbox_5">
+										<span class="content">
+											<span class="icon">
+												SJ
+											</span>
+											<span class="info">
+												<strong>Sarah Jones</strong>
+												<span>Agent</span>
+											</span>
+										</span>
+									</label>
+									<div class="icons">
+										<a href="#!"><img src="img/ico-done-white.svg" alt="image description"></a>
+										<a href="#!"><img src="img/ico-view-white.svg" alt="image description"></a>
+										<a href="#!" class="tooltip" title="Remove This Member"><img src="img/ico-delete-white.svg"
+												alt="image description"></a>
+									</div>
+								</li>
+
+								<li>
+									<input type="checkbox" class="checkbox" name="checkbox_6" id="checkbox_6" />
+									<label for="checkbox_6">
+										<span class="content">
+											<img src="img/ico-img-man.png" alt="image description">
+											<span class="info">
+												<strong>Sarah Jones</strong>
+												<span>Staff</span>
+											</span>
+										</span>
+									</label>
+									<div class="icons">
+										<a href="#!"><img src="img/ico-done-white.svg" alt="image description"></a>
+										<a href="#!"><img src="img/ico-view-white.svg" alt="image description"></a>
+										<a href="#!" class="tooltip" title="Remove This Member"><img src="img/ico-delete-white.svg"
+												alt="image description"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		//= template/footer.html
+	</div>

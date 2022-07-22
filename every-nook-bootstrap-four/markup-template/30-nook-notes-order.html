@@ -1,0 +1,878 @@
+//= template/head-meta.html
+	<title>Every Nook</title>
+//= template/head-link-onload.html
+<body class="on-load">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list">
+							<li>
+								<a class="nav-link active" href="#">
+									<span class="nav-ico">
+										<svg width="23" height="22">
+											<use xlink:href="img/sprite-icons.svg#home-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Home</span>
+								</a>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#users-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Clients</span>
+								</a>
+								<div class="drop-hover-menu">
+									<ul class="drop-menu-list">
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-users.svg" alt="image description">
+													<img class="ico active" src="img/ico-users-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Your Clients</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-managment.svg" alt="image description">
+													<img class="ico active" src="img/ico-managment-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Transaction Managment</span>
+											</a>
+											<div class="drop-options">
+												<ul>
+													<li><a href="#">Archived Transactions</a></li>
+													<li class="active"><a href="#">Manage Current</a></li>
+													<li><a href="#">Preferences</a></li>
+													<li><a href="#">Other Options</a></li>
+												</ul>
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-financial.svg" alt="image description">
+													<img class="ico active" src="img/ico-financial-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Financial</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-listing-active.svg" alt="image description">
+													<img class="ico active" src="img/ico-listing.svg" alt="image description">
+												</span>
+												<span class="drop-text">Listing & Contract Prep</span>
+											</a>
+											<div class="drop-options">
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-tours.svg" alt="image description">
+													<img class="ico active" src="img/ico-tours-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Tour Itinerary</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="img/sprite-icons.svg#new-tour"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Tours</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#statistics-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Statistics</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="24">
+											<use xlink:href="img/sprite-icons.svg#pages-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Pages</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="18" height="18">
+									<use xlink:href="img/sprite-icons.svg#search-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="img/sprite-icons.svg#message-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="img/sprite-icons.svg#notification-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="20" height="20">
+									<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="img/img14.jpg" srcset="img/img14@2x.jpg" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#share"></use>
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#logout"></use>
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="tools-hero-section pb-0">
+				<div class="tools-hero-section__wrap">
+					<div class="container">
+						<ol class="breadcrumbs">
+							<li class="breadcrumb-item"><a href="#">Properties</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Add A Property</li>
+						</ol>
+						<h2 class="headline-title">Productivity Tools</h2>
+					</div>
+					<div class="bg-stretch bg-stretch__left-bg">
+						<img src="img/bg05.svg" alt="image description">
+					</div>
+				</div>
+			</section>
+			<section class="step-productivity-section step-section">
+				<div class="container container__container-flexibly">
+					<form class="step-form">
+						<div class="step-form__step-item">
+							<div class="step-form__title-wrap">
+								<h4 class="step-form__step-title bg-primary">Step 1</h4>
+								<h4 class="step-form__title">Add Your Property</h4>
+							</div>
+							<div class="step-form__text-content">
+								<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem. Etiam sed mauris sed ex tempus porttitor. Praesent sollicitudin accumsan tellus, ac sollicitudin leo laoreet sit amet. In tristique dolor dolor, non aliquet sapien volutpat sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas convallis est, in iaculis lacus lacinia non. Curabitur volutpat enim nunc, sit amet molestie justo malesuada at. Nulla nec tellus neque.</span></p>
+							</div>
+							<div class="property-form-wrap row">
+								<div class="col-xl-2 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Street number</label>
+										<input type="text" class="form-control" placeholder="Street number">
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Street name</label>
+										<div class="address-input">
+											<input type="text" class="form-control is-invalid required-invalid" placeholder="Street Name">
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Unit Number</label>
+										<input type="text" class="form-control" placeholder="Unit Number">
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">City</label>
+										<input type="text" class="form-control" placeholder="City">
+									</div>
+								</div>
+								<div class="col-xl-2 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">State</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Select</option>
+												<option>Select #1</option>
+												<option>Select #2</option>
+												<option>Select #3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">zip code</label>
+										<input type="text" class="form-control numeric-value" maxlength="5" placeholder="Zip Code">
+									</div>
+								</div>
+								<div class="col-xl-2 col-12">
+									<label class="label-form d-xl-block d-none">&nbsp;</label>
+									<div class="btn-holder">
+										<a href="#" class="btn btn-primary">Search</a>
+									</div>
+								</div>
+							</div>
+							<label class="label-form text-secondary mb-0">Chooose from the properties below</label>
+							<div class="slider-holder">
+								<div class="properties-list">
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch01"/>
+													<label for="ch01">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+												<span class=" properties-list__label mls-label bg-danger">MLS: MDAA8476693</span>
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch02"/>
+													<label for="ch02">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch03"/>
+													<label for="ch03">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Unit 34D <br> Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch04"/>
+													<label for="ch04">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch05"/>
+													<label for="ch05">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch06"/>
+													<label for="ch06">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch07"/>
+													<label for="ch07">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch08"/>
+													<label for="ch08">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch09"/>
+													<label for="ch09">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch10"/>
+													<label for="ch10">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch11"/>
+													<label for="ch11">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="properties-list__item slider-item">
+										<div class="properties-list__inner">
+											<div class="properties-list__map-wrap">
+												<img class="properties-list__img" src="img/img75.jpg" srcset="img/img75@2x.jpg" alt="image description">
+											</div>
+											<div class="properties-list__content-wrap">
+												<span class="properties-list__address"><span class="properties-list__load-text">6913 Harewood Park Drive Baltimore, MD 21020</span></span>
+												<span class="properties-list__tax"><span class="properties-list__load-text">TAX ID: 7897897868</span></span>
+												<strong class="properties-list__owners font-weight-bold"><span class="properties-list__load-text">Owners</span></strong>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Deliliah Jones Mercedes</span></span>
+												<span class="properties-list__owners"><span class="properties-list__load-text">Franklin Miller</span></span>
+											</div>
+											<div class="properties-list__btn-holder">
+												<div class="btn-check">
+													<input type="checkbox" id="ch12"/>
+													<label for="ch12">
+														<span class="text">confirm this property</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="slider-status">
+									Properties
+									<span class="slider-current">1-4</span> of
+								<span class="slider-total">12</span>
+								</span>
+							</div>
+						</div>
+						<div class="step-form__step-item">
+							<div class="step-form__title-wrap">
+								<h4 class="step-form__step-title bg-primary">Step 2</h4>
+								<h4 class="step-form__title">Add Your Clients</h4>
+							</div>
+							<div class="step-form__text-content">
+								<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem. Etiam sed mauris sed ex tempus porttitor. Praesent sollicitudin accumsan tellus, ac sollicitudin leo laoreet sit amet. In tristique dolor dolor, non aliquet sapien volutpat sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas convallis est, in iaculis lacus lacinia non. Curabitur volutpat enim nunc, sit amet molestie justo malesuada at. Nulla nec tellus neque.</span></p>
+							</div>
+							<div class="add-client-wrap">
+								<div class="add-client-wrap__add-item">
+									<label class="label-form text-secondary">Choose Your clients</label>
+									<div class="step-form__row-btn">
+										<div class="step-form__input-field">
+											<div class="select-holder add-select-drop">
+												<select class="custom-multiple-select" data-sub-class="custom-select2-drop" data-placeholder="Enter Client(s) name" name="test_skill">
+													<option value="01" title="img/img01.jpg">Steve Wilkerson</option>
+													<option value="02" title="img/img02.jpg">Steve Johnson</option>
+													<option value="03" title="img/img03.jpg">Steve Wilson</option>
+													<option value="04" title="img/img04.jpg">Steve Jackson</option>
+													<option value="05" title="img/img04.jpg">Steve Jackson</option>
+												</select>
+											</div>
+										</div>
+										<div class="step-form__btn-field">
+											<a href="#" class="link-title">Or create new client</a>
+										</div>
+									</div>
+								</div>
+								<div class="add-client-wrap__client-item">
+									<label class="label-form text-secondary mb-3">Added Clients</label>
+									<ul class="client-list">
+										<li class="client-list__item">
+											<span class="client-list__img">
+												<img src="img/img76.jpg" width="46" srcset="img/img76@2x.jpg" alt="image description">
+											</span>
+											<div class="client-list__info">
+												<h6 class="client-list__title h7">Jason Anderson</h6>
+											</div>
+										</li>
+										<li class="client-list__item">
+											<span class="client-list__img img-letter" data-parent="s"></span>
+											<div class="client-list__info">
+												<h6 class="client-list__title h7">Steve Smith</h6>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="step-form__step-item">
+							<div class="step-form__title-wrap">
+								<h4 class="step-form__step-title bg-primary">Step 4</h4>
+								<h4 class="step-form__title">Start Collecting Your Data</h4>
+							</div>
+							<div class="step-form__text-content">
+								<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem. Etiam sed mauris sed ex tempus porttitor. Praesent sollicitudin accumsan tellus, ac sollicitudin leo laoreet sit amet. In tristique dolor dolor, non aliquet sapien volutpat sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas convallis est, in iaculis lacus lacinia non. Curabitur volutpat enim nunc, sit amet molestie justo malesuada at. Nulla nec tellus neque.</span></p>
+							</div>
+							<div class="collecting-wrap">
+								<div class="collecting-wrap__head">
+									<label class="label-form text-secondary mb-md-0">Chooose which questions to send</label>
+									<ul class="select-list text-uppercase">
+										<li class="select-list__option-item">
+											<span class="check-title check-all">Select all</span>
+										</li>
+										<li class="select-list__option-item">
+											<span class="check-title uncheck-all">Clear all</span>
+										</li>
+									</ul>
+								</div>
+								<ul class="info-squares">
+									<li class="info-squares__item">
+										<div class="info-squares__inner">
+											<div class="info-squares__form-check form-check">
+												<label class="form-check-label" for="defaultCheck1">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+													<span>&nbsp;</span>
+												</label>
+											</div>
+											<div class="info-squares__form-check checkbox-holder">
+												<input type="checkbox" id="ch13"/>
+												<label for="ch13">&nbsp;</label>
+											</div>
+											<span class="info-squares__tooltip questions-tooltip  tooltip-secondary" data-toggle="tooltip" data-placement="bottom" title="Personal Information">?</span>
+											<span class="info-squares__ico">
+												<img src="img/personal-ico.svg" alt="image description">
+											</span>
+											<h6 class="info-squares__title h7">Personal Information</h6>
+											<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem.</span></p>
+										</div>
+									</li>
+									<li class="info-squares__item">
+										<div class="info-squares__inner">
+											<div class="info-squares__form-check form-check">
+												<label class="form-check-label" for="defaultCheck2">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+													<span>&nbsp;</span>
+												</label>
+											</div>
+											<span class="info-squares__tooltip questions-tooltip  tooltip-secondary" data-toggle="tooltip" data-placement="bottom" title="Personal Information">?</span>
+											<span class="info-squares__ico">
+												<img src="img/property-ico.svg" alt="image description">
+											</span>
+											<h6 class="info-squares__title h7">Property Information</h6>
+											<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem.</span></p>
+										</div>
+									</li>
+									<li class="info-squares__item">
+										<div class="info-squares__inner">
+											<div class="info-squares__form-check form-check">
+												<label class="form-check-label" for="defaultCheck3">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+													<span>&nbsp;</span>
+												</label>
+											</div>
+											<span class="info-squares__tooltip questions-tooltip  tooltip-secondary" data-toggle="tooltip" data-placement="bottom" title="Personal Information">?</span>
+											<span class="info-squares__ico">
+												<img src="img/financial-ico.svg" alt="image description">
+											</span>
+											<h6 class="info-squares__title h7">Financial Information</h6>
+											<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem.</span></p>
+										</div>
+									</li>
+									<li class="info-squares__item">
+										<div class="info-squares__inner">
+											<div class="info-squares__form-check form-check">
+												<label class="form-check-label" for="defaultCheck4">
+													<input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+													<span>&nbsp;</span>
+												</label>
+											</div>
+											<span class="info-squares__tooltip questions-tooltip  tooltip-secondary" data-toggle="tooltip" data-placement="bottom" title="Personal Information">?</span>
+											<span class="info-squares__ico">
+												<img src="img/neighborhood-ico.svg" alt="image description">
+											</span>
+											<h6 class="info-squares__title h7">Neighborhood Information</h6>
+											<p><span class="load-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem.</span></p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="step-form__step-buttons">
+							<div class="btn-holder">
+								<a href="#" class="btn btn-flat">No thanks, I don’t Agree</a>
+							</div>
+							<div class="btn-holder">
+								<a href="#" class="btn btn-primary">Order Nook Notes For This Property</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		//= template/footer-onload.html
+	</body>
+</html>

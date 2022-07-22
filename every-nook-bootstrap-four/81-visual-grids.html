@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="hero-search-section">
+				<div class="container container__container-flexibly">
+					<div class="search-block">
+						<h2 class="search-block__headtitle"><span class="search-block__headtitle__num">41,075</span> Agents Available</h2>
+						<p>Find an agent to help you with every nook of the house purchase and sale process!</p>
+						<div class="search-tab-holder">
+							<div class="tab-holder">
+								<ul class="tab-control">
+									<li class="active">
+										<a href="#agents" data-tabs="agents">
+											<svg class="icon" width="24" height="24">
+												<use xlink:href="assets/img/sprite-icons.svg#agent" />
+											</svg>
+											<span class="h5">Agents</span>
+										</a>
+									</li>
+									<li>
+										<a href="#teams" data-tabs="teams">
+											<svg class="icon" width="32" height="32">
+												<use xlink:href="assets/img/sprite-icons.svg#teams" />
+											</svg>
+											<span class="h5">Teams</span>
+										</a>
+									</li>
+									<li>
+										<a href="#offices" data-tabs="offices">
+											<svg class="icon" width="24" height="24">
+												<use xlink:href="assets/img/sprite-icons.svg#build" />
+											</svg>
+											<span class="h5">Offices</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-body">
+								<div class="tab active" data-tabs-name="agents">
+									<div class="search-property-form">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#agent" />
+										</svg>
+										<input type="text" class="form-control" placeholder="type here to search and hit enter">
+										<span class="form-btn-search">
+											<svg width="30" height="30" fill="#fff">
+												<use xlink:href="assets/img/sprite-icons.svg#search-bar" />
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="tab" data-tabs-name="teams">
+									<div class="search-property-form">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#teams" />
+										</svg>
+										<input type="text" class="form-control" placeholder="type here to search and hit enter">
+										<span class="form-btn-search">
+											<svg width="30" height="30" fill="#fff">
+												<use xlink:href="assets/img/sprite-icons.svg#search-bar" />
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="tab" data-tabs-name="offices">
+									<div class="search-property-form">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#build" />
+										</svg>
+										<input type="text" class="form-control" placeholder="type here to search and hit enter">
+										<span class="form-btn-search">
+											<svg width="30" height="30" fill="#fff">
+												<use xlink:href="assets/img/sprite-icons.svg#search-bar" />
+											</svg>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p>Not what you’re looking for? More search options below!</p>
+						<div class="searches-options">
+							<div class="searches-options__item">
+								<a href="#" class="searches-options__link">
+									<svg class="searches-options__link__icon" width="50" height="50">
+										<use xlink:href="assets/img/sprite-icons.svg#real-estate" />
+									</svg>
+									<span class="searches-options__link__title h5">Properties</span>
+								</a>
+							</div>
+							<div class="searches-options__item">
+								<a href="#" class="searches-options__link">
+									<svg class="searches-options__link__icon" width="44" height="50">
+										<use xlink:href="assets/img/sprite-icons.svg#man" />
+									</svg>
+									<span class="searches-options__link__title h5">Vendors</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-stretch">
+					<img src="assets/img/bg08.png" srcset="assets/img/bg08@2x.png 2x" alt>
+				</div>
+			</section>
+			<section class="property-content-section">
+				<div class="container container__container-flexibly">
+					<div class="property-category">
+						<div class="property-category__item">
+							<div class="property-category__head">
+								<svg class="property-category__head__ico" width="26" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#best-ico" />
+								</svg>
+								<h4 class="property-category__head__title">Top Local Agents</h4>
+							</div>
+							<div class="property-category__item__content">
+								<div class="property-category__item__content__text-wrap">
+									<p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget solor metus.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+								</div>
+								<ul class="review-agent-list">
+									<li class="review-agent-list__item">
+										<div class="agent-card">
+											<svg class="agent-card__union-icon" width="36" height="36">
+												<use xlink:href="assets/img/sprite-icons.svg#logo-union" />
+											</svg>
+											<div class="agent-card__agent-img">
+												<div class="thumb-cover">
+													<img src="assets/img/img124.jpg" srcset="assets/img/img124@2x.jpg 2x" width="80" alt>
+												</div>
+												<div class="endorse-action">
+													<div class="endorse-action__item">
+														<button class="endorse-action__btn endorse-action__btn__thumbs  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>You’ve Endorsed</span>">
+															<svg class="endorse-action__btn__icon" width="18" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#thumbs-up" />
+															</svg>
+														</button>
+													</div>
+													<div class="endorse-action__item">
+														<button class="endorse-action__btn endorse-action__btn__like  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Your Favorite</span>">
+															<svg class="endorse-action__btn__icon" width="18" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#like-ico" />
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+											<div class="agent-card__flex-wrap">
+												<h4 class="agent-card__title"><a href="#">Katheryn (Valerie) V Henderson</a></h4>
+												<div class="rating-info">
+													<div class="rating-info__current-view">
+														<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+														<span class="rating-info__current-view__text">4.8</span>
+													</div>
+													<a href="#" class="rating-info__link-title link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+												</div>
+												<h4 class="agent-card__group-title h5">Berkshire Hathaway HomeServices PenFed Realty</h4>
+											</div>
+											<div class="review-action">
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send E-Mail</span> ">
+														<svg class="review-action__btn__icon" width="20" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Call</span>">
+														<svg class="review-action__btn__icon review-action__btn__icon__phone" width="36" height="37">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-call" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send Text</span>">
+														<svg class="review-action__btn__icon" width="19" height="19">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="review-agent-list__item">
+										<div class="agent-card">
+											<div class="agent-card__agent-img">
+												<div class="thumb-cover">
+													<img src="assets/img/img125.jpg" srcset="assets/img/img125@2x.jpg 2x" width="80" alt>
+												</div>
+												<div class="endorse-action">
+													<div class="endorse-action__item">
+														<button class="endorse-action__btn endorse-action__btn__thumbs  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>You’ve Endorsed</span>">
+															<svg class="endorse-action__btn__icon" width="18" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#thumbs-up" />
+															</svg>
+														</button>
+													</div>
+													<div class="endorse-action__item">
+														<button class="endorse-action__btn endorse-action__btn__like  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Your Favorite</span>">
+															<svg class="endorse-action__btn__icon" width="18" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#like-ico" />
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+											<h4 class="agent-card__title"><a href="#">Katheryn Henderson</a></h4>
+											<div class="agent-card__flex-wrap">
+												<div class="rating-info">
+													<span class="rating-info__no-reviews title-text">No Reviews Yet</span>
+												</div>
+												<h4 class="agent-card__group-title h5">Berkshire Hathaway Realty</h4>
+											</div>
+											<div class="review-action">
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send E-Mail</span> ">
+														<svg class="review-action__btn__icon" width="20" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Call</span>">
+														<svg class="review-action__btn__icon review-action__btn__icon__phone" width="36" height="37">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-call" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send Text</span>">
+														<svg class="review-action__btn__icon" width="19" height="19">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="review-agent-list__item">
+										<div class="agent-card">
+											<div class="agent-card__agent-img">
+												<div class="thumb-cover">
+													<svg class="agent-card__agent-img__icon" width="50" height="50">
+														<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+													</svg>
+												</div>
+											</div>
+											<h4 class="agent-card__title"><a href="#">Katheryn Henderson</a></h4>
+											<div class="agent-card__flex-wrap">
+												<div class="rating-info">
+													<div class="rating-info__current-view">
+														<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+														<span class="rating-info__current-view__text">3.0</span>
+													</div>
+													<a href="#" class="rating-info__link-title link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+												</div>
+												<h4 class="agent-card__group-title h5">Berkshire Hathaway Realty</h4>
+											</div>
+											<div class="review-action">
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send E-Mail</span> ">
+														<svg class="review-action__btn__icon" width="20" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Call</span>">
+														<svg class="review-action__btn__icon review-action__btn__icon__phone" width="36" height="37">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-call" />
+														</svg>
+													</button>
+												</div>
+												<div class="review-action__item">
+													<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send Text</span>">
+														<svg class="review-action__btn__icon" width="19" height="19">
+															<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-holder text-md-right text-center">
+									<button class="btn btn-light-outline">Load More</button>
+								</div>
+							</div>
+						</div>
+						<div class="property-category__item">
+							<div class="property-category__head">
+								<svg class="property-category__head__ico" width="26" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#houses" />
+								</svg>
+								<h4 class="property-category__head__title">Recent Listings</h4>
+							</div>
+							<div class="property-category__item__content">
+								<div class="property-category__item__content__text-wrap">
+									<p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget solor metus.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+								</div>
+								<div class="card-list card-list__tile-list">
+									<div class="card-list__item">
+										<div class="card-list__inner">
+											<div class="card-list__link-img">
+												<span class="notification-label bg-black">Active</span>
+												<div class="card-list__form-check checkbox-holder card-check">
+													<input type="checkbox" id="ch02">
+													<label for="ch02">&nbsp;</label>
+												</div>
+												<div class="gallery-items">
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+												</div>
+											</div>
+											<div class="card-list__description">
+												<div class="card-list__head">
+													<span class="prop-type">Single family home - 5yr</span>
+													<span class="card-list__rating-button rating-button bg-danger">
+														<svg class="rating-button__img" width="18" height="11">
+															<use xlink:href="assets/img/sprite-icons.svg#speed" />
+														</svg>
+														<span class="rating-button__text">82</span>
+													</span>
+												</div>
+												<div class="card-list__about-info">
+													<h4 class="card-list__price">$ 220,000</h4>
+													<span class="card-list__address">6913 Harewood Park Drive Baltimore, MD 21020</span>
+												</div>
+											</div>
+											<div class="card-list__feature">
+												<ul class="feature-list">
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#couch" />
+															</svg>
+															<span class="count">4</span>
+															<span class="label-text">Beds</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="24">
+																<use xlink:href="assets/img/sprite-icons.svg#bath" />
+															</svg>
+															<span class="count">2</span>
+															<span class="label-text">Baths</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="21">
+																<use xlink:href="assets/img/sprite-icons.svg#garage" />
+															</svg>
+															<span class="count">2.5</span>
+															<span class="label-text">Garage</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#levels" />
+															</svg>
+															<span class="count">3</span>
+															<span class="label-text">Levels</span>
+														</div>
+													</li>
+												</ul>
+												<div class="card-settings-buttons">
+													<div class="item">
+														<button class="btn-card favorite">
+															<svg class="ico" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+															</svg>
+															<svg class="ico active" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon-fill" />
+															</svg>
+															<span>Favorite</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#agent" />
+															</svg>
+															<span>Agent</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+															</svg>
+															<span>Share</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-expand" />
+															</svg>
+															<span>Expand</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-list__item">
+										<div class="card-list__inner">
+											<div class="card-list__link-img">
+												<span class="notification-label bg-primary">Pending</span>
+												<div class="card-list__form-check checkbox-holder card-check">
+													<input type="checkbox" id="ch03">
+													<label for="ch03">&nbsp;</label>
+												</div>
+												<div class="gallery-items">
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img135.jpg" srcset="assets/img/img135@2x.jpg 2x" alt="image description">
+													</div>
+												</div>
+											</div>
+											<div class="card-list__description">
+												<div class="card-list__head">
+													<span class="prop-type">Single family home - 5yr</span>
+													<span class="card-list__rating-button rating-button bg-danger">
+														<svg class="rating-button__img" width="18" height="11">
+															<use xlink:href="assets/img/sprite-icons.svg#speed" />
+														</svg>
+														<span class="rating-button__text">82</span>
+													</span>
+												</div>
+												<div class="card-list__about-info">
+													<h4 class="card-list__price">$ 220,000</h4>
+													<span class="card-list__address">6913 Harewood Park Drive Baltimore, MD 21020</span>
+												</div>
+											</div>
+											<div class="card-list__feature">
+												<ul class="feature-list">
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#couch" />
+															</svg>
+															<span class="count">4</span>
+															<span class="label-text">Beds</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="24">
+																<use xlink:href="assets/img/sprite-icons.svg#bath" />
+															</svg>
+															<span class="count">2</span>
+															<span class="label-text">Baths</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="21">
+																<use xlink:href="assets/img/sprite-icons.svg#garage" />
+															</svg>
+															<span class="count">2.5</span>
+															<span class="label-text">Garage</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#levels" />
+															</svg>
+															<span class="count">3</span>
+															<span class="label-text">Levels</span>
+														</div>
+													</li>
+												</ul>
+												<div class="card-settings-buttons">
+													<div class="item">
+														<button class="btn-card favorite">
+															<svg class="ico" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+															</svg>
+															<svg class="ico active" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon-fill" />
+															</svg>
+															<span>Favorite</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#agent" />
+															</svg>
+															<span>Agent</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+															</svg>
+															<span>Share</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-expand" />
+															</svg>
+															<span>Expand</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-list__item">
+										<div class="card-list__inner">
+											<div class="card-list__link-img">
+												<span class="notification-label bg-black">Active</span>
+												<div class="card-list__form-check checkbox-holder card-check">
+													<input type="checkbox" id="ch04">
+													<label for="ch04">&nbsp;</label>
+												</div>
+												<div class="gallery-items">
+													<div class="item">
+														<img src="assets/img/img132.jpg" srcset="assets/img/img132@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img132.jpg" srcset="assets/img/img132@2x.jpg 2x" alt="image description">
+													</div>
+													<div class="item">
+														<img src="assets/img/img132.jpg" srcset="assets/img/img132@2x.jpg 2x" alt="image description">
+													</div>
+												</div>
+											</div>
+											<div class="card-list__description">
+												<div class="card-list__head">
+													<span class="prop-type">Single family home - 5yr</span>
+													<span class="card-list__rating-button rating-button bg-danger">
+														<svg class="rating-button__img" width="18" height="11">
+															<use xlink:href="assets/img/sprite-icons.svg#speed" />
+														</svg>
+														<span class="rating-button__text">82</span>
+													</span>
+												</div>
+												<div class="card-list__about-info">
+													<h4 class="card-list__price">$ 220,000</h4>
+													<span class="card-list__address">6913 Harewood Park Drive Baltimore, MD 21020</span>
+												</div>
+											</div>
+											<div class="card-list__feature">
+												<ul class="feature-list">
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#couch" />
+															</svg>
+															<span class="count">4</span>
+															<span class="label-text">Beds</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="24">
+																<use xlink:href="assets/img/sprite-icons.svg#bath" />
+															</svg>
+															<span class="count">2</span>
+															<span class="label-text">Baths</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="21">
+																<use xlink:href="assets/img/sprite-icons.svg#garage" />
+															</svg>
+															<span class="count">2.5</span>
+															<span class="label-text">Garage</span>
+														</div>
+													</li>
+													<li>
+														<div class="feature-inner">
+															<svg class="feature-list__ico" width="24" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#levels" />
+															</svg>
+															<span class="count">3</span>
+															<span class="label-text">Levels</span>
+														</div>
+													</li>
+												</ul>
+												<div class="card-settings-buttons">
+													<div class="item">
+														<button class="btn-card favorite">
+															<svg class="ico" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+															</svg>
+															<svg class="ico active" width="22" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#favorite-icon-fill" />
+															</svg>
+															<span>Favorite</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#agent" />
+															</svg>
+															<span>Agent</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+															</svg>
+															<span>Share</span>
+														</button>
+													</div>
+													<div class="item">
+														<button class="btn-card">
+															<svg class="ico" width="22" height="22">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-expand" />
+															</svg>
+															<span>Expand</span>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="btn-holder text-md-right text-center">
+									<button class="btn btn-light-outline">Load More</button>
+								</div>
+							</div>
+						</div>
+						<div class="property-category__item">
+							<div class="property-category__head">
+								<svg class="property-category__head__ico" width="30" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#high-rise" />
+								</svg>
+								<h4 class="property-category__head__title">Local Real Estate Offices</h4>
+							</div>
+							<div class="property-category__item__content">
+								<div class="property-category__item__content__text-wrap">
+									<p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget solor metus.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+								</div>
+								<ul class="records-card">
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<svg class="records-card__visual__icon" width="86" height="124">
+													<use xlink:href="assets/img/sprite-icons.svg#small-build" />
+												</svg>
+											</div>
+											<h4 class="records-card__title">Re/Max Components Of Edgewate</h4>
+											<div class="records-card__content-inner">
+												<address class="records-card__address">6913 Harewood Park Drive Baltimore, MD 21020</address>
+											</div>
+											<div class="rating-info">
+												<span class="rating-info__no-reviews title-text">No Reviews Yet</span>
+											</div>
+										</div>
+									</li>
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<svg class="records-card__visual__icon" width="124" height="124">
+													<use xlink:href="assets/img/sprite-icons.svg#medium-office-build" />
+												</svg>
+											</div>
+											<h4 class="records-card__title">Re/Max Components Of Annapolis</h4>
+											<div class="records-card__content-inner">
+												<address class="records-card__address">6913 Harewood Park Drive Suite 219 Baltimore, MD 21020</address>
+											</div>
+											<div class="rating-info">
+												<div class="rating-info__current-view">
+													<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#star" />
+													</svg>
+													<span class="rating-info__current-view__text">4.8</span>
+												</div>
+												<a href="#" class="rating-info__link-title link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+											</div>
+										</div>
+									</li>
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<svg class="records-card__visual__icon" width="124" height="124">
+													<use xlink:href="assets/img/sprite-icons.svg#high-build" />
+												</svg>
+											</div>
+											<h4 class="records-card__title">Re/Max Components</h4>
+											<div class="records-card__content-inner">
+												<address class="records-card__address">6913 Harewood Park Drive Baltimore, MD 21020</address>
+											</div>
+											<div class="rating-info">
+												<span class="rating-info__no-reviews title-text">No Reviews Yet</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-holder text-md-right text-center">
+									<button class="btn btn-light-outline">Load More</button>
+								</div>
+							</div>
+						</div>
+						<div class="property-category__item">
+							<div class="property-category__head">
+								<svg class="property-category__head__ico" width="30" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#group-team" />
+								</svg>
+								<h4 class="property-category__head__title">Real Estate Teams</h4>
+							</div>
+							<div class="property-category__item__content">
+								<div class="property-category__item__content__text-wrap">
+									<p>Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget solor metus.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+								</div>
+								<ul class="records-card">
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<img class="records-card__visual__img" src="assets/img/img136.jpg" srcset="assets/img/img136@2x.jpg 2x" alt="image description">
+											</div>
+											<h4 class="records-card__title">The Jimmy Johnson Team</h4>
+											<div class="records-card__content-inner">
+												<span class="records-card__text h5">Monument Sotheby's Realty</span>
+											</div>
+											<div class="rating-info">
+												<span class="rating-info__no-reviews title-text">No Reviews Yet</span>
+											</div>
+										</div>
+									</li>
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<svg class="records-card__visual__icon" width="124" height="124">
+													<use xlink:href="assets/img/sprite-icons.svg#group-team" />
+												</svg>
+											</div>
+											<h4 class="records-card__title">The Jimmy Johnson Team of Langmore Real Estate</h4>
+											<div class="records-card__content-inner">
+												<span class="records-card__text h5">Monument Sotheby's International Realty</span>
+											</div>
+											<div class="rating-info">
+												<div class="rating-info__current-view">
+													<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#star" />
+													</svg>
+													<span class="rating-info__current-view__text">4.8</span>
+												</div>
+												<a href="#" class="rating-info__link-title link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+											</div>
+										</div>
+									</li>
+									<li class="records-card__item">
+										<div class="records-card__item-wrap">
+											<div class="records-card__visual">
+												<svg class="records-card__visual__icon" width="124" height="124">
+													<use xlink:href="assets/img/sprite-icons.svg#group-team" />
+												</svg>
+											</div>
+											<h4 class="records-card__title">The Jimmy Johnson Team</h4>
+											<div class="records-card__content-inner">
+												<span class="records-card__text h5">Monument Sotheby's International Realty</span>
+											</div>
+											<div class="rating-info">
+												<span class="rating-info__no-reviews title-text">No Reviews Yet</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-holder text-md-right text-center">
+									<button class="btn btn-light-outline">Load More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional-info">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. &copy; 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal-gallery-wrap">
+		<a href="#" class="modal-gallery-wrap__modal-close modal-close">
+			<svg width="11" height="11" fill="#fff">
+				<use xlink:href="assets/img/sprite-icons.svg#close-x" />
+			</svg>
+		</a>
+		<div class="modal-gallery-wrap__scroll-content">
+			<ul class="collections-list">
+				<li class="collections-list__item">
+					<div class="collections-list__inner">
+						<div class="collections-list__visual">
+							<img src="assets/img/img23.jpg" srcset="assets/img/img23@2x.jpg 2x" alt="image description">
+							<div class="collections-list__action-bar">
+								<span class="collections-list__title h5 h5">Kitchen Overview Photograph</span>
+								<div class="collections-list__content">
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+								</div>
+								<div class="actions-list">
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-star-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-download-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-message-flat" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="collections-list__item">
+					<div class="collections-list__inner">
+						<div class="collections-list__visual">
+							<img src="assets/img/img23.jpg" srcset="assets/img/img23@2x.jpg 2x" alt="image description">
+							<div class="collections-list__action-bar">
+								<span class="collections-list__title h5 h5">Kitchen Overview Photograph</span>
+								<div class="collections-list__content">
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+								</div>
+								<div class="actions-list">
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-star-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-download-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-message-flat" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="collections-list__item">
+					<div class="collections-list__inner">
+						<div class="collections-list__visual">
+							<img src="assets/img/img23.jpg" srcset="assets/img/img23@2x.jpg 2x" alt="image description">
+							<div class="collections-list__action-bar">
+								<span class="collections-list__title h5 h5">Kitchen Overview Photograph</span>
+								<div class="collections-list__content">
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+								</div>
+								<div class="actions-list">
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-star-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-download-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-message-flat" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="collections-list__item">
+					<div class="collections-list__inner">
+						<div class="collections-list__visual">
+							<img src="assets/img/img23.jpg" srcset="assets/img/img23@2x.jpg 2x" alt="image description">
+							<div class="collections-list__action-bar">
+								<span class="collections-list__title h5 h5">Kitchen Overview Photograph</span>
+								<div class="collections-list__content">
+									<p>Lorem ipsum dolor sit amet random text used as a description. Lorem ipsum dolor sit amet random text used as a description.Lorem ipsum dolor sit amet random text used as a description.</p>
+								</div>
+								<div class="actions-list">
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-star-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-download-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-share-flat" />
+										</svg>
+									</button>
+									<button class="actions-list__btn">
+										<svg width="24" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#ico-message-flat" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/datatables.min.js"></script>
+	<script src="assets/js/select2.full.min.js"></script>
+	<script src="assets/js/nouislider.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery.fancybox.min.js"></script>
+	<script src="assets/js/bootstrap-select.min.js"></script>
+	<script src="assets/js/mmenu.js"></script>
+	<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+	<script src="assets/js/cropper.min.js"></script>
+	<script src="assets/js/jquery-cropper.min.js"></script>
+	<script src="assets/js/dotdotdot.js"></script>
+	<script src="assets/js/moment.min.js"></script>
+	<script src="assets/js/daterangepicker.js"></script>
+	<script src="assets/js/jquery.inputmask.min.js"></script>
+	<script src="assets/js/jcf.js"></script>
+	<script src="assets/js/jcf.checkbox.js"></script>
+	<script src="assets/js/jcf.radio.js"></script>
+	<script src="assets/js/tooltipster.bundle.min.js"></script>
+	<script src="assets/js/jquery.main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+</body>
+
+</html>

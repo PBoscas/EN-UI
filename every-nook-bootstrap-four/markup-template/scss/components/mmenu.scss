@@ -1,0 +1,220 @@
+.menu-item{
+	&__inner{
+		display:flex;
+		font-size:14px;
+		line-height:16px;
+		flex-direction:column;
+		color: #A3A5B0;
+		max-width:290px;
+		white-space: normal;
+		&:hover{
+			color: #AAB0BB;
+		}
+		@include media("<desktop") {
+			color:$white;
+			padding-right:30px;
+		}
+		.label-title{
+			color: #2F344C;
+			font-size:11px;
+			font-family:$nunito-font;
+			margin:0;
+			@include media("<desktop") {
+				color:#848898;
+			}
+		}
+		span{
+			padding-top:3px;
+			margin-bottom:5px;
+		}
+	}
+	.ellipse-ico{
+		width:37px;
+		height:37px;
+		margin-right:9px;
+	}
+}
+.mm-menu_autoheight:not(.mm-menu_offcanvas){
+	position:static;
+}
+.mm-navbar_sticky{
+	@include media("<desktop") {
+		position:static;
+	}
+}
+.mm-btn_prev{
+	&::before{
+		width:11px;
+		left:30px;
+		top:-5px;
+		height:11px;
+		border-color:#5D6174;
+		@include media("<desktop") {
+			left:26px;
+		}
+	}
+}
+.mm-navbar__btn:not(.mm-hidden)+.mm-navbar__title:last-child{
+	padding:0;
+}
+.mm-btn_next{
+	&::after{
+		width:11px;
+		height:11px;
+		top:-18px;
+		right:13px;
+		border-color:#5D6174;
+		@include media("<desktop") {
+			right:26px;
+		}
+	}
+}
+.mm-panels{
+	@include media("<desktop") {
+		background:#181e39;
+	}
+	.mm-panel{
+		@include media("<desktop") {
+			background:#181e39;
+		}
+		&:first-child{
+			.mm-navbar{
+				display:none;
+			}
+		}
+		&:not(:first-child){
+			.mm-listview{
+				padding-left:64px;
+				@include media("<desktop") {
+					padding-left:0;
+				}
+			}
+		}
+	}
+}
+.mm-navbar{
+	background:none;
+	border:none;
+	color: #A3A5B0;
+	&__title{
+		display:flex;
+		flex-direction:column;
+		align-items:flex-start;
+		max-width:310px;
+		text-align:left;
+		padding:22px 0 0 14px !important;
+		@include media("<desktop") {
+			max-width:260px;
+			padding:15px 0 10px 0 !important;
+		}
+		> span{
+			white-space: normal;
+		}
+		.label-title{
+			font-size:12px;
+			font-family:$nunito-font;
+			padding-top:0;
+			color:$color-text;
+		}
+	}
+}
+.mm-menu_autoheight:not(.mm-menu_offcanvas){
+	position:absolute;
+	@include media("<desktop") {
+		position:relative;
+	}
+}
+.mm-wrapper{
+	overflow-x:unset;
+}
+.mm-listview{
+	@include media(">=desktop") {
+		padding:15px 18px 20px;
+	}
+}
+.mm-listitem_selected{
+	>.mm-listitem__text{
+		@include media("<desktop") {
+			background:#2F344C;
+		}
+	}
+}
+.mm-listitem{
+	@include media(">=desktop") {
+		border-radius: 10px;
+	}
+	&:hover{
+		background: #F5F7FC;
+		@include media("<desktop") {
+			background:none;
+		}
+		a{
+			@include media("<desktop") {
+				background:#2F344C;
+				border-color:#1AACFF;
+			}
+		}
+		.ellipse-ico{
+			background:#1AACFF;
+			svg{
+				fill:$white;
+			}
+		}
+	}
+	&::after{
+		display:none;
+	}
+	a{
+		display:flex;
+		transition: all .35s ease;
+		@include media("<desktop") {
+			border-left:3px solid transparent;
+			padding-left:20px;
+			padding-right:20px;
+		}
+	}
+	&:not(:first-child){
+		margin-top:6px;
+	}
+	&__btn{
+		padding:0;
+		.label-title{
+			font-size:12px;
+			padding-top:0 !important;
+			color:$color-text !important;
+		}
+	}
+	&__text{
+		align-items:flex-start;
+		padding:7px 10px;
+	}
+	.ellipse-ico{
+		transition: all .35s ease;
+		svg{
+			transition: all .35s ease;
+		}
+	}
+}
+.mm-panel{
+	border-color:#E6E7EC;
+	background:$white;
+	border:none;
+	@include media(">=desktop") {
+		overflow: auto;
+		overflow-x:hidden;
+		overflow-y:hidden;
+	}
+	&::after{
+		display:none;
+	}
+}
+.mm-menu_tip-top{
+	&::before{
+		display:none;
+	}
+}
+.mm-panels{
+	@include media("<desktop") {
+		position:static;
+	}
+}

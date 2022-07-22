@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list">
+							<li>
+								<a class="nav-link active" href="#">
+									<span class="nav-ico">
+										<svg width="23" height="22">
+											<use xlink:href="assets/img/sprite-icons.svg#home-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Home</span>
+								</a>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#users-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Clients</span>
+								</a>
+								<div class="drop-hover-menu">
+									<ul class="drop-menu-list">
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-users.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-users-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Your Clients</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-managment.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-managment-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Transaction Managment</span>
+											</a>
+											<div class="drop-options">
+												<ul>
+													<li><a href="#">Archived Transactions</a></li>
+													<li class="active"><a href="#">Manage Current</a></li>
+													<li><a href="#">Preferences</a></li>
+													<li><a href="#">Other Options</a></li>
+												</ul>
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-financial.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-financial-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Financial</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-listing-active.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-listing.svg" alt="image description">
+												</span>
+												<span class="drop-text">Listing & Contract Prep</span>
+											</a>
+											<div class="drop-options">
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="assets/img/ico-tours.svg" alt="image description">
+													<img class="ico active" src="assets/img/ico-tours-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Tour Itinerary</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#new-tour" />
+										</svg>
+									</span>
+									<span class="nav-text">Tours</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#statistics-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Statistics</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="24">
+											<use xlink:href="assets/img/sprite-icons.svg#pages-ico" />
+										</svg>
+									</span>
+									<span class="nav-text">Pages</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="18" height="18">
+									<use xlink:href="assets/img/sprite-icons.svg#search-icon" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="20" height="20">
+									<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img14.jpg" srcset="assets/img/img14@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="overview-hero-section overview-hero-section__full-bg">
+				<div class="bg-stretch">
+					<img src="assets/img/bg04.svg" alt="image description">
+				</div>
+			</section>
+			<section class="staff-member-section">
+				<div class="container container__container-flexibly">
+					<div class="main-content-wrap">
+						<aside class="sidebar staff-sidebar">
+							<div class="dashboard-holder">
+								<div class="dashboard-holder__item">
+									<div class="profile-aside-wrap">
+										<div class="avatar-wrap">
+											<img class="avatar-wrap__img" src="assets/img/img98.jpg" srcset="assets/img/img98@2x.jpg 2x" alt="image description">
+											<span class="avatar-wrap__ico-logo">
+												<img src="assets/img/logo-red-cedar.svg" width="70" alt="image description">
+											</span>
+										</div>
+										<div class="profile-aside-wrap__item">
+											<h4 class="profile-aside-wrap__name-title">James McDonald</h4>
+											<ul class="contact-info">
+												<li class="contact-info__item">
+													<span class="contact-info__ico">
+														<img src="assets/img/ico-tours01.svg" width="20" alt="image description">
+													</span>
+													<div class="contact-info__info-inner">
+														<span class="contact-info__title">Address</span>
+														<span class="contact-info__text">1601 John Smith Blvd, Harrisonburg, PA 19103</span>
+													</div>
+												</li>
+												<li class="contact-info__item">
+													<span class="contact-info__ico">
+														<img src="assets/img/ico-phone.svg" width="18" alt="image description">
+													</span>
+													<div class="contact-info__info-inner">
+														<span class="contact-info__title">Phone</span>
+														<a href="tel:5417543010" class="contact-info__text">(541) 754-3010</a>
+													</div>
+												</li>
+												<li class="contact-info__item">
+													<span class="contact-info__ico">
+														<img src="assets/img/ico-email.svg" width="21" alt="image description">
+													</span>
+													<div class="contact-info__info-inner">
+														<span class="contact-info__title">Email</span>
+														<a href="mailto:Peter@redagency.com" class="contact-info__text">Peter@redagency.com</a>
+													</div>
+												</li>
+												<li class="contact-info__item">
+													<span class="contact-info__ico">
+														<img src="assets/img/ico-site.svg" width="21" alt="image description">
+													</span>
+													<div class="contact-info__info-inner">
+														<span class="contact-info__title">Website</span>
+														<a href="nphouseinspectors.com" class="contact-info__text">nphouseinspectors.com</a>
+													</div>
+												</li>
+											</ul>
+											<div class="btn-holder">
+												<a href="#" class="btn btn-primary">Contact James</a>
+											</div>
+										</div>
+										<div class="profile-aside-wrap__item">
+											<div class="rating-holder">
+												<span class="rating-holder__total-num__no-reviews bg-lighter">&nbsp;</span>
+												<ul class="rating-list rating-list__no-rating">
+													<li>
+														<span class="rating-list__star-full">
+															<svg width="15" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+														</span>
+													</li>
+													<li>
+														<span class="rating-list__star-full">
+															<svg width="15" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+														</span>
+													</li>
+													<li>
+														<span class="rating-list__star-full">
+															<svg width="15" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+														</span>
+													</li>
+													<li>
+														<span class="rating-list__star-full">
+															<svg width="15" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+														</span>
+													</li>
+													<li>
+														<span class="rating-list__star">
+															<svg width="15" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+														</span>
+													</li>
+												</ul>
+												<span class="rating-holder__link__no-link bg-lighter">&nbsp;</span>
+												<a href="#" class="rating-holder__link-write link-title">No reviews yet<br> be the first!</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dashboard-holder__item">
+									<div class="dashboard-wrap">
+										<div class="dashboard-wrap__item">
+											<h6 class="dashboard-wrap__title h7">Interact with James</h6>
+										</div>
+										<div class="dashboard-wrap__btn-holder">
+											<a href="#" class="btn-flag">
+												<svg class="ico-svg" width="13" height="13">
+													<use xlink:href="assets/img/sprite-icons.svg#ico-flag" />
+												</svg>
+												<span>Flag</span>
+											</a>
+										</div>
+									</div>
+									<div class="interaction-wrap">
+										<div class="interaction-wrap__item interaction-wrap__item__secondary-width">
+											<button class="btn-interact">
+												<span class="btn-interact__ico btn-interact__ico-like">
+													<svg width="25" height="23">
+														<use xlink:href="assets/img/sprite-icons.svg#like-ico" />
+													</svg>
+												</span>
+												<span class="label-text">Favorite</span>
+											</button>
+										</div>
+										<div class="interaction-wrap__item interaction-wrap__item__secondary-width">
+											<button class="btn-interact">
+												<span class="btn-interact__ico">
+													<svg width="25" height="25">
+														<use xlink:href="assets/img/sprite-icons.svg#approve" />
+													</svg>
+												</span>
+												<span class="label-text">Endorse</span>
+											</button>
+										</div>
+										<div class="interaction-wrap__item interaction-wrap__item__secondary-width">
+											<button class="btn-interact">
+												<span class="btn-interact__ico">
+													<svg width="25" height="25">
+														<use xlink:href="assets/img/sprite-icons.svg#ico-share" />
+													</svg>
+												</span>
+												<span class="label-text">Share</span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="dashboard-holder__item">
+									<div class="dashboard-wrap">
+										<div class="dashboard-wrap__item">
+											<h6 class="dashboard-wrap__title h7">Service Area</h6>
+										</div>
+										<div class="dashboard-wrap__btn-holder">
+											<a href="#" class="link-title">See all (25)</a>
+										</div>
+									</div>
+									<div class="area-service-wrap">
+										<ul class="service-area">
+											<li class="service-area__item">
+												<a class="service-area__link" href="#">Alachua County</a>
+											</li>
+											<li class="service-area__item">
+												<a class="service-area__link" href="#">Baker County</a>
+											</li>
+											<li class="service-area__item">
+												<a class="service-area__link" href="#">Bradford County</a>
+											</li>
+											<li class="service-area__item">
+												<a class="service-area__link" href="#">Clay County</a>
+											</li>
+											<li class="service-area__item">
+												<a class="service-area__link" href="#">Clay County</a>
+											</li>
+										</ul>
+										<a href="#" class="btn-expanded label-title">Expand list (10 more)</a>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="main-content">
+							<div class="overview-menu-wrap">
+								<ul class="overview-menu staff-overview-menu">
+									<li class="overview-menu__item">
+										<a href="#" class="overview-menu__link">
+											<span class="overview-menu__link-text">
+												<span class="overview-menu__ico">
+													<img class="ico inactive" src="assets/img/ico-feed-active.svg" width="24" alt="image description">
+													<img class="ico active" src="assets/img/ico-feed.svg" width="24" alt="image description">
+												</span>
+												<span class="overview-menu__text">Activity Feed</span>
+											</span>
+										</a>
+									</li>
+									<li class="overview-menu__item active">
+										<a href="#" class="overview-menu__link">
+											<span class="overview-menu__link-text">
+												<span class="overview-menu__ico">
+													<img class="ico inactive" src="assets/img/ico-active-staff.svg" width="25" alt="image description">
+													<img class="ico active" src="assets/img/ico-staff.svg" width="25" alt="image description">
+												</span>
+												<span class="overview-menu__text">Staff</span>
+											</span>
+										</a>
+									</li>
+									<li class="overview-menu__item">
+										<a href="#" class="overview-menu__link">
+											<span class="overview-menu__link-text">
+												<span class="overview-menu__ico">
+													<img class="ico inactive" src="assets/img/ico-prop-active.svg" width="27" alt="image description">
+													<img class="ico active" src="assets/img/ico-house01.svg" width="27" alt="image description">
+												</span>
+												<span class="overview-menu__text">Properties</span>
+											</span>
+										</a>
+									</li>
+									<li class="overview-menu__item">
+										<a href="#" class="overview-menu__link">
+											<span class="overview-menu__link-text">
+												<span class="overview-menu__ico">
+													<img class="ico inactive" src="assets/img/ico-about-active.svg" width="23" alt="image description">
+													<img class="ico active" src="assets/img/ico63.svg" width="23" alt="image description">
+												</span>
+												<span class="overview-menu__text">About</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="staff-member-holder">
+								<div class="reviews-wrap overview-box-wrap">
+									<div class="reviews-wrap__content-inner">
+										<div class="reviews-wrap__visual">
+											<img class="reviews-wrap__visual__icon" src="assets/img/ico-home-search.svg" alt="image description">
+										</div>
+										<div class="reviews-wrap__description">
+											<h6 class="reviews-wrap__description__title h7">Have experience with this agent?</h6>
+											<div class="reviews-wrap__description__btn-holder">
+												<a href="#" class="btn btn-primary">Leave A Review</a>
+											</div>
+										</div>
+									</div>
+									<div class="reviews-wrap__review-inner">
+										<div class="rating-holder">
+											<span class="rating-holder__total-num">4.3</span>
+											<ul class="rating-list">
+												<li>
+													<span class="rating-list__star-full">
+														<svg width="15" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+													</span>
+												</li>
+												<li>
+													<span class="rating-list__star-full">
+														<svg width="15" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+													</span>
+												</li>
+												<li>
+													<span class="rating-list__star-full">
+														<svg width="15" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+													</span>
+												</li>
+												<li>
+													<span class="rating-list__star-full">
+														<svg width="15" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+													</span>
+												</li>
+												<li>
+													<span class="rating-list__star">
+														<svg width="15" height="15">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+													</span>
+												</li>
+											</ul>
+											<a href="#" class="rating-holder__link h7">68 Reviews</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="staff-member-holder">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Endorsements</h6>
+										</div>
+									</div>
+								</div>
+								<ul class="endorsements-list">
+									<li class="endorsements-list__item">
+										<div class="endorsements-list__inner-wrap">
+											<a href="#" class="endorsements-list__link-wrap">
+												<span class="endorsements-list__img thumb-cover">
+													<img src="assets/img/img05.jpg" srcset="assets/img/img05@2x.jpg 2x" width="70" alt="image description">
+												</span>
+												<h6 class="endorsements-list__title h7">Patrick Wellinger</h6>
+												<span class="text-sidewalk">Endorsed This Company</span>
+											</a>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="endorsements-list__item">
+										<div class="endorsements-list__inner-wrap">
+											<a href="#" class="endorsements-list__link-wrap">
+												<span class="endorsements-list__img thumb-cover">
+													<img src="assets/img/img107.jpg" srcset="assets/img/img107@2x.jpg 2x" width="70" alt="image description">
+												</span>
+												<h6 class="endorsements-list__title h7">Alexander Smith</h6>
+												<span class="text-sidewalk">Endorsed This Company</span>
+											</a>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="endorsements-list__item">
+										<div class="endorsements-list__inner-wrap">
+											<a href="#" class="endorsements-list__link-wrap">
+												<span class="endorsements-list__img thumb-cover">
+													<img src="assets/img/img57.jpg" srcset="assets/img/img57@2x.jpg 2x" width="70" alt="image description">
+												</span>
+												<h6 class="endorsements-list__title h7">Alice Anderson</h6>
+												<span class="text-sidewalk">Endorsed This Company</span>
+											</a>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="assets/img/sprite-icons.svg#union" />
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="18">
+																		<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																	</svg>
+																</span>
+																<span class="text">View Your Profile</span>
+															</a>
+														</li>
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20">
+																		<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																	</svg>
+																</span>
+																<span class="text">Edit Your Profile</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="btn-holder text-right">
+									<button class="btn btn-border">Load More</button>
+								</div>
+							</div>
+							<div class="staff-member-holder">
+								<div class="section-title-wrap mb-3">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap section-title-wrap__review-wrap">
+											<h6 class="section-title-wrap__title h7">Reviews</h6>
+											<div class="sorting-reviews">
+												<a href="#" class="sorting-reviews__sort label-title">
+													<svg class="ico" width="12" height="6">
+														<use xlink:href="assets/img/sprite-icons.svg#chevron-sort" />
+													</svg>
+													<span>Date</span>
+												</a>
+												<a href="#" class="sorting-reviews__sort label-title">
+													<svg class="ico" width="12" height="6">
+														<use xlink:href="assets/img/sprite-icons.svg#chevron-sort" />
+													</svg>
+													<span>popularity</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+										<div class="section-title-wrap__btn-holder">
+											<div class="flat-custom-select-drop reviews-select-drop drop-thin-border">
+												<select class="selectpicker">
+													<option disabled selected>Consumer Reviews</option>
+													<option>Consumer Reviews</option>
+													<option>Consumer Reviews</option>
+													<option>Consumer Reviews</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="reviews-list">
+									<li class="reviews-list__item">
+										<div class="reviews-list__inner-wrap">
+											<div class="reviews-list__inner-wrap__user-descr">
+												<div class="reviews-inner">
+													<div class="reviews-inner__user-info">
+														<span class="reviews-inner__avatar bg-primary thumb-cover">
+															<svg class="reviews-inner__avatar__icon" width="36" height="36">
+																<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+															</svg>
+														</span>
+														<div class="reviews-inner__user-info__wrap">
+															<h6 class="h7">Patrick Wellinger</h6>
+															<a href="#" class="reviews-inner__link text-sidewalk">Consumer Review</a>
+														</div>
+													</div>
+													<div class="reviews-inner__rating">
+														<span class="link-title">Rated 3 out of 5</span>
+														<ul class="rating-list">
+															<li>
+																<span class="rating-list__star-full">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star-full">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star-full">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="reviews-list__inner-wrap__content">
+												<div class="reviews-block ellipsis-block">
+													<div class="reviews-block__head-panel">
+														<span class="reviews-block__time label-title">1 week</span>
+														<button class="btn-flag">
+															<svg class="ico-svg" width="13" height="13">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-flag" />
+															</svg>
+															<span>Flag</span>
+														</button>
+													</div>
+													<div class="reviews-block__expanded">
+														<div class="ellipsis-text">
+															<p>Occaecati repudiandae blanditiis dolor tempore sit praesentium. Alias suscipit ex reiciendis magni et eum aliquam. Quis sit ullam optio sit commodi. Maiores aut quas consequatur odit veniam distinctio sunt voluptates. In ut quis a quas voluptates aut voluptatem autemini Occaecati repudiandae blanditiis dolor tempore kon zul praesentium. Alias suscipit ex reiciendis magni et eum aliquam. Quis sit ullam optio sit commodi. Maiores aut quas consequatur odit veniam distinctio.</p>
+														</div>
+													</div>
+													<div class="reviews-panel">
+														<a href="#" class="btn-comment">
+															<svg class="ico" width="27" height="26">
+																<use xlink:href="assets/img/sprite-icons.svg#reply-outline" />
+															</svg>
+															<span>Write Comment</span>
+														</a>
+														<a class="ellipsis-text-toggle" href="#" data-default="Expand Review" data-active="Minimize review"></a>
+														<a href="#" class="btn-helpful link-title">
+															<span>Find it helpful?</span>
+															<span class="ico-helpful">25</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="reviews-list__item">
+										<div class="reviews-list__inner-wrap">
+											<div class="reviews-list__inner-wrap__user-descr">
+												<div class="reviews-inner">
+													<div class="reviews-inner__user-info">
+														<span class="reviews-inner__avatar bg-danger">
+															<svg class="reviews-inner__avatar__icon" width="36" height="36">
+																<use xlink:href="assets/img/sprite-icons.svg#user-avatar" />
+															</svg>
+														</span>
+														<div class="reviews-inner__user-info__wrap">
+															<h6 class="h7">Patrick Wellinger</h6>
+															<a href="#" class="reviews-inner__link text-sidewalk">Agent Review</a>
+														</div>
+													</div>
+													<div class="reviews-inner__rating">
+														<span class="link-title">RATED 3 out of 5</span>
+														<ul class="rating-list">
+															<li>
+																<span class="rating-list__star-full">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+															<li>
+																<span class="rating-list__star">
+																	<svg width="15" height="15">
+																		<use xlink:href="assets/img/sprite-icons.svg#star" />
+																	</svg>
+																</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="reviews-list__inner-wrap__content">
+												<div class="reviews-block ellipsis-block">
+													<div class="reviews-block__head-panel">
+														<span class="reviews-block__time label-title">1 Week</span>
+														<button class="btn-flag">
+															<svg class="ico-svg" width="13" height="13">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-flag" />
+															</svg>
+															<span>Flag</span>
+														</button>
+													</div>
+													<div class="reviews-block__expanded">
+														<div class="ellipsis-text">
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat vehicula nibh, congue luctus nibh dolor sit scelerisque nec. Curabitur eget elit id ex mattis moderus ullamcorper. Duis consectetur mauris a lacus hendrerit pellentesque. Ut sodales fringilla risus.</p>
+														</div>
+													</div>
+													<div class="reviews-panel">
+														<a href="#" class="btn-comment">
+															<svg class="ico" width="27" height="26">
+																<use xlink:href="assets/img/sprite-icons.svg#reply-outline" />
+															</svg>
+															<span>Write Comment</span>
+														</a>
+														<a class="ellipsis-text-toggle" href="#" data-default="Expand Review" data-active="Minimize review"></a>
+														<a href="#" class="btn-helpful link-title">
+															<span>Find it helpful?</span>
+															<span class="ico-helpful">14</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	</div>
+</body>
+
+</html>

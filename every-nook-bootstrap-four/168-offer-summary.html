@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-snow">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-menu-sliding">
+			<div class="sliding-inner">
+				<a href="#" class="btn-back">
+					<span class="label-title">Hide panel</span>
+					<svg class="ico" width="24" height="20">
+						<use xlink:href="assets/img/sprite-icons.svg#arrow-hide" />
+					</svg>
+				</a>
+				<ul class="nav-menu-list">
+					<li class="active">
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#itinerary-home" />
+								</svg>
+							</span>
+							<span class="text">Itinerary Home</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Itinerary Home</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="17" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#create-tour" />
+								</svg>
+							</span>
+							<span class="text">Create A New Tour</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Create A New Tour</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#previous-tours" />
+								</svg>
+							</span>
+							<span class="text">Previous Tours</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Previous Tours</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#compare" />
+								</svg>
+							</span>
+							<span class="text">Best And Worst</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Best And Worst</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="20" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#comparison" />
+								</svg>
+							</span>
+							<span class="text">Comparison</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Comparison</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#switch-subject" />
+								</svg>
+							</span>
+							<span class="text">Switch Subject</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Switch Subject</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main id="main">
+			<section class="overview-hero-section overview-hero-section__tile-section">
+				<div class="container container__container-flexibly">
+					<ul class="breadcrumbs">
+						<li><a href="#">Properties</a></li>
+						<li class="breadcrumbs-active"><a href="#">819 Ashmor Drive, Grand Rapids, MN 55744</a></li>
+					</ul>
+					<h1 class="headline-title">Offer Summary</h1>
+				</div>
+				<div class="bg-stretch">
+					<img src="assets/img/bg07.svg" alt="image description">
+				</div>
+			</section>
+			<section class="offer-section sticky-sidebar-parent">
+				<div class="container container__container-flexibly">
+					<div class="property-section-holder shadow-section bg-snow">
+						<div class="property-preview-wrap">
+							<div class="property-preview-wrap__content-wrap">
+								<div class="property-preview-wrap__content-wrap__visual-wrap">
+									<span class="mls-label d-xl-none d-flex bg-danger">Pre-Market Exclusive</span>
+									<div class="property-preview-wrap__head-wrap d-md-none d-block">
+										<div class="property-preview-wrap__head-wrap__title-wrap">
+											<h4 class="property-preview-wrap__head-wrap__headtitle">819 Ashmor Drive</h4>
+											<h5 class="property-preview-wrap__head-wrap__title h5">Grand Rapids, MN 55744</h5>
+										</div>
+									</div>
+									<div class="property-preview-wrap__content-wrap__flex-holder">
+										<div class="property-preview-wrap__content-wrap__visual">
+											<img class="property-preview-wrap__content-wrap__visual__img" src="assets/img/img132.jpg" srcset="assets/img/img132@2x.jpg 2x" alt="image description">
+										</div>
+										<ul class="avatars">
+											<li class="avatars__item">
+												<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+													<img class="avatars__img-wrap__img" src="assets/img/img196.jpg" srcset="assets/img/img196@2x.jpg 2x" alt="image description">
+												</a>
+											</li>
+											<li class="avatars__item">
+												<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+													<img class="avatars__img-wrap__img" src="assets/img/img143.jpg" srcset="assets/img/img143@2x.jpg 2x" alt="image description">
+												</a>
+											</li>
+											<li class="avatars__item">
+												<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+													<img class="avatars__img-wrap__img" src="assets/img/img146.jpg" srcset="assets/img/img146@2x.jpg 2x" alt="image description">
+												</a>
+											</li>
+											<li class="avatars__item">
+												<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+													<img class="avatars__img-wrap__img" src="assets/img/img195.jpg" srcset="assets/img/img195@2x.jpg 2x" alt="image description">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="property-preview-wrap__content-wrap__inner-holder">
+									<div class="property-preview-wrap__head-wrap">
+										<div class="property-preview-wrap__head-wrap__title-wrap">
+											<h4 class="property-preview-wrap__head-wrap__headtitle">819 Ashmor Drive</h4>
+											<h5 class="property-preview-wrap__head-wrap__title h5">Grand Rapids, MN 55744</h5>
+										</div>
+										<div class="summary-item">
+											<div class="summary-item__item">
+												<strong class="summary-item__label">List Price:</strong>
+												<span>$300,000</span>
+											</div>
+											<div class="summary-item__item">
+												<strong class="summary-item__label">Days On Market:</strong>
+												<span>27</span>
+											</div>
+											<div class="summary-item__item">
+												<strong class="summary-item__label">Days On Everynook:</strong>
+												<span>35</span>
+											</div>
+										</div>
+										<span class="mls-label d-xl-block d-none bg-danger">Pre-Market Exclusive</span>
+									</div>
+									<div class="people-list-holder">
+										<div class="people-list-holder__item">
+											<h6 class="h7">Collaborators</h6>
+											<ul class="avatars">
+												<li class="avatars__item">
+													<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+														<img class="avatars__img-wrap__img" src="assets/img/img196.jpg" srcset="assets/img/img196@2x.jpg 2x" alt="image description">
+													</a>
+												</li>
+												<li class="avatars__item">
+													<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+														<img class="avatars__img-wrap__img" src="assets/img/img143.jpg" srcset="assets/img/img143@2x.jpg 2x" alt="image description">
+													</a>
+												</li>
+												<li class="avatars__item">
+													<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+														<img class="avatars__img-wrap__img" src="assets/img/img146.jpg" srcset="assets/img/img146@2x.jpg 2x" alt="image description">
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="people-list-holder__item">
+											<h6 class="h7">Clients</h6>
+											<ul class="avatars">
+												<li class="avatars__item">
+													<a class="avatars__img-wrap tooltip-large" data-toggle="tooltip" title="Heidi Stewart" href="#">
+														<img class="avatars__img-wrap__img" src="assets/img/img195.jpg" srcset="assets/img/img195@2x.jpg 2x" alt="image description">
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="property-preview-wrap__feature-holder">
+								<div class="feature-list feature-list__feature-secondary">
+									<div class="feature-list__item">
+										<div class="feature-inner feature-inner__row-inner">
+											<svg class="feature-list__ico" width="30" height="24">
+												<use xlink:href="assets/img/sprite-icons.svg#couch" />
+											</svg>
+											<div class="feature-list__info">
+												<span class="count">3.5</span>
+												<span class="property-title">Beds</span>
+											</div>
+										</div>
+									</div>
+									<div class="feature-list__item">
+										<div class="feature-inner feature-inner__row-inner">
+											<svg class="feature-list__ico" width="26" height="30">
+												<use xlink:href="assets/img/sprite-icons.svg#bathroom" />
+											</svg>
+											<div class="feature-list__info">
+												<span class="count">2.5</span>
+												<span class="property-title">Baths</span>
+											</div>
+										</div>
+									</div>
+									<div class="feature-list__item">
+										<div class="feature-inner feature-inner__row-inner">
+											<svg class="feature-list__ico" width="25" height="25">
+												<use xlink:href="assets/img/sprite-icons.svg#square-secondary" />
+											</svg>
+											<div class="feature-list__info">
+												<span class="count">6,450</span>
+												<span class="property-title">Sqft</span>
+											</div>
+										</div>
+									</div>
+									<div class="feature-list__item">
+										<div class="feature-inner feature-inner__row-inner">
+											<svg class="feature-list__ico" width="25" height="25">
+												<use xlink:href="assets/img/sprite-icons.svg#ico-tree" />
+											</svg>
+											<div class="feature-list__info">
+												<span class="count">3.5</span>
+												<span class="property-title">Acres</span>
+											</div>
+										</div>
+									</div>
+									<div class="feature-list__item">
+										<div class="feature-inner feature-inner__row-inner">
+											<svg class="feature-list__ico" width="32" height="28">
+												<use xlink:href="assets/img/sprite-icons.svg#levels" />
+											</svg>
+											<div class="feature-list__info">
+												<span class="count">3</span>
+												<span class="property-title">Levels</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cover-letter-holder bg-light-grayish mb-3">
+						<div class="cover-letter-block">
+							<div class="cover-letter-block__head">
+								<svg class="cover-letter-block__icon" width="50" height="50">
+									<use xlink:href="assets/img/sprite-icons.svg#writing-ico" />
+								</svg>
+								<h4 class="cover-letter-block__title">Offer 1: Active</h4>
+							</div>
+							<div class="cover-letter-block__text-wrap text-medium">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor rhoncus dignissim. Proin volutpat faucibus felis, in accumsan quam venenatis at. Nullam eget lacus nec purus sagittis vehicula sit amet sed ipsum.</p>
+							</div>
+						</div>
+					</div>
+					<div class="offer-summary-wrap">
+						<div class="offer-summary-wrap__main-content">
+							<div class="summary-card-items">
+								<div class="summary-card-items__item">
+									<div class="section-white-card">
+										<h6 class="text-navy-dark h7 mb-2">Economic Details</h6>
+										<ul class="details-table secondary-table odd-col">
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Purchase Price</span>
+													<span class="details-table__descr">$400,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Deposit</span>
+													<span class="details-table__descr">$4,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Warranty</span>
+													<span class="details-table__descr">$600.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Escalation Cap</span>
+													<span class="details-table__descr">$420,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Seller Credit</span>
+													<span class="details-table__descr">$10,000</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Transfer Taxes</span>
+													<span class="details-table__descr">Split Evenly</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Escalation increment</span>
+													<span class="details-table__descr">$1,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Purchase Price</span>
+													<span class="details-table__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor rhoncus dignissim. Proin volutpat faucibus felis, in accumsan quam venenatis at. Nullam eget lacus nec purus sagittis vehicula sit amet sed ipsum. Fusce molestie ac est nec scelerisque. Duis gravida enim vitae ipsum maximus, at condimentum ante tincidunt. Nam condimentum condimentum enim, ac bibendum justo congue consectetur. Suspendisse sapien ipsum, sollicitudin eu tincidunt id, suscipit ac mauris. Praesent facilisis elit eget pulvinar condimentum.</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="summary-card-items__item">
+									<div class="section-white-card">
+										<h6 class="text-navy-dark h7 mb-2">Financing Details</h6>
+										<ul class="details-table secondary-table odd-col">
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Purchase Price</span>
+													<span class="details-table__descr">$400,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Deposit</span>
+													<span class="details-table__descr">$4,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Warranty</span>
+													<span class="details-table__descr">$600.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Escalation Cap</span>
+													<span class="details-table__descr">$420,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Seller Credit</span>
+													<span class="details-table__descr">$10,000</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Transfer Taxes</span>
+													<span class="details-table__descr">Split Evenly</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Escalation increment</span>
+													<span class="details-table__descr">$1,000.00</span>
+												</div>
+											</li>
+											<li class="details-table__item">
+												<div class="details-table__col details-table__full-col">
+													<span class="details-table__td text-navy-dark">Purchase Price</span>
+													<span class="details-table__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor rhoncus dignissim. Proin volutpat faucibus felis, in accumsan quam venenatis at. Nullam eget lacus nec purus sagittis vehicula sit amet sed ipsum. Fusce molestie ac est nec scelerisque. Duis gravida enim vitae ipsum maximus, at condimentum ante tincidunt. Nam condimentum condimentum enim, ac bibendum justo congue consectetur. Suspendisse sapien ipsum, sollicitudin eu tincidunt id, suscipit ac mauris. Praesent facilisis elit eget pulvinar condimentum.</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<aside class="sticky-sidebar sidebar">
+							<div class="property-section__flex-wrap">
+								<div class="aside-profile-block">
+									<div class="profile-block-agent">
+										<ul class="agent-group">
+											<li class="active"><a href="#">Buyer Agent</a></li>
+											<li><a href="#">Co-Buyer Agent</a></li>
+										</ul>
+										<div class="aside-review offset-block">
+											<div class="agent-card">
+												<div class="agent-card__agent-img">
+													<div class="thumb-cover">
+														<img src="assets/img/img124.jpg" srcset="assets/img/img124@2x.jpg 2x" width="80" alt>
+													</div>
+													<div class="endorse-action">
+														<div class="endorse-action__item">
+															<button class="endorse-action__btn endorse-action__btn__thumbs  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>You’ve Endorsed</span>">
+																<svg class="endorse-action__btn__icon" width="18" height="15">
+																	<use xlink:href="assets/img/sprite-icons.svg#thumbs-up" />
+																</svg>
+															</button>
+														</div>
+														<div class="endorse-action__item">
+															<button class="endorse-action__btn endorse-action__btn__like  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Your Favorite</span>">
+																<svg class="endorse-action__btn__icon" width="18" height="15">
+																	<use xlink:href="assets/img/sprite-icons.svg#like-ico" />
+																</svg>
+															</button>
+														</div>
+													</div>
+												</div>
+												<h4 class="agent-card__title"><a href="#">Paul Goodling</a></h4>
+												<div class="rating-info">
+													<div class="rating-info__current-view">
+														<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#star" />
+														</svg>
+														<span class="rating-info__current-view__text">4.8</span>
+													</div>
+													<a href="#" class="rating-info__link-title link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+												</div>
+												<div class="review-action">
+													<div class="review-action__item">
+														<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send E-Mail</span> ">
+															<svg class="review-action__btn__icon" width="20" height="15">
+																<use xlink:href="assets/img/sprite-icons.svg#incoming-mail" />
+															</svg>
+														</button>
+													</div>
+													<div class="review-action__item">
+														<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Call</span>">
+															<svg class="review-action__btn__icon review-action__btn__icon__phone" width="36" height="37">
+																<use xlink:href="assets/img/sprite-icons.svg#incoming-call" />
+															</svg>
+														</button>
+													</div>
+													<div class="review-action__item">
+														<button class="review-action__btn  tooltip-secondary" data-toggle="tooltip" data-html="true" data-placement="top" title="<span class='tooltip-btn'>Send Text</span>">
+															<svg class="review-action__btn__icon" width="19" height="19">
+																<use xlink:href="assets/img/sprite-icons.svg#incoming-messages" />
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="18">
+																			<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																		</svg>
+																	</span>
+																	<span class="text">View Your Profile</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																		</svg>
+																	</span>
+																	<span class="text">Edit Your Profile</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="aside-expanded">
+												<div class="aside-expanded__item-wrap pt-0">
+													<span class="aside-review__title-text text-center">You reviewed Paul and gave him:</span>
+													<div class="rating-info mb-0">
+														<div class="rating-info__current-view">
+															<svg class="rating-info__icon" width="18" height="18" fill="#1AACFF">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+															<span>3</span>
+														</div>
+														<a href="#" class="link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">Read Your Review</a>
+													</div>
+												</div>
+												<div class="aside-expanded__item-wrap">
+													<div class="review-components">
+														<h5 class="review-components__title h5-text">Re/Max Components</h5>
+														<address class="review-components__address">123 Main Street Suite 2100 Baltimore, MD 21044</address>
+														<span class="review-components__text-link">Member Of<a href="#">The John Jannsen Team of Long & Foster</a></span>
+														<div class="dropdown-option dropdown">
+															<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<svg class="ico" width="17" height="4">
+																	<use xlink:href="assets/img/sprite-icons.svg#union" />
+																</svg>
+															</button>
+															<div class="dropdown-menu overview-drop-option">
+																<ul class="drop-option-list">
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="18">
+																					<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																				</svg>
+																			</span>
+																			<span class="text">View Your Profile</span>
+																		</a>
+																	</li>
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="20">
+																					<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																				</svg>
+																			</span>
+																			<span class="text">Edit Your Profile</span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="aside-expanded__item-wrap">
+													<div class="exclamation-message">
+														<svg class="exclamation-message__ico" width="30" height="30">
+															<use xlink:href="assets/img/sprite-icons.svg#exclamation" />
+														</svg>
+														<span class="exclamation-message__text">You’ve worked with Paul on the following transactions:</span>
+													</div>
+													<div class="aside-review__item-wrap">
+														<ul class="resources-list secondary-list">
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img82.jpg" srcset="assets/img/img82@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img126.jpg" srcset="assets/img/img126@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img109.jpg" srcset="assets/img/img109@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img126.jpg" srcset="assets/img/img126@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+														</ul>
+														<div class="btn-holder text-right">
+															<a href="#" class="more-view  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>See All</span>">32 More</a>
+														</div>
+													</div>
+													<div class="aside-review__item-wrap">
+														<span class="aside-review__title-text">Paul has been endorsed by:</span>
+														<ul class="support-list">
+															<li class="support-list__item">
+																<a class="support-list__img  tooltip-secondary thumb-cover" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img12.jpg" srcset="assets/img/img12@2x.jpg 2x" width="44" alt>
+																</a>
+															</li>
+															<li class="support-list__item">
+																<a class="support-list__img  tooltip-secondary thumb-cover" href="#" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img35.jpg" srcset="assets/img/img35@2x.jpg 2x" width="44" alt>
+																</a>
+															</li>
+															<li class="support-list__item">
+																<a class="support-list__img  tooltip-secondary thumb-cover" href="#" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img12.jpg" srcset="assets/img/img12@2x.jpg 2x" width="44" alt>
+																</a>
+															</li>
+															<li class="support-list__item">
+																<a class="support-list__img  tooltip-secondary thumb-cover" href="#" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img35.jpg" srcset="assets/img/img35@2x.jpg 2x" width="44" alt>
+																</a>
+															</li>
+															<li class="support-list__item">
+																<a class="support-list__img  tooltip-secondary thumb-cover" href="#" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img12.jpg" srcset="assets/img/img12@2x.jpg 2x" width="44" alt>
+																</a>
+															</li>
+															<li class="support-list__item">
+																<a class="support-list__more-link  tooltip-secondary" href="#" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>See All</span>">2+</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="aside-expanded__item-wrap">
+													<h6 class="aside-review__title-text text-uppercase h7 text-center mb-2">Transactions In The Last 12 Months</h6>
+													<div class="operations">
+														<div class="operations__item">
+															<button class="operations__btn">16 Sales</button>
+														</div>
+														<div class="operations__item">
+															<button class="operations__btn">$1.23M</button>
+														</div>
+													</div>
+													<div class="aside-review__item-wrap">
+														<span class="aside-review__title-text">Paul’s other current listings:</span>
+														<ul class="resources-list secondary-list">
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img82.jpg" srcset="assets/img/img82@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img126.jpg" srcset="assets/img/img126@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img109.jpg" srcset="assets/img/img109@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+															<li class="resources-list__item">
+																<a href="#" class="resources-list__img thumb-cover  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>Click To View</span>">
+																	<img src="assets/img/img126.jpg" srcset="assets/img/img126@2x.jpg 2x" width="66" alt="image description">
+																</a>
+															</li>
+														</ul>
+														<div class="btn-holder text-right">
+															<a href="#" class="more-view  tooltip-secondary" data-html="true" data-toggle="tooltip" data-placement="top" title="<span class='tooltip-btn'>See All</span>">32 More</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="btn-expanded-holder">
+											<button class="btn-expanded  tooltip-secondary" data-toggle="tooltip" title="<span class='tooltip-btn'>Expand / Contract</span>">
+												<svg class="btn-expanded__ico" width="15" height="15">
+													<use xlink:href="assets/img/sprite-icons.svg#expanded" />
+												</svg>
+												<span class="btn-expanded__text">Click Here To See <span class="btn-expanded__text__more">More</span><span class="btn-expanded__text__less">Less</span></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+					<div class="buttons-item buttons-item__group-buttons">
+						<div class="buttons-item__item">
+							<button data-toggle="modal" data-target="#set-deadline" class="btn btn-dark-blue">Set Offer Deadline</button>
+						</div>
+						<div class="buttons-item__item">
+							<button class="btn btn-success">Accept Offer</button>
+						</div>
+						<div class="buttons-item__item">
+							<button class="btn btn-primary">Send Counter Offer</button>
+						</div>
+						<div class="buttons-item__item">
+							<button class="btn btn-danger">Reject Offer</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional-info">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. &copy; 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+		<div class="modal fade" id="set-deadline" role="dialog">
+			<div class="modal-dialog md-modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header text-left pt-5 pb-3">
+						<div class="text-form-wrap">
+							<div class="text-description mb-4">
+								<svg class="text-description__icon mr-lg-3" width="30" height="30">
+									<use xlink:href="assets/img/sprite-icons.svg#alarm-clock" />
+								</svg>
+								<h4 class="text-nunito">Set A Deadline</h4>
+							</div>
+							<div class="text-wrap">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, purus at molestie commodo, est nisi aliquet quam, in luctus arcu elit quis lorem. Etiam sed mauris sed ex tempus porttitor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-body pb-5">
+						<form class="modal-form">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Deadline Date</label>
+										<input type="text" class="form-control datepicker" placeholder="Please Select">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label" for="example-time-input">Deadline Time</label>
+										<input class="form-control time-control" type="text" onfocus="(this.type='time')" id="example-time-input" placeholder="Please Select">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Make Deadline Public To Agents</label>
+										<div class="form-switch-group">
+											<div class="toggle-holder toggle-holder-lg">
+												<input type="checkbox" id="switch01" checked>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Make Deadline Public To Consumers</label>
+										<div class="form-switch-group">
+											<div class="toggle-holder toggle-holder-lg">
+												<input type="checkbox" id="switch02" checked>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="buttons-item justify-content-center mb-2">
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-flat w-100" data-dismiss="modal">Cancel</button>
+								</div>
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-primary-secondary w-100">Set Offer Deadline</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

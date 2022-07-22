@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-snow">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="nav-menu-sliding">
+			<div class="sliding-inner">
+				<a href="#" class="btn-back">
+					<span class="label-title">Hide panel</span>
+					<svg class="ico" width="24" height="20">
+						<use xlink:href="assets/img/sprite-icons.svg#arrow-hide" />
+					</svg>
+				</a>
+				<ul class="nav-menu-list">
+					<li class="active">
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#list-icon" />
+								</svg>
+							</span>
+							<span class="text">Button 1</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 1</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#tag-fill" />
+								</svg>
+							</span>
+							<span class="text">Button 2</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 2</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#loupe" />
+								</svg>
+							</span>
+							<span class="text">Button 3</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 3</div>
+					</li>
+					<li>
+						<a href="#">
+							<span class="ico-menu">
+								<svg width="24" height="24">
+									<use xlink:href="assets/img/sprite-icons.svg#houses-plus" />
+								</svg>
+							</span>
+							<span class="text">Button 4</span>
+						</a>
+						<div class="custom-tooltip custom-tooltip__sliding-tooltip">Button 4</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<main id="main">
+			<section class="overview-hero-section overview-hero-section__tile-section">
+				<div class="container container__container-flexibly">
+					<ul class="breadcrumbs">
+						<li><a href="#">Properties</a></li>
+						<li class="breadcrumbs-active"><a href="#">819 Ashmor Drive, Grand Rapids, MN 55744</a></li>
+					</ul>
+					<h1 class="headline-title">Listing Prep</h1>
+				</div>
+				<div class="bg-stretch">
+					<img src="assets/img/bg07.svg" alt="image description">
+				</div>
+			</section>
+			<section class="tile-section">
+				<div class="container container__container-flexibly">
+					<form class="offer-form">
+						<div class="offer-form__item">
+							<div class="offer-info mb-5">
+								<svg class="offer-info__icon mr-md-3" width="48" height="50">
+									<use xlink:href="assets/img/sprite-icons.svg#house-search" />
+								</svg>
+								<div class="offer-info__content">
+									<h4 class="text-nunito">Choose A Property</h4>
+									<p class="text-secondary">Let’s select a property.</p>
+								</div>
+							</div>
+							<div class="property-form-wrap row">
+								<div class="col-xl-2 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Street number</label>
+										<input type="number" class="form-control" placeholder="Street Number">
+									</div>
+								</div>
+								<div class="col-xl-2 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Street Direction</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Choose</option>
+												<option>Select #1</option>
+												<option>Select #2</option>
+												<option>Select #3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Address</label>
+										<input type="text" class="form-control" placeholder="Street Name">
+									</div>
+								</div>
+								<div class="col-xl-2 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary required-label">Street Suffix</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Choose</option>
+												<option>Select #1</option>
+												<option>Select #2</option>
+												<option>Select #3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">Unit Number</label>
+										<input type="text" class="form-control" placeholder="Unit Number">
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">City</label>
+										<input type="text" class="form-control" placeholder="City">
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">State</label>
+										<div class="custom-select-drop">
+											<select class="selectpicker">
+												<option disabled selected>Please Select</option>
+												<option>Select #1</option>
+												<option>Select #2</option>
+												<option>Select #3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 col-md-6">
+									<div class="form-group">
+										<label class="label-form text-secondary">zip code</label>
+										<input type="text" class="form-control numeric-value" maxlength="5" placeholder="Zip Code">
+									</div>
+								</div>
+								<div class="col-xl-4 col-12">
+									<div class="property-form-wrap__buttons">
+										<div class="btn-holder">
+											<a href="#" class="btn btn-primary">Search</a>
+										</div>
+										<div class="btn-holder">
+											<a href="#" class="btn-link reset-form">Clear Form And Start Over</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<ul class="property-tile-list">
+						<li class="property-tile-list__item">
+							<div class="property-tile">
+								<div class="property-tile__map-holder">
+									<img class="property-tile__map-holder__img" src="assets/img/img-map-04.jpg" srcset="assets/img/img-map-04@2x.jpg 2x" alt="image description">
+									<span class="mls-label bg-primary">MLS: MDAA8476693</span>
+								</div>
+								<div class="property-tile__inner-holder">
+									<div class="property-tile__block-content">
+										<div class="info-descr">
+											<div class="info-descr__item">
+												<strong>Property Address</strong>
+												<address>6913 Harewood Park Drive Baltimore, MD 21020</address>
+											</div>
+											<div class="info-descr__item">
+												<strong>Owners</strong>
+												<span>Deliliah Jones Mercedes</span>
+												<span>Franklin Miller</span>
+											</div>
+										</div>
+									</div>
+									<ul class="field-list">
+										<li>
+											<strong>Property Type</strong>
+											<span>Detached</span>
+										</li>
+										<li>
+											<strong>Property Use</strong>
+											<span>Residential</span>
+										</li>
+										<li>
+											<strong>Year Built</strong>
+											<span>1987</span>
+										</li>
+									</ul>
+									<div class="property-tile__property-actions">
+										<div class="btn-holder">
+											<button data-toggle="modal" data-target="#confirm-selection" class="btn btn-sidewalk">Choose this property</button>
+										</div>
+										<span class="tax-id"><strong>TAX ID:</strong> 7897897868</span>
+									</div>
+									<div class="bg-decor">
+										<img src="assets/img/house-decor-icon.svg" width="150" alt="image description">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="property-tile-list__item">
+							<div class="property-tile">
+								<div class="property-tile__map-holder">
+									<img class="property-tile__map-holder__img" src="assets/img/img-map-05.jpg" srcset="assets/img/img-map-05@2x.jpg 2x" alt="image description">
+								</div>
+								<div class="property-tile__inner-holder">
+									<div class="property-tile__block-content">
+										<div class="info-descr">
+											<div class="info-descr__item">
+												<strong>Property Address</strong>
+												<address>1861 Florence Street Unit 17 Longview, TX 75601</address>
+											</div>
+											<div class="info-descr__item">
+												<strong>Owners</strong>
+												<span>Emmanuel L. Woosley</span>
+											</div>
+										</div>
+									</div>
+									<ul class="field-list">
+										<li>
+											<strong>Property Type</strong>
+											<span>Townhome</span>
+										</li>
+										<li>
+											<strong>Property Use</strong>
+											<span>Residential</span>
+										</li>
+										<li>
+											<strong>Year Built</strong>
+											<span>1987</span>
+										</li>
+									</ul>
+									<div class="property-tile__property-actions">
+										<div class="btn-holder">
+											<button data-toggle="modal" data-target="#confirm-selection" class="btn btn-sidewalk">Choose this property</button>
+										</div>
+										<span class="tax-id"><strong>TAX ID:</strong> 7897897868</span>
+									</div>
+									<div class="bg-decor">
+										<img src="assets/img/terraced-decor-icon.svg" width="150" alt="image description">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="property-tile-list__item">
+							<div class="property-tile">
+								<div class="property-tile__map-holder">
+									<img class="property-tile__map-holder__img" src="assets/img/img-map-06.jpg" srcset="assets/img/img-map-06@2x.jpg 2x" alt="image description">
+								</div>
+								<div class="property-tile__inner-holder">
+									<div class="property-tile__block-content">
+										<div class="info-descr">
+											<div class="info-descr__item">
+												<strong>Property Address</strong>
+												<address>2663 Waldeck Street Arlington, TX 76010</address>
+											</div>
+											<div class="info-descr__item">
+												<strong>Owners</strong>
+												<span>Albert J. Fralick</span>
+											</div>
+										</div>
+									</div>
+									<ul class="field-list">
+										<li>
+											<strong>Property Type</strong>
+											<span>Condo Hi Rise</span>
+										</li>
+										<li>
+											<strong>Property Use</strong>
+											<span>Residential</span>
+										</li>
+										<li>
+											<strong>Year Built</strong>
+											<span>1987</span>
+										</li>
+									</ul>
+									<div class="property-tile__property-actions">
+										<div class="btn-holder">
+											<button data-toggle="modal" data-target="#confirm-selection" class="btn btn-sidewalk">Choose this property</button>
+										</div>
+										<span class="tax-id"><strong>TAX ID:</strong> 7897897868</span>
+									</div>
+									<div class="bg-decor">
+										<img src="assets/img/apartment-decor-icon.svg" width="150" alt="image description">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="property-tile-list__item">
+							<div class="property-tile">
+								<div class="property-tile__map-holder">
+									<img class="property-tile__map-holder__img" src="assets/img/img-map-07.jpg" srcset="assets/img/img-map-07@2x.jpg 2x" alt="image description">
+								</div>
+								<div class="property-tile__inner-holder">
+									<div class="property-tile__block-content">
+										<div class="info-descr">
+											<div class="info-descr__item">
+												<strong>Property Address</strong>
+												<address>253 Monroe Avenue Bradenton, FL 34207</address>
+											</div>
+											<div class="info-descr__item">
+												<strong>Owners</strong>
+												<span>Milford A. Chamblee</span>
+												<span>Danny F. Hopkins</span>
+											</div>
+										</div>
+									</div>
+									<ul class="field-list">
+										<li>
+											<strong>Property Type</strong>
+											<span>Townhome</span>
+										</li>
+										<li>
+											<strong>Property Use</strong>
+											<span>Residential</span>
+										</li>
+										<li>
+											<strong>Year Built</strong>
+											<span>1987</span>
+										</li>
+									</ul>
+									<div class="property-tile__property-actions">
+										<div class="btn-holder">
+											<button data-toggle="modal" data-target="#confirm-selection" class="btn btn-sidewalk">Choose this property</button>
+										</div>
+										<span class="tax-id"><strong>TAX ID:</strong> 7897897868</span>
+									</div>
+									<div class="bg-decor">
+										<img src="assets/img/terraced-decor-icon.svg" width="150" alt="image description">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="property-tile-list__item">
+							<div class="property-tile">
+								<div class="property-tile__map-holder">
+									<img class="property-tile__map-holder__img" src="assets/img/img85.jpg" srcset="assets/img/img85@2x.jpg 2x" alt="image description">
+									<svg class="property-tile__map-holder__icon" width="100" height="100">
+										<use xlink:href="assets/img/sprite-icons.svg#not-found" />
+									</svg>
+								</div>
+								<div class="property-tile__inner-holder">
+									<div class="property-tile__block-content">
+										<div class="text-wrap">
+											<h4>Property Not Found</h4>
+											<p>Please verify the details you entered and try again. If the property cannot be found in the tax records, click the button to add the property manually.</p>
+										</div>
+									</div>
+									<div class="property-tile__property-actions">
+										<div class="btn-holder">
+											<button data-toggle="modal" data-target="#add-manual" class="btn btn-sidewalk">Add Manually</button>
+										</div>
+									</div>
+									<div class="bg-decor">
+										<img src="assets/img/not-found-decor-icon.svg" width="100" alt="image description">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="pagination-holder">
+						<ul class="pagination pagination-bg">
+							<li class="page-item previous">
+								<a class="page-link" href="#" aria-label="Previous">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-left" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item next">
+								<a class="page-link" href="#" aria-label="Next">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-right" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pagination-holder">
+						<ul class="pagination pagination-bg">
+							<li class="page-item first">
+								<a class="page-link" href="#" aria-label="Previous">
+									<svg width="11" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-double-left" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item previous">
+								<a class="page-link" href="#" aria-label="Previous">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-left" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">9</a></li>
+							<li class="page-item"><a class="page-link" href="#">10</a></li>
+							<li class="page-item next">
+								<a class="page-link" href="#" aria-label="Next">
+									<svg width="9" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-right" />
+									</svg>
+								</a>
+							</li>
+							<li class="page-item last">
+								<a class="page-link" href="#" aria-label="Next">
+									<svg width="11" height="13">
+										<use xlink:href="assets/img/sprite-icons.svg#chevron-double-right" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional-info">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. &copy; 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+		<div class="modal fade" id="add-manual" role="dialog">
+			<div class="modal-dialog md-modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header align-items-start text-left">
+						<h4 class="modal-title">Manually Add A Property Address</h4>
+						<p class="text-body mb-0">Please verify the details you entered and try again. If the property cannot be found in the tax records, click the button to add the property manually.</p>
+					</div>
+					<div class="modal-body pb-4">
+						<form class="manually-form">
+							<div class="form-group mb-4">
+								<label class="label-form text-secondary required-label">Address</label>
+								<input type="text" class="form-control" placeholder="Street Name">
+								<div class="form-note text-gray"><strong class="text-danger text-uppercase">Note:</strong> Please verify the details you entered and try again. If the property cannot be found in the tax record s, click the button to add the property manually.</div>
+							</div>
+							<div class="buttons-item justify-content-center">
+								<div class="buttons-item__item order-md-0 order-1">
+									<button type="button" class="btn text-secondary" data-dismiss="modal">Cancel</button>
+								</div>
+								<div class="buttons-item__item">
+									<button type="button" class="btn btn-primary">Add Property</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="confirm-selection" role="dialog">
+			<div class="modal-dialog sm-modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="selection-modal-card">
+						<div class="selection-modal-card__map-holder">
+							<img class="selection-modal-card__map-holder__img" src="assets/img/img-map-07.jpg" srcset="assets/img/img-map-07@2x.jpg 2x" alt="image description">
+						</div>
+						<div class="selection-modal-card__inner-holder">
+							<h4>Confirm Your Selection</h4>
+							<div class="info-descr">
+								<div class="info-descr__item">
+									<strong>Property Address</strong>
+									<address>6913 Harewood Park Drive Baltimore, MD 21020</address>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 order-lg-0 order-1">
+									<button type="button" class="btn btn-sidewalk" data-dismiss="modal">Cancel</button>
+								</div>
+								<div class="col-lg-6 mb-lg-0 mb-2">
+									<button type="button" class="btn btn-primary">Confirm</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

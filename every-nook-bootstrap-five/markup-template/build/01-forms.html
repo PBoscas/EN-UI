@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Forms</title>
+	<link media="all" rel="stylesheet" href="assets/css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="assets/css/timepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/datepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/select.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<section class="module-section">
+				<div class="container">
+					<form>
+						<div class="row">
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Standard Field</label>
+								<input type="text" class="form-control" placeholder="Please Select">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Focus</label>
+								<input type="text" class="form-control" placeholder="Please Select">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Completed</label>
+								<input type="text" class="form-control" placeholder="Please Select" value="User input">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Error</label>
+								<input type="text" class="form-control is-invalid" placeholder="Please Select" value="User input">
+								<div id="validationServerUsernameFeedback" class="invalid-feedback">
+									Invalid Input. Please try again.
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Verified</label>
+								<input type="text" class="form-control is-valid" placeholder="Please Select" value="User input">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Disabled</label>
+								<input type="text" class="form-control" placeholder="Please Select" disabled>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label required-label">Required</label>
+								<input type="text" class="form-control" placeholder="Please Select">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Text Label Before</label>
+								<div class="input-group">
+									<span class="input-group-text">Label</span>
+									<input type="text" class="form-control" placeholder="User input">
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Text Label After</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="User input">
+									<span class="input-group-text">Label</span>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label is-tooltip">
+									<span>With Explanation</span>
+									<a href="javascript://" class="tooltip-btn" data-bs-toggle="tooltip" title="With Explanation">?</a>
+								</label>
+								<input type="text" class="form-control" placeholder="Please Select" value="User input">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Icon Before</label>
+								<div class="input-group">
+									<span class="input-group-text is-icon">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#clock-fill"/>
+										</svg>
+									</span>
+									<input type="text" class="form-control" placeholder="User input">
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Icon Before</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="User input">
+									<span class="input-group-text is-icon">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#clock-fill"/>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<hr class="dividers">
+						<div class="row">
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">numerical</label>
+								<div class="input-group">
+									<span class="input-group-text is-icon">
+										<svg class="icon" width="16" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#dollar-symbol"/>
+										</svg>
+									</span>
+									<input type="text" class="form-control number-decimal" placeholder="Please Enter">
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">numerical With out Decimals</label>
+								<div class="input-group">
+									<span class="input-group-text is-icon">
+										<svg class="icon" width="16" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#dollar-symbol"/>
+										</svg>
+									</span>
+									<input type="text" class="form-control currency" placeholder="Please Enter">
+									<span class="input-group-text">.00</span>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Numerical Only Plain (Whole number, no decimals)</label>
+								<input type="text" class="form-control number-only" placeholder="Please Enter">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Numerical Only Plain (with 2 decimals)</label>
+								<input type="text" class="form-control number-decimal" placeholder="Please Enter">
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Days (whole numbers only, no decimals)</label>
+								<div class="input-group">
+									<input type="text" class="form-control number-only" placeholder="Please Enter">
+									<span class="input-group-text">
+										Days
+									</span>
+								</div>
+							</div>
+						</div>
+						<hr class="dividers">
+						<div class="row">
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Time</label>
+								<div class="input-group timepicker timepicker-inline-12">
+									<input type="text" class="form-control" id="form1" value="2:34 AM" placeholder="Please Enter">
+									<span class="input-group-text is-icon timepicker-toggle-button" data-mdb-toggle="timepicker">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#clock-fill"/>
+										</svg>
+									</span>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label">Calendar</label>
+								<div class="input-group datepicker" data-mdb-inline="true" data-mdb-format="mm/dd/yyyy">
+									<input type="text" class="form-control" id="exampleDatepicker2" placeholder="Please Enter">
+									<span class="input-group-text is-icon datepicker-toggle-button" data-mdb-toggle="datepicker">
+										<svg class="icon" width="30" height="30">
+											<use xlink:href="assets/img/sprite-icons.svg#calendar-fill"/>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</div>
+						<hr class="dividers">
+						<div class="row">
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<span class="form-label">Form Section Explanation</span>
+								<p class="text-secondary">Paragraph Text - Roboto 14 px Regular - #848898 Sed suscipit,
+									velit a malesuada viverra, ipsum odio aliquam leo, ac pretium sapien nisl in tellus.
+									Pellentesque sed nibh feugiat, rutrum risus a, finibus metus. Sed hendrerit
+									ullamcorper velit, ut rutrum purus egestas at. Nulla semper sem non tincidunt
+									volutpat. Cras finibus non leo sagittis vehicula. </p>
+							</div>
+							<div class="col-xl-8 col-12 mb-4">
+								<label class="form-label">Text Area</label>
+								<textarea class="form-control" placeholder="Please Select" aria-label="With textarea"></textarea>
+							</div>
+						</div>
+						<hr class="dividers">
+						<div class="row">
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Toggle (On)</label>
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+									<label class="form-check-label" for="flexSwitchCheckChecked">Option 1</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Toggle (Off)</label>
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+									<label class="form-check-label" for="flexSwitchCheckDefault"></label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Diasbled</label>
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+									<label class="form-check-label" for="flexSwitchCheckDisabled"></label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Radio (Selected)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Option 1
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Radio (Not Selected)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+									<label class="form-check-label" for="flexRadioDefault1">
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Radio (Disabled)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+									<label class="form-check-label" for="flexRadioDisabled">
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Check Box (Selected)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value id="flexCheckDefault" checked>
+									<label class="form-check-label" for="flexCheckDefault">
+										Option 1
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-4">
+								<label class="form-label mb-3">Check Box (Not Selected)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value id="flexCheckChecked">
+									<label class="form-check-label" for="flexCheckChecked">
+										Option 1
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-12 mb-4">
+								<label class="form-label mb-3">Check Box (Disabled)</label>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value id="flexCheckDisabled" disabled>
+									<label class="form-check-label" for="flexCheckDisabled">
+									</label>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-5">
+								<div class="d-flex flex-column">
+									<label class="form-label mb-3">Selected</label>
+									<div class="form-check-card checked">
+										<label class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+											<span class="form-check-label" for="flexRadioDefault3">
+												<span class="form-label">Volume Sold</span>
+												<span class="text-secondary">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Aliquam lectus libero, porta vel hendrerit sed,
+													pharetra non dui.</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-5">
+								<div class="d-flex flex-column">
+									<label class="form-label mb-3">hover</label>
+									<div class="form-check-card">
+										<label class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+											<span class="form-check-label" for="flexRadioDefault4">
+												<span class="form-label">Units Sold</span>
+												<span class="text-secondary">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Aliquam lectus libero, porta vel hendrerit sed,
+													pharetra non dui.</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-6 col-12 mb-5">
+								<div class="d-flex flex-column">
+									<label class="form-label mb-3">Default</label>
+									<div class="form-check-card">
+										<label class="form-check">
+											<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+											<span class="form-check-label" for="flexRadioDefault5">
+												<span class="form-label">Commissions Earned <span class="d-inline text-muted">(Advanced)</span></span>
+												<span class="text-secondary">Lorem ipsum dolor sit amet, consectetur
+													adipiscing elit. Aliquam lectus libero, porta vel hendrerit sed,
+													pharetra non dui.</span>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 mb-4">
+								<label class="form-label">Standard Dropdown</label>
+								<select class="select">
+									<option value disabled selected>Please Select</option>
+									<option value="1" data-mdb-icon="assets/img/grid-icon.svg">Option 1</option>
+									<option value="1" data-mdb-icon="assets/img/grid-sm-icon.svg">Option 1</option>
+									<option value="1" data-mdb-icon="assets/img/grid-row-icon.svg">Option 1</option>
+								</select>
+							</div>
+							<div class="col-lg-4 mb-4">
+								<label class="form-label">Standard Dropdown</label>
+								<select class="select">
+									<option value disabled selected>Please Select</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+								</select>
+							</div>
+							<div class="col-lg-4 mb-4">
+								<label class="form-label">Multi Option Dropdown</label>
+								<select class="select" data-mdb-placeholder="Please Select" multiple>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+							</div>
+							<div class="col-lg-4 mb-4">
+								<label class="form-label">Dropdown With Scroll</label>
+								<select class="select">
+									<option value disabled selected>Select All</option>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+									<option value="5">Option 5</option>
+									<option value="6">Option 6</option>
+								</select>
+							</div>
+							<div class="col-lg-4 mb-4">
+								<label class="form-label">With search</label>
+								<select class="select" data-mdb-filter="true" data-mdb-placeholder="Please Select" multiple>
+									<option value="1">Option 1</option>
+									<option value="2">Option 2</option>
+									<option value="3">Option 3</option>
+									<option value="4">Option 4</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-bg">
+				<img src="assets/img/footer-bg.svg" alt="image description">
+			</div>
+			<div class="footer-tile bg-white">
+				<div class="container">
+					<div class="row upper-footer">
+						<div class="col-xl-6 col-lg-5">
+							<div class="footer-block">
+								<a href="#" class="footer-logo">
+									<img src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+								</a>
+								<p>Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</p>
+								<ul class="socials">
+									<li>
+										<a href="#" target="_blank">
+											<svg width="12" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#facebook"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="24" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#twitter"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="23" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#linkedin"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="20" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#instagram"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="row">
+								<div class="col-lg-6 col-md-5 mb-md-0 mb-5">
+									<h4 class="footer-title">Useful Links</h4>
+									<ul class="footer-list">
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Services</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-7">
+									<h4 class="footer-title">Get in Touch</h4>
+									<ul class="footer-contact">
+										<li>
+											<svg class="icon" width="20" height="20">
+												<use xlink:href="assets/img/sprite-icons.svg#subtract"/>
+											</svg>
+											<div>
+												<span class="d-block fw-medium text-muted">Everynook</span>
+												<a href="https://goo.gl/maps/gSfNiLD9kwhipUn26" target="_blank">9175 Guilford Road, Suite 209, <br> Columbia, Maryland 21046</a>
+											</div>
+										</li>
+										<li>
+											<svg class="icon" width="22" height="22">
+												<use xlink:href="assets/img/sprite-icons.svg#phone"/>
+											</svg>
+											<a href="tel:8885026080">(888) 502-6080</a>
+										</li>
+										<li>
+											<svg class="icon" width="21" height="16">
+												<use xlink:href="assets/img/sprite-icons.svg#mail"/>
+											</svg>
+											<a href="mailto:info@everynook.com">info@everynook.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="under-footer">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. © 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+						<span class="copyright">&copy; 2021 EveryNook, LLC. All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	<script src="assets/js/jquery.main.js" defer></script>
+</body>
+
+</html>

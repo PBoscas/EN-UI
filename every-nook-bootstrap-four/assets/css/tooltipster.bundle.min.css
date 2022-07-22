@@ -1,0 +1,446 @@
+@-webkit-keyframes tooltipster-fading
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes tooltipster-fading
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tooltipster-rotating
+{
+    25%
+    {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    75%
+    {
+        -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+    }
+
+    to
+    {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@keyframes tooltipster-rotating
+{
+    25%
+    {
+        -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+    }
+
+    75%
+    {
+        -webkit-transform: rotate(2deg);
+                transform: rotate(2deg);
+    }
+
+    to
+    {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@-webkit-keyframes tooltipster-scaling
+{
+    50%
+    {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+
+    to
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes tooltipster-scaling
+{
+    50%
+    {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+
+    to
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.tooltipster-fall,
+.tooltipster-grow.tooltipster-show
+{
+    -moz-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+     -ms-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+}
+
+.tooltipster-base
+{
+    position: absolute;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    pointer-events: none;
+}
+
+.tooltipster-box
+{
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+}
+
+.tooltipster-content
+{
+    overflow: auto;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tooltipster-ruler
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.tooltipster-fade
+{
+    -webkit-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+
+    opacity: 0;
+}
+
+.tooltipster-fade.tooltipster-show
+{
+    opacity: 1;
+}
+
+.tooltipster-grow,
+.tooltipster-swing
+{
+    -webkit-transition-property: -webkit-transform;
+         -o-transition-property:      -o-transform;
+         -o-transition-property:         transform;
+            transition-property:         transform;
+            transition-property:         transform,-webkit-transform;
+}
+
+.tooltipster-grow
+{
+    -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+            transform: scale(0,0);
+
+    -webkit-backface-visibility: hidden;
+}
+
+.tooltipster-grow.tooltipster-show
+{
+    -webkit-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+         -o-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+            transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+    -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+            transform: scale(1,1);
+}
+
+.tooltipster-swing
+{
+    -webkit-transform: rotateZ(4deg);
+        -ms-transform: rotateZ(4deg);
+            transform: rotateZ(4deg);
+
+    opacity: 0;
+}
+
+.tooltipster-swing.tooltipster-show
+{
+    -webkit-transition-timing-function: cubic-bezier(.23,.635,.495,2.4);
+         -o-transition-timing-function: cubic-bezier(.23,.635,.495,2.4);
+            transition-timing-function: cubic-bezier(.23,.635,.495,2.4);
+    -webkit-transform: rotateZ(0);
+        -ms-transform: rotateZ(0);
+            transform: rotateZ(0);
+
+    opacity: 1;
+}
+
+.tooltipster-fall,
+.tooltipster-slide
+{
+    -webkit-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+         -o-transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+            transition-timing-function: cubic-bezier(.175,.885,.32,1.15);
+    -webkit-transition-property: top;
+         -o-transition-property: top;
+            transition-property: top;
+}
+
+.tooltipster-fall.tooltipster-initial
+{
+    top: 0!important;
+}
+
+.tooltipster-fall.tooltipster-dying
+{
+    top: 0!important;
+
+    -webkit-transition-property: all;
+         -o-transition-property: all;
+            transition-property: all;
+
+    opacity: 0;
+}
+
+.tooltipster-slide
+{
+    -webkit-transition-property: left;
+         -o-transition-property: left;
+            transition-property: left;
+}
+
+.tooltipster-slide.tooltipster-initial
+{
+    left: -40px!important;
+}
+
+.tooltipster-slide.tooltipster-dying
+{
+    left: 0!important;
+
+    -webkit-transition-property: all;
+         -o-transition-property: all;
+            transition-property: all;
+
+    opacity: 0;
+}
+
+.tooltipster-update-fade
+{
+    -webkit-animation: tooltipster-fading .4s;
+            animation: tooltipster-fading .4s;
+}
+
+.tooltipster-update-rotate
+{
+    -webkit-animation: tooltipster-rotating .6s;
+            animation: tooltipster-rotating .6s;
+}
+
+.tooltipster-update-scale
+{
+    -webkit-animation: tooltipster-scaling .6s;
+            animation: tooltipster-scaling .6s;
+}
+
+.tooltipster-sidetip .tooltipster-box
+{
+    border: 2px solid #000;
+    border-radius: 4px;
+    background: #565656;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box
+{
+    margin-top: 8px;
+}
+
+.tooltipster-sidetip.tooltipster-left .tooltipster-box
+{
+    margin-right: 8px;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-box
+{
+    margin-left: 8px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-box
+{
+    margin-bottom: 8px;
+}
+
+.tooltipster-sidetip .tooltipster-content
+{
+    line-height: 18px;
+
+    padding: 6px 14px;
+
+    color: #fff;
+}
+
+.tooltipster-sidetip .tooltipster-arrow
+{
+    position: absolute;
+
+    overflow: hidden;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow
+{
+    top: 0;
+
+    width: 20px;
+    height: 10px;
+    margin-left: -10px;
+}
+
+.tooltipster-sidetip.tooltipster-left .tooltipster-arrow
+{
+    top: 0;
+    right: 0;
+
+    width: 10px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow
+{
+    top: 0;
+    left: 0;
+
+    width: 10px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow
+{
+    bottom: 0;
+
+    width: 20px;
+    height: 10px;
+    margin-left: -10px;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background,
+.tooltipster-sidetip .tooltipster-arrow-border
+{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background
+{
+    border: 10px solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background
+{
+    top: 3px;
+    left: 0;
+
+    border-bottom-color: #565656;
+}
+
+.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-background
+{
+    top: 0;
+    left: -3px;
+
+    border-left-color: #565656;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background
+{
+    top: 0;
+    left: 3px;
+
+    border-right-color: #565656;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background
+{
+    top: -3px;
+    left: 0;
+
+    border-top-color: #565656;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-border
+{
+    top: 0;
+    left: 0;
+
+    border: 10px solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border
+{
+    border-bottom-color: #000;
+}
+
+.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-border
+{
+    border-left-color: #000;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border
+{
+    border-right-color: #000;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border
+{
+    border-top-color: #000;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-uncropped
+{
+    position: relative;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-uncropped
+{
+    top: -10px;
+}
+
+.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-uncropped
+{
+    left: -10px;
+}

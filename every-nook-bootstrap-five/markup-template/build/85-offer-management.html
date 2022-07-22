@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Offer Management</title>
+	<link media="all" rel="stylesheet" href="assets/css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="assets/css/timepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/datepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/select.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header-wrapper">
+					<a href="#" class="logo">
+						<img class="logo__desktop" src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+						<img class="logo__mobile" src="assets/img/logo-mobile.svg" width="34" height="33" alt="EveryNook">
+					</a>
+					<div class="main-menu">
+						<nav class="nav">
+							<ul>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#wrench"/>
+										</svg>
+										<span>Tools</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Manage Your Goals</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+														</svg>
+													</span>
+													<span>Shared Goals</span>
+													<span class="subtitle">View goals shared in the community, your brokerage or your team, if applicable.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#community2"/>
+																	</svg>
+																</span>
+																<span>Community Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#building2"/>
+																	</svg>
+																</span>
+																<span>Brokerage Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+																	</svg>
+																</span>
+																<span>Team Goals</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#plus"/>
+														</svg>
+													</span>
+													<span>Add A New Goal</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart2"/>
+										</svg>
+										<span>Insights</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+														</svg>
+													</span>
+													<span>Your Business Insights</span>
+													<span class="subtitle">Analytical breakdown of your sales trends, achievments and forecast of your future performance.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul class="sub-list">
+														<li>
+															<a href="#">Production Insights</a>
+														</li>
+														<li>
+															<a href="#">Your Awards</a>
+														</li>
+														<li>
+															<a href="#">Ranking</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#building2"/>
+														</svg>
+													</span>
+													<span>Brokerage Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community2"/>
+														</svg>
+													</span>
+													<span>Team Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#pin"/>
+														</svg>
+													</span>
+													<span>Area Insights</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media"/>
+										</svg>
+										<span>Collaboration</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Agent Collaboration</span>
+													<span class="subtitle">Share your experiences with other agents in the community and showcase your favorite peers.</span>
+												</a>
+												<ul class="sub-list">
+													<li>
+														<a href="#">Reviews</a>
+													</li>
+													<li>
+														<a href="#">Endorsements</a>
+													</li>
+													<li>
+														<a href="#">Favorites</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community"/>
+														</svg>
+													</span>
+													<span>Invite Other Agents</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<ul class="navbar-users">
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 4C1 2.34315 2.34315 1 4 1H19C20.6569 1 22 2.34315 22 4V16H4C2.34315 16 1 14.6569 1 13V4Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+										<path class="fill" d="M14.3308 20.9979L10.9998 18C9.79981 16.92 13.8331 15.55 15.9998 15V20.2546C15.9998 21.1204 14.9744 21.5771 14.3308 20.9979Z" fill="#AAB0BB"/>
+										<rect x="5" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+										<rect x="10" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+										<rect x="15" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB"/>
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messages settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL Messages (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Messages</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1127_15913" fill="white">
+											<path d="M8.5 18C9.875 18 11 17.1 11 16H6C6 17.1 7.125 18 8.5 18Z"/>
+										</mask>
+										<path class="fill" d="M11 16H14C14 14.3431 12.6569 13 11 13V16ZM6 16V13C4.34315 13 3 14.3431 3 16H6ZM8.5 21C10.8726 21 14 19.347 14 16H8C8 15.468 8.27792 15.1608 8.39154 15.0699C8.50218 14.9814 8.54819 15 8.5 15V21ZM11 13H6V19H11V13ZM3 16C3 19.347 6.12744 21 8.5 21V15C8.45181 15 8.49782 14.9814 8.60846 15.0699C8.72208 15.1608 9 15.468 9 16H3Z" fill="#AAB0BB" mask="url(#path-1-inside-1_1127_15913)"/>
+										<path d="M14 6.50018V9.58596C14 10.1164 14.2107 10.6251 14.5858 11.0002L15.2286 10.3574L14.5858 11.0002L16 12.4144L16 14.0002H1V12.4144L2.41421 11.0002C2.78929 10.6251 3 10.1164 3 9.58596V6.50018C3 3.8889 4.75475 1.77958 7.21551 1.17691C8.07302 1.00807 8.92691 1.0081 9.78451 1.17691C12.2453 1.77959 14 3.8889 14 6.50018Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage"/>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL NOTIFICATIONS (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Notifications</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="assets/img/img-user02.png" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+								</button>
+								<div class="dropdown-menu">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option-userpic">
+												<img src="assets/img/img-user02.png" height="40" width="40" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+											</div>
+											<div class="profile-option-info">
+												<h6 class="fw-bold f-ubuntu">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#dashboard"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Dashboard</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#settings"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#log-out"/>
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="head-section pb-4">
+				<div class="container">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Offers</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Defaults and Preferences</li>
+						</ol>
+					</nav>
+					<div class="section-row">
+						<div class="section-row-headtitle">
+							<h1 class="title-section f-ubuntu text-body h1-lg mb-0">
+								<img class="title-section-icon" src="assets/img/for-sale-icon.svg" alt="image description">
+								<span>Everynook Offers</span>
+							</h1>
+						</div>
+						<a href="#" class="btn btn-primary btn-width">Submit An Offer</a>
+					</div>
+				</div>
+			</section>
+			<div class="dashboard-menu">
+				<div class="container">
+					<ul class="dashboard-menu-list text-uppercase">
+						<li class="active">
+							<a href="#!" class="title-4">Offer Management</a>
+						</li>
+						<li>
+							<a href="#!" class="title-4">Settings</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section class="section pt-4">
+				<div class="container">
+					<form class="filter-actions">
+						<div class="filter-head">
+							<div class="filter-head-title">
+								<h4 class="filter-subtitle">Offers</h4>
+								<span class="d-md-inline fs-6">Showing (<strong>4 of 15</strong>)</span>
+							</div>
+							<div class="filter-drop-row">
+								<div class="filter-drop">
+									<button class="btn-filter" type="button" data-bs-toggle="modal" data-bs-target="#filter">
+										<span class="d-lg-block d-none">Filter</span>
+										<svg class="dropdown-toggle-icon ms-lg-1 ms-0" width="20" height="18">
+											<use xlink:href="assets/img/sprite-icons.svg#filter"/>
+										</svg>
+									</button>
+								</div>
+								<div class="filter-drop dropdown">
+									<button class="btn-filter dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<span class="d-lg-block d-none">Sort By</span>
+										<svg class="dropdown-toggle-icon ms-lg-1 ms-0" width="16" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#sort-arrows"/>
+										</svg>
+									</button>
+									<ul class="dropdown-menu dropdown-menu-lg-end">
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="18">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar-sm"/>
+												</svg>
+												<span>Date NEwest</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="18">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar-sm"/>
+												</svg>
+												<span>Date Oldest</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+												</svg>
+												<span>Progress (High)</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up"/>
+												</svg>
+												<span>Progress (Low)</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#a"/>
+												</svg>
+												<span>Name (A to z)</span>
+											</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">
+												<svg class="dropdown-icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#a"/>
+												</svg>
+												<span>Name (Z to A)</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="filter-actions-select-btns">
+							<div class="selections">
+								<button class="selections-btn active">Your Listing Offers</button>
+								<button class="selections-btn">Your Buyer Offers</button>
+							</div>
+						</div>
+					</form>
+					<div class="table-wrapper">
+						<ul class="row-list secondary">
+							<li>
+								<div class="property-card single-card card-tile">
+									<div class="property-card-visual">
+										<strong class="premarket-tag fs-6">Pre-Market Exclusive</strong>
+										<img class="img-cover" src="assets/img/img-property-07.jpg" alt="image description" srcset="assets/img/img-property-07@2x.jpg 2x">
+									</div>
+									<div class="property-card-content offer-content">
+										<div class="alert-bar top">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#fff">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar2"/>
+												</svg>
+												<span>Deadline set for <strong>4/22/2022</strong> at <strong>5:00 pm</strong></span>
+											</span>
+											<ul class="alert-bar-list d-lg-flex d-none">
+												<li><a href="#" class="detail-btn">Details</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">Collaborators</a></li>
+											</ul>
+										</div>
+										<div class="property-card-header justify-content-start flex-wrap">
+											<span class="tag-tile">Single family home</span>
+											<span class="tag-tile">1987</span>
+											<span class="tag-tile">32 dom</span>
+										</div>
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+										</div>
+										<div class="offers-btns">
+											<a href="#" class="status-tag bg-primary">3 Offers Recieved</a>
+										</div>
+										<div class="limited-text">
+											<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding, windows and roof. Interior featurers large rooms and a pellet stove that heats the entire house. Kitchen has new cabinets, countertop and floors. Boiler, water heater and washer/dryer are 1 year old. Large back yard with 2sheds is perfect for entertaining. Attic with access has plenty of room for </p>
+										</div>
+										<div class="quick-fact secondary">
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="32" height="26" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#bed"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">3.5</strong>
+												<span>Beds</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="26" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#toilet"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2.5</strong>
+												<span>Baths</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="27" height="27" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#blueprint"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">6,450</strong>
+												<span>Sq. Ft.</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">.54</strong>
+												<span>Acres</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Levels</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="31" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#garage"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Parking</span>
+											</div>
+										</div>
+										<div class="option-dropdown dropdown d-lg-none">
+											<button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Options</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item detail-btn" href="#">
+													<span class="icon">
+														<img src="assets/img/document.svg" alt="image description">
+													</span>
+													<span>Details</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/dollar-symbol.svg" alt="image description">
+													</span>
+													<span>Offers</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/customer.svg" alt="image description">
+													</span>
+													<span>Collaborators</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="details-panel">
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+										</div>
+										<div class="details-panel-wrap">
+											<div class="content-wrap">
+												<div class="terms-block">
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>Yes, 1/1/2022 at 2:00 pm EST</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$5,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$10,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Conventional</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Waived</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Standard</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>30 Days</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>No</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-panel-buttons">
+											<div class="btn-actions">
+												<a href="#" class="btn-actions-btn">Edit Details</a>
+											</div>
+											<a href="#" class="details-panel-close">Close</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="property-card single-card card-tile">
+									<div class="property-card-visual">
+										<strong class="premarket-tag fs-6">Active</strong>
+										<img class="img-cover" src="assets/img/img-property-14.jpg" alt="image description" srcset="assets/img/img-property-14@2x.jpg 2x">
+									</div>
+									<div class="property-card-content offer-content">
+										<div class="alert-bar top">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#B0B7C4">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar2"/>
+												</svg>
+												<span>Set A Deadline</span>
+											</span>
+											<ul class="alert-bar-list d-lg-flex d-none">
+												<li><a href="#" class="detail-btn">Details</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">Collaborators</a></li>
+											</ul>
+										</div>
+										<div class="property-card-header justify-content-start flex-wrap">
+											<span class="tag-tile">Single family home</span>
+											<span class="tag-tile">1987</span>
+											<span class="tag-tile">32 dom</span>
+										</div>
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Coburn Hollow Road, Peoria, IL 61602</a>
+										</div>
+										<div class="offers-btns">
+											<a href="#" class="status-tag bg-gray">No Offers Recieved</a>
+										</div>
+										<div class="limited-text">
+											<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding, windows and roof. Interior featurers large rooms and a pellet stove that heats the entire house. Kitchen has new cabinets, countertop and floors. Boiler, water heater and washer/dryer are 1 year old. Large back yard with 2sheds is perfect for entertaining. Attic with access has plenty of room for </p>
+										</div>
+										<div class="quick-fact secondary">
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="32" height="26" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#bed"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">3.5</strong>
+												<span>Beds</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="26" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#toilet"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2.5</strong>
+												<span>Baths</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="27" height="27" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#blueprint"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">6,450</strong>
+												<span>Sq. Ft.</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">.54</strong>
+												<span>Acres</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Levels</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="31" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#garage"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Parking</span>
+											</div>
+										</div>
+										<div class="option-dropdown dropdown d-lg-none">
+											<button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Options</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item detail-btn" href="#">
+													<span class="icon">
+														<img src="assets/img/document.svg" alt="image description">
+													</span>
+													<span>Details</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/dollar-symbol.svg" alt="image description">
+													</span>
+													<span>Offers</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/customer.svg" alt="image description">
+													</span>
+													<span>Collaborators</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="details-panel">
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+										</div>
+										<div class="details-panel-wrap">
+											<div class="content-wrap">
+												<div class="terms-block">
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>Yes, 1/1/2022 at 2:00 pm EST</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$5,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$10,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Conventional</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Waived</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Standard</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>30 Days</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>No</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-panel-buttons">
+											<div class="btn-actions">
+												<a href="#" class="btn-actions-btn">Edit Details</a>
+											</div>
+											<a href="#" class="details-panel-close">Close</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="property-card single-card card-tile">
+									<div class="property-card-visual">
+										<strong class="premarket-tag fs-6">Office Exclusive</strong>
+										<img class="img-cover" src="assets/img/img-property-19.jpg" alt="image description" srcset="assets/img/img-property-19@2x.jpg 2x">
+									</div>
+									<div class="property-card-content offer-content">
+										<div class="alert-bar top">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#B0B7C4">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar2"/>
+												</svg>
+												<span>Set A Deadline</span>
+											</span>
+											<ul class="alert-bar-list d-lg-flex d-none">
+												<li><a href="#" class="detail-btn">Details</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">Collaborators</a></li>
+											</ul>
+										</div>
+										<div class="property-card-header justify-content-start flex-wrap">
+											<span class="tag-tile">Single family home</span>
+											<span class="tag-tile">1987</span>
+											<span class="tag-tile">32 dom</span>
+										</div>
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">206 Leverton Cove Road, Montague, MA 01315</a>
+										</div>
+										<div class="offers-btns">
+											<a href="#" class="status-tag bg-primary">1 Offer Recieved</a>
+										</div>
+										<div class="limited-text">
+											<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding, windows and roof. Interior featurers large rooms and a pellet stove that heats the entire house. Kitchen has new cabinets, countertop and floors. Boiler, water heater and washer/dryer are 1 year old. Large back yard with 2sheds is perfect for entertaining. Attic with access has plenty of room for </p>
+										</div>
+										<div class="alert-bar alert-show active bg-success">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#fff">
+													<use xlink:href="assets/img/sprite-icons.svg#edit2"/>
+												</svg>
+												<span>You’ve Received <strong>1 New Offer</strong></span>
+											</span>
+											<ul class="alert-bar-list">
+												<li><a href="#"><strong>View</strong></a></li>
+												<li><a href="#" class="summary-btn">Summary</a></li>
+												<li><a href="#" class="dismiss-btn">Dismiss</a></li>
+											</ul>
+										</div>
+										<div class="quick-fact secondary">
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="32" height="26" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#bed"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">3.5</strong>
+												<span>Beds</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="26" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#toilet"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2.5</strong>
+												<span>Baths</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="27" height="27" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#blueprint"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">6,450</strong>
+												<span>Sq. Ft.</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">.54</strong>
+												<span>Acres</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Levels</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="31" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#garage"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Parking</span>
+											</div>
+										</div>
+										<div class="option-dropdown dropdown d-lg-none">
+											<button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Options</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item detail-btn" href="#">
+													<span class="icon">
+														<img src="assets/img/document.svg" alt="image description">
+													</span>
+													<span>Details</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/dollar-symbol.svg" alt="image description">
+													</span>
+													<span>Offers</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/customer.svg" alt="image description">
+													</span>
+													<span>Collaborators</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="details-panel">
+										<div class="details-panel-wrap">
+											<div class="content-wrap">
+												<div class="text-facts text-dark-90">
+													<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+												</div>
+												<div class="terms-block full-unit">
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Offer Price:</dt>
+															<dd>$250,000 (escalates to $275,000 by $10,000)</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Seller Credit:</dt>
+															<dd>$5,000</dd>
+														</dl>
+														<dl>
+															<dt>EMD:</dt>
+															<dd>$10,000</dd>
+														</dl>
+														<dl>
+															<dt>Financing:</dt>
+															<dd>Conventional</dd>
+														</dl>
+														<dl>
+															<dt>Appraisal:</dt>
+															<dd>Waived</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Settlement:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Inspections:</dt>
+															<dd>Standard</dd>
+														</dl>
+														<dl>
+															<dt>Rent Back:</dt>
+															<dd>30 Days</dd>
+														</dl>
+														<dl>
+															<dt>Home Sale Cont.:</dt>
+															<dd>No</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+											<div class="rating-block">
+												<span class="rating-block-row">Buyer’s Agent</span>
+												<div class="rating-block-img">
+													<img class="img-cover" src="assets/img/userpic-14.jpg" width="100" alt="image description" srcset="assets/img/userpic-14@2x.jpg 2x">
+												</div>
+												<span class="rating-block-agent">George Biddle</span>
+												<span class="rating-block-row mb-2"><a href="#">Cummings & Co. Realtors</a></span>
+												<ul class="rating">
+													<li class="checked">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#star"/>
+														</svg>
+													</li>
+													<li class="checked">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#star"/>
+														</svg>
+													</li>
+													<li class="checked">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#star"/>
+														</svg>
+													</li>
+													<li class="checked">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#star"/>
+														</svg>
+													</li>
+													<li>
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#star"/>
+														</svg>
+													</li>
+												</ul>
+												<a href="#" class="link-review text-xs f-nunito">68 Reviews</a>
+											</div>
+										</div>
+										<div class="details-panel-buttons">
+											<div class="btn-actions">
+												<a href="#" class="btn-actions-btn active">View Offer Details</a>
+												<a href="#" class="btn-actions-btn">View All Offers</a>
+											</div>
+											<a href="#" class="details-panel-close">Close</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="property-card single-card card-tile">
+									<div class="property-card-visual">
+										<strong class="premarket-tag fs-6">Active</strong>
+										<img class="img-cover" src="assets/img/img-property-20.jpg" alt="image description" srcset="assets/img/img-property-20@2x.jpg 2x">
+									</div>
+									<div class="property-card-content offer-content">
+										<div class="alert-bar top">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#B0B7C4">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar2"/>
+												</svg>
+												<span>Set A Deadline</span>
+											</span>
+											<ul class="alert-bar-list d-lg-flex d-none">
+												<li><a href="#" class="detail-btn">Details</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">Collaborators</a></li>
+											</ul>
+										</div>
+										<div class="property-card-header justify-content-start flex-wrap">
+											<span class="tag-tile">Single family home</span>
+											<span class="tag-tile">1987</span>
+											<span class="tag-tile">32 dom</span>
+										</div>
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">1402 Glory Road, Nashville, TN 37209</a>
+										</div>
+										<div class="offers-btns">
+											<a href="#" class="status-tag bg-gray">No Offers Received</a>
+										</div>
+										<div class="limited-text">
+											<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding, windows and roof. Interior featurers large rooms and a pellet stove that heats the entire house. Kitchen has new cabinets, countertop and floors. Boiler, water heater and washer/dryer are 1 year old. Large back yard with 2sheds is perfect for entertaining. Attic with access has plenty of room for </p>
+										</div>
+										<div class="alert-bar alert-show active bg-danger">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#fff">
+													<use xlink:href="assets/img/sprite-icons.svg#warning"/>
+												</svg>
+												<span>Additional <strong>Listing Alert</strong> Text</span>
+											</span>
+											<ul class="alert-bar-list">
+												<li><a href="#"><strong>View</strong></a></li>
+												<li><a href="#" class="dismiss-btn">Dismiss</a></li>
+											</ul>
+										</div>
+										<div class="quick-fact secondary">
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="32" height="26" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#bed"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">3.5</strong>
+												<span>Beds</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="26" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#toilet"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2.5</strong>
+												<span>Baths</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="27" height="27" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#blueprint"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">6,450</strong>
+												<span>Sq. Ft.</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">.54</strong>
+												<span>Acres</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Levels</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="31" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#garage"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Parking</span>
+											</div>
+										</div>
+										<div class="option-dropdown dropdown d-lg-none">
+											<button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Options</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item detail-btn" href="#">
+													<span class="icon">
+														<img src="assets/img/document.svg" alt="image description">
+													</span>
+													<span>Details</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/dollar-symbol.svg" alt="image description">
+													</span>
+													<span>Offers</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/customer.svg" alt="image description">
+													</span>
+													<span>Collaborators</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="details-panel">
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+										</div>
+										<div class="details-panel-wrap">
+											<div class="content-wrap">
+												<div class="terms-block">
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>Yes, 1/1/2022 at 2:00 pm EST</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$5,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$10,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Conventional</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Waived</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Standard</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>30 Days</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>No</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-panel-buttons">
+											<div class="btn-actions">
+												<a href="#" class="btn-actions-btn">Edit Details</a>
+											</div>
+											<a href="#" class="details-panel-close">Close</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="property-card single-card card-tile">
+									<div class="property-card-visual">
+										<strong class="premarket-tag fs-6">Active</strong>
+										<img class="img-cover" src="assets/img/img-property-21.jpg" alt="image description" srcset="assets/img/img-property-21@2x.jpg 2x">
+									</div>
+									<div class="property-card-content offer-content">
+										<div class="alert-bar top">
+											<span class="timeline">
+												<svg class="timeline-icon" width="30" height="30" fill="#B0B7C4">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar2"/>
+												</svg>
+												<span>Set A Deadline</span>
+											</span>
+											<ul class="alert-bar-list d-lg-flex d-none">
+												<li><a href="#" class="detail-btn">Details</a></li>
+												<li><a href="#">Offers</a></li>
+												<li><a href="#">Collaborators</a></li>
+											</ul>
+										</div>
+										<div class="property-card-header justify-content-start flex-wrap">
+											<span class="tag-tile">Single family home</span>
+											<span class="tag-tile">1987</span>
+											<span class="tag-tile">32 dom</span>
+										</div>
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">1536 Goldleaf Lane, Rochelle Park, NJ 07662</a>
+										</div>
+										<div class="offers-btns">
+											<a href="#" class="status-tag bg-danger">Offers NOT Enabled</a>
+										</div>
+										<div class="limited-text">
+											<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding, windows and roof. Interior featurers large rooms and a pellet stove that heats the entire house. Kitchen has new cabinets, countertop and floors. Boiler, water heater and washer/dryer are 1 year old. Large back yard with 2sheds is perfect for entertaining. Attic with access has plenty of room for </p>
+										</div>
+										<div class="quick-fact secondary">
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="32" height="26" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#bed"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">3.5</strong>
+												<span>Beds</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="26" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#toilet"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2.5</strong>
+												<span>Baths</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="27" height="27" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#blueprint"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">6,450</strong>
+												<span>Sq. Ft.</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">.54</strong>
+												<span>Acres</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="36" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#levels"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Levels</span>
+											</div>
+											<div class="quick-fact-item">
+												<span class="quick-fact-icon">
+													<svg width="31" height="30" fill="#A3A5B0">
+														<use xlink:href="assets/img/sprite-icons.svg#garage"/>
+													</svg>
+												</span>
+												<strong class="quick-fact-num fs-6">2</strong>
+												<span>Parking</span>
+											</div>
+										</div>
+										<div class="option-dropdown dropdown d-lg-none">
+											<button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Options</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item detail-btn" href="#">
+													<span class="icon">
+														<img src="assets/img/document.svg" alt="image description">
+													</span>
+													<span>Details</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/dollar-symbol.svg" alt="image description">
+													</span>
+													<span>Offers</span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<span class="icon">
+														<img src="assets/img/customer.svg" alt="image description">
+													</span>
+													<span>Collaborators</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="details-panel">
+										<div class="text-facts text-dark-90">
+											<a href="#" class="link fw-medium">3907 Lynn Street, Boston, MA 02210</a>
+										</div>
+										<div class="details-panel-wrap">
+											<div class="content-wrap">
+												<div class="terms-block">
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>Yes, 1/1/2022 at 2:00 pm EST</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$5,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>$10,000</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Conventional</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Waived</dd>
+														</dl>
+													</div>
+													<div class="terms-block-unit">
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>8/13/2020</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>Standard</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>30 Days</dd>
+														</dl>
+														<dl>
+															<dt>Term:</dt>
+															<dd>No</dd>
+														</dl>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-panel-buttons">
+											<div class="btn-actions">
+												<a href="#" class="btn-actions-btn">Edit Details</a>
+											</div>
+											<a href="#" class="details-panel-close">Close</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="d-xl-flex align-items-center justify-content-end">
+							<ul class="pagination justify-content-center pagination-lg mb-0">
+								<li class="page-item d-xl-block d-none">
+									<a class="page-link" href="#" aria-label="Previous">
+										<svg class="page-link-icon" width="20" height="16">
+											<use xlink:href="assets/img/sprite-icons.svg#double-arrow-prev"/>
+										</svg>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<svg class="page-link-icon" width="12" height="16">
+											<use xlink:href="assets/img/sprite-icons.svg#arrow-prev"/>
+										</svg>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item active"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item d-xl-block d-none"><a class="page-link" href="#">5</a></li>
+								<li class="page-item d-xl-block d-none"><a class="page-link" href="#">6</a></li>
+								<li class="page-item d-xl-block d-none"><a class="page-link" href="#">7</a></li>
+								<li class="page-item d-xl-block d-none"><a class="page-link" href="#">8</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<svg class="page-link-icon" width="12" height="16">
+											<use xlink:href="assets/img/sprite-icons.svg#arrow-next"/>
+										</svg>
+									</a>
+								</li>
+								<li class="page-item d-xl-block d-none">
+									<a class="page-link" href="#" aria-label="Next">
+										<svg class="page-link-icon" width="20" height="16">
+											<use xlink:href="assets/img/sprite-icons.svg#double-arrow-next"/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="modal fade" id="listing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title mb-0">Choose Your Listing Broker</h2>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body overflow-visible">
+						<p class="text-secondary mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus libero, porta vel hendrerit sed, pharetra non dui. Nam et mi eget risus gravida ultricies ac ullamcorper eros. Mauris quis rutrum lacus. Nulla sed elit faucibus, ullamcorper ipsum eu, pharetra lorem.</p>
+						<form action="#">
+							<div class="row">
+								<div class="col-lg-10 pe-lg-5">
+									<label class="form-label">Choose Who To Share This Goal With</label>
+									<div class="input-group">
+										<input type="text" class="form-control dropdown-toggle" data-bs-toggle="dropdown" placeholder="User input">
+										<button class="input-group-text is-icon">
+											<svg class="icon" width="30" height="30">
+												<use xlink:href="assets/img/sprite-icons.svg#search"/>
+											</svg>
+										</button>
+										<ul class="dropdown-menu dropdown-search-menu">
+											<li class="memder-item">
+												<div class="member-tile">
+													<span class="member-tile-img bg-primary">
+														<svg width="20" height="20" fill="#ffffff">
+															<use xlink:href="assets/img/sprite-icons.svg#plus-symbol"/>
+														</svg>
+													</span>
+													<div class="member-tile-info">
+														<span class="text-dark">Need to Add A New Contact?</span>
+													</div>
+												</div>
+												<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-member">ADd New</button>
+											</li>
+											<li class="memder-item">
+												<div class="member-tile">
+													<img class="member-tile-img img-fluid" src="assets/img/userpic-20.jpg" srcset="assets/img/userpic-20@2x.jpg 2x" alt="image description">
+													<div class="member-tile-info">
+														<strong class="text-dark">Harry A. Thomas</strong>
+														<span>Keller Williams</span>
+													</div>
+												</div>
+												<button class="btn btn-accent-gray">Select</button>
+											</li>
+											<li class="memder-item">
+												<div class="member-tile">
+													<img class="member-tile-img img-fluid" src="assets/img/userpic-19.jpg" srcset="assets/img/userpic-19@2x.jpg 2x" alt="image description">
+													<div class="member-tile-info">
+														<strong class="text-dark">John T. Jingleheimer</strong>
+														<span>Keller Williams</span>
+													</div>
+												</div>
+												<button class="btn btn-accent-gray">Select</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer flex-sm-row flex-column">
+						<button type="button" class="btn btn-primary btn-width">Default</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer-bg">
+				<img src="assets/img/footer-bg.svg" alt="image description">
+			</div>
+			<div class="footer-tile bg-white">
+				<div class="container">
+					<div class="row upper-footer">
+						<div class="col-xl-6 col-lg-5">
+							<div class="footer-block">
+								<a href="#" class="footer-logo">
+									<img src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+								</a>
+								<p>Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</p>
+								<ul class="socials">
+									<li>
+										<a href="#" target="_blank">
+											<svg width="12" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#facebook"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="24" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#twitter"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="23" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#linkedin"/>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="20" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#instagram"/>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="row">
+								<div class="col-lg-6 col-md-5 mb-md-0 mb-5">
+									<h4 class="footer-title">Useful Links</h4>
+									<ul class="footer-list">
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Services</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-7">
+									<h4 class="footer-title">Get in Touch</h4>
+									<ul class="footer-contact">
+										<li>
+											<svg class="icon" width="20" height="20">
+												<use xlink:href="assets/img/sprite-icons.svg#subtract"/>
+											</svg>
+											<div>
+												<span class="d-block fw-medium text-muted">Everynook</span>
+												<a href="https://goo.gl/maps/gSfNiLD9kwhipUn26" target="_blank">9175 Guilford Road, Suite 209, <br> Columbia, Maryland 21046</a>
+											</div>
+										</li>
+										<li>
+											<svg class="icon" width="22" height="22">
+												<use xlink:href="assets/img/sprite-icons.svg#phone"/>
+											</svg>
+											<a href="tel:8885026080">(888) 502-6080</a>
+										</li>
+										<li>
+											<svg class="icon" width="21" height="16">
+												<use xlink:href="assets/img/sprite-icons.svg#mail"/>
+											</svg>
+											<a href="mailto:info@everynook.com">info@everynook.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="under-footer">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. © 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+						<span class="copyright">&copy; 2021 EveryNook, LLC. All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	<script src="assets/js/jquery.main.js" defer></script>
+</body>
+
+</html>

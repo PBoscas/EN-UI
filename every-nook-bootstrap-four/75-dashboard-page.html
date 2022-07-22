@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Every Nook</title>
+	<link rel="stylesheet" href="assets/css/mmenu.css">
+	<link rel="stylesheet" href="assets/css/cropper.min.css">
+	<link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/dropzone.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/nouislider.min.css">
+	<link rel="stylesheet" href="assets/css/select2.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="assets/img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="assets/img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list nav-secondary-list">
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart" />
+										</svg>
+									</span>
+									<span class="nav-text">Insights</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#covid" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Covid-19 Market Update </span>
+													<span>In-depth analysis of both the overall and personal impact of the Covid-19 virus on the real estate market.</span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="23">
+																<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Covid-19 Market Impact</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Covid-19 impact by location</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span>
+												<span class="ellipse-ico">
+													<svg width="20" height="16">
+														<use xlink:href="assets/img/sprite-icons.svg#bar-graph" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Personal Market Stats </span>
+													<span>Analytical breakdown of your sales trends, achievments and forecast of your future performance. </span>
+												</span>
+											</span>
+											<ul>
+												<li>
+													<a href="#" class="align-items-center">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Your Personal Production</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Industry Ranking</span>
+															<span>How do you stack up among the other real estate professionals in the area?</span>
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="ellipse-ico">
+															<svg width="20" height="20">
+																<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+															</svg>
+														</span>
+														<span class="menu-item__inner">
+															<span class="label-title">Best & Worst</span>
+															<span>Visual insights into the range and scale of your sales.</span>
+														</span>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+									</span>
+									<span class="nav-text">Collaboration</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#reviews-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Agent Reviews</span>
+													<span>Provide insights into your experiences with other agents and keep private notes on transactions for future reference.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="21" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#invite-agent" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Invite Agents</span>
+													<span>Spread the word about our community. The more agents who join, the more accurate and useful our insights will be for you and them.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#tools-icon" />
+										</svg>
+									</span>
+									<span class="nav-text">Tools</span>
+								</a>
+								<div class="drop-hover-mmenu drop-hover-menu">
+									<ul>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#profile-settings" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Edit Your Profile</span>
+													<span>Tell us about yourself so other agents in the community can have a better appreciation of who you are and what you do.</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#plane" />
+													</svg>
+												</span>
+												<span class="menu-item__inner">
+													<span class="label-title">Suggest Features or Changes</span>
+													<span>We're building this community for you! Let us know how we can improve and what feaures you would like to see us add as we grow with you.</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="assets/img/sprite-icons.svg#message-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="assets/img/sprite-icons.svg#notification-ico" />
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#group-tours" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="assets/img/sprite-icons.svg#layers" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="assets/img/img118.jpg" srcset="assets/img/img118@2x.jpg 2x" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#share" />
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#ico-plus" />
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="assets/img/sprite-icons.svg#logout" />
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="dashboard-section">
+				<div class="container container__container-flexibly">
+					<div class="dashboard-head">
+						<div class="dashboard-head__desc">
+							<h4 class="dashboard-head__head-title text-nunito">Welcome Randy!</h4>
+							<span class="dashboard-head__info-text">This is your dashboard, we’ll sort the relevant information for you</span>
+						</div>
+						<div class="dashboard-head__actions">
+							<span class="label-text text-body text-nunito">Dashboard View</span>
+							<ul class="dashboard-list">
+								<li class="dashboard-list__item">
+									<a href="#" class="ellipse-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart-bottom" />
+										</svg>
+									</a>
+								</li>
+								<li class="dashboard-list__item">
+									<a href="#" class="ellipse-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#ranking" />
+										</svg>
+									</a>
+								</li>
+								<li class="dashboard-list__item">
+									<a href="#" class="ellipse-ico">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#best-worst" />
+										</svg>
+									</a>
+								</li>
+								<li class="dashboard-list__item">
+									<a href="#" class="ellipse-ico user-icon">
+										<svg width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#personal-icon" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-content-wrap">
+						<aside class="sidebar profile-sidebar">
+							<div class="dashboard-holder">
+								<div class="dashboard-holder__item">
+									<div class="profile-aside">
+										<div class="profile-view">
+											<h6 class="profile-view__head-title h7 text-nunito">Profile Summary</h6>
+											<div class="profile-view__inner-wrap">
+												<div class="profile-view__agent-img">
+													<div class="thumb-cover">
+														<img src="assets/img/agent-avatar.jpg" srcset="assets/img/agent-avatar@2x.jpg 2x" width="150" alt="image description">
+													</div>
+													<span class="position-label">Agent</span>
+												</div>
+												<div class="profile-view__about-info">
+													<h4 class="profile-view__title text-nunito">Randy Owens</h4>
+													<span class="profile-view__position">Red Cedar Real Estate</span>
+													<div class="rating-info">
+														<div class="rating-info__current-view">
+															<svg class="rating-info__icon" width="15" height="15" fill="#1AACFF">
+																<use xlink:href="assets/img/sprite-icons.svg#star" />
+															</svg>
+															<span>4.8</span>
+														</div>
+														<a href="#" class="link-title  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE YOUR REVIEWS">62 Reviews</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="alerts-holder">
+											<div class="alerts-holder__item">
+												<h4 class="alerts-holder__title text-nunito">Alerts</h4>
+												<ul class="aside-list">
+													<li class="aside-list__item">
+														<a href="#" class="alerts-link">
+															<span>Team Admin</span>
+															<span class="alerts-link__num">3</span>
+														</a>
+													</li>
+													<li class="aside-list__item">
+														<a href="#" class="alerts-link">
+															<span>Statistics</span>
+															<span class="alerts-link__num">1</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="alerts-holder__item">
+												<h4 class="alerts-holder__title text-nunito">Alerts</h4>
+												<ul class="aside-list">
+													<li class="aside-list__item">
+														<a href="#" class="alerts-link">
+															<span>Team Admin</span>
+															<span class="alerts-link__num">3</span>
+														</a>
+													</li>
+													<li class="aside-list__item">
+														<a href="#" class="alerts-link">
+															<span>Statistics</span>
+															<span class="alerts-link__num">1</span>
+														</a>
+													</li>
+													<li class="aside-list__item">
+														<a href="#" class="alerts-link alerts-link__more-link">
+															<span>5 More</span>
+															<span class="alerts-link__num">+</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="alerts-holder__item">
+												<h4 class="alerts-holder__title text-nunito">Alerts</h4>
+												<div class="alerts-information">
+													<svg class="alerts-information__ico" width="50" height="48">
+														<use xlink:href="assets/img/sprite-icons.svg#ico-warning" />
+													</svg>
+													<p>You currently don’t have any alerts.</p>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-option dropdown">
+											<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg class="ico" width="17" height="4">
+													<use xlink:href="assets/img/sprite-icons.svg#union" />
+												</svg>
+											</button>
+											<div class="dropdown-menu overview-drop-option">
+												<ul class="drop-option-list">
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="18">
+																	<use xlink:href="assets/img/sprite-icons.svg#profile-view" />
+																</svg>
+															</span>
+															<span class="text">View Your Profile</span>
+														</a>
+													</li>
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="20">
+																	<use xlink:href="assets/img/sprite-icons.svg#edit-pen" />
+																</svg>
+															</span>
+															<span class="text">Edit Your Profile</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="profile-aside__bottom-aside">
+											<div class="profile-status">
+												<h6 class="h7 text-nunito">Profile 70% Complete!</h6>
+												<span class="load-line">
+													<span class="fill-line" style="width:75%;">&nbsp;</span>
+												</span>
+												<div class="btn-holder">
+													<button class="btn">
+														<span>Finish to get a badge</span>
+														<svg width="10" height="8" fill="#fff" class="icon">
+															<use xlink:href="assets/img/sprite-icons.svg#arrow-right-icon" />
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dashboard-holder__item">
+									<div class="badges-holder">
+										<div class="dashboard-wrap">
+											<div class="dashboard-wrap__item">
+												<h6 class="dashboard-wrap__title h7 text-nunito">Earned Badges</h6>
+											</div>
+											<div class="dashboard-wrap__btn-holder">
+												<a href="#" class="btn btn-border">See all</a>
+											</div>
+										</div>
+										<ul class="badges overview-box-wrap">
+											<li class="badges__item completed-item">
+												<span class="badges__icon">
+													<img src="assets/img/badge-profile.svg" width="54" alt="image description">
+												</span>
+												<div class="badges__inner-info">
+													<span class="badges__headline">Profile Completed</span>
+													<div class="badges__success-wrap">
+														<div class="badges__text-wrap">
+															<p>You’ve completed your profile, good job!</p>
+														</div>
+														<span class="ico-success">
+															<svg width="13" height="12" fill="#fff">
+																<use xlink:href="assets/img/sprite-icons.svg#ico-success" />
+															</svg>
+														</span>
+													</div>
+												</div>
+											</li>
+											<li class="badges__item">
+												<span class="badges__icon">
+													<img src="assets/img/badge-world.svg" width="54" alt="image description">
+												</span>
+												<div class="badges__inner-info">
+													<span class="badges__headline">World Traveller</span>
+													<div class="badges__text-wrap">
+														<p>Travel 10,000 miles</p>
+													</div>
+													<div class="badges__score-status">
+														<span class="load-line" style="opacity:.63;">
+															<span class="fill-line" style="width:55%;">&nbsp;</span>
+														</span>
+														<span class="badges__status-num">63%</span>
+													</div>
+												</div>
+											</li>
+											<li class="badges__item">
+												<span class="badges__icon">
+													<img src="assets/img/badge-house.svg" width="54" alt="image description">
+												</span>
+												<div class="badges__inner-info">
+													<span class="badges__headline">House Hunter</span>
+													<div class="badges__text-wrap">
+														<p>Visit 200 houses</p>
+													</div>
+													<div class="badges__score-status">
+														<span class="load-line" style="opacity:.35;">
+															<span class="fill-line" style="width:30%;">&nbsp;</span>
+														</span>
+														<span class="badges__status-num">35%</span>
+													</div>
+												</div>
+											</li>
+											<li class="badges__item">
+												<span class="badges__icon">
+													<img src="assets/img/badge-people.svg" width="54" alt="image description">
+												</span>
+												<div class="badges__inner-info">
+													<span class="badges__headline">People Person</span>
+													<div class="badges__text-wrap">
+														<p>Get 10 people to join</p>
+													</div>
+													<div class="badges__score-status">
+														<span class="load-line">
+															<span class="fill-line" style="width:80%;">&nbsp;</span>
+														</span>
+														<span class="badges__status-num">3/10</span>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="main-content">
+							<div class="info-section__overview-wrap ">
+								<div class="slider-overview-wrap">
+									<div class="section-title-wrap mb-0">
+										<div class="section-title-wrap__item">
+											<div class="section-title-wrap__title-wrap">
+												<h5 class="section-title-wrap__headline text-nunito">Everynook Tour</h5>
+												<div class="navigation-dots">
+													<button class="btn-arrow-circle arrow-prev">
+														<svg width="29" height="29">
+															<use xlink:href="assets/img/sprite-icons.svg#arrow-left" />
+														</svg>
+													</button>
+													<button class="btn-arrow-circle arrow-next">
+														<svg width="29" height="29">
+															<use xlink:href="assets/img/sprite-icons.svg#arrow-right" />
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+											<div class="section-title-wrap__btn-holder d-md-block d-lg-block d-none">
+												<a href="#" class="btn btn-border">See all</a>
+											</div>
+										</div>
+									</div>
+									<div class="card-slider card-items">
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/welcome-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title text-uppercase h7-title">Welcome!!</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/vaccine-icon.svg" width="41" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Covid-19 Update</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/card-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">View Your Profile</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/user-review-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Agent Reviews</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/invite-card-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Invite Others</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/stats-card-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Your Statistics</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/vendor-card-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Vendors</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/img26.svg" width="56" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Goals</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/income-card-icon.svg" width="48" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Income And Expenses</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/properties-card-icon.svg" width="41" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Properties</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item completed-task">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="assets/img/properties-card-icon.svg" width="41" alt="image description">
+												</span>
+												<h6 class="card-items__title h7-title">Properties</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="btn-holder">
+													<a href="#" class="btn btn-outline-primary">Learn More</a>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="assets/img/sprite-icons.svg#union" />
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#wall-clock" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Day</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#snooze" />
+																		</svg>
+																	</span>
+																	<span class="text">Snooze 1 Week</span>
+																</a>
+															</li>
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="20" height="20">
+																			<use xlink:href="assets/img/sprite-icons.svg#checked-state" />
+																		</svg>
+																	</span>
+																	<span class="text">Mark Complete</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap mb-2">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h5 class="section-title-wrap__headline text-nunito">Widgets</h5>
+										</div>
+									</div>
+								</div>
+								<div class="widgets-items">
+									<div class="widgets-items__item">
+										<div class="widget-holder overview-box-wrap">
+											<div class="widget-holder__desc">
+												<div class="widget-holder__text-wrap">
+													<h5 class="widget-holder__head-title text-nunito">Covid-19 Impact</h5>
+													<div class="text-block">
+														<p>Id autem quisquam culpa in sint a. Ut ea numquam harum. Atque quis minima quae atque. Est aliquid illum consequun mollitia distinctio accusamus ipsum quam.Id autem quisquam culpa in sint a. Ut numqam harum. Atque quis minima quae.</p>
+													</div>
+													<div class="btn-holder">
+														<a href="#" class="link">See Additional Impact Information</a>
+													</div>
+												</div>
+											</div>
+											<div class="widget-holder__inner-wrap">
+												<div class="tile-block">
+													<div class="tile-block__inner">
+														<div class="tile-block__icon-wrap">
+															<svg class="tile-block__icon-wrap__icon" width="17" height="30">
+																<use xlink:href="assets/img/sprite-icons.svg#currency" />
+															</svg>
+														</div>
+														<div class="tile-block__info">
+															<h4 class="tile-block__title">52,000</h4>
+															<span class="tile-block__text">Your Estimated Losses To Date</span>
+														</div>
+													</div>
+													<div class="progress">
+														<div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+												</div>
+												<div class="chart-img">
+													<img src="assets/img/chart-placeholder-01.svg" alt="image description">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="widgets-items__item">
+										<div class="widget-holder overview-box-wrap">
+											<div class="widget-holder__desc">
+												<div class="widget-holder__text-wrap">
+													<h5 class="widget-holder__head-title text-nunito">Manage Your Team</h5>
+													<p>Id autem quisquam culpa in sint a. Ut ea numquam harum. Atque quis minima quae atque. Est aliquid illum consequun mollitia distinctio accusamus ipsum quam.Id autem quisquam culpa in sint a. Ut numqam harum. Atque quis minima quae.</p>
+													<div class="btn-holder">
+														<a href="#" class="link">Add Member</a>
+														<a href="#" class="link">See All </a>
+													</div>
+												</div>
+											</div>
+											<div class="widget-holder__inner-wrap">
+												<div class="team-wrap">
+													<h6 class="team-wrap__title h7 text-nunito">Team Members</h6>
+													<ul class="teams">
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img55.jpg" srcset="assets/img/img55@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img119.jpg" srcset="assets/img/img119@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img33.jpg" srcset="assets/img/img33@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img120.jpg" srcset="assets/img/img120@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img121.jpg" srcset="assets/img/img121@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img55.jpg" srcset="assets/img/img55@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img119.jpg" srcset="assets/img/img119@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<span class="teams__img  tooltip-secondary thumb-cover" data-toggle="tooltip" data-placement="top" title="JACK PARKER">
+																<img src="assets/img/img123.jpg" srcset="assets/img/img123@2x.jpg 2x" width="50" alt>
+															</span>
+														</li>
+														<li class="teams__item">
+															<a href="#" class="teams__btn teams__btn-more  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="SEE ALL">
+																<span class="num">5</span>
+															</a>
+														</li>
+														<li class="teams__item">
+															<a href="#" class="teams__btn teams__btn-invite  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="INVITE OR ADD">
+																<svg width="20" height="20">
+																	<use xlink:href="assets/img/sprite-icons.svg#plus-ico" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="widgets-items__item">
+										<div class="widget-holder overview-box-wrap">
+											<div class="widget-holder__desc">
+												<div class="widget-holder__text-wrap">
+													<h5 class="widget-holder__head-title text-nunito">Stats Description</h5>
+													<div class="text-block">
+														<p>Id autem quisquam culpa in sint a. Ut ea numquam harum. Atque quis minima quae atque. Est aliquid illum consequuntur mollitia distinctio accusamus ipsum quam.</p>
+													</div>
+													<div class="btn-holder">
+														<a href="#" class="link">Add New Milestone</a>
+													</div>
+												</div>
+											</div>
+											<div class="widget-holder__inner-wrap">
+												<div class="goals-holder">
+													<div class="goals-holder__item">
+														<div class="goals-information goals-information__flex-wrap rectangle-bg">
+															<span class="goals-information__flex-wrap__icon">
+																<img src="assets/img/house-icon.svg" alt="image description">
+															</span>
+															<div class="goals-information__flex-wrap__inner-info">
+																<span class="info-desc">You have sold a total of <strong class="text-primary">23</strong> houses which ranks <strong class="text-primary">83rd</strong> in Metro Baltimore.</span>
+															</div>
+														</div>
+														<div class="dropdown-option dropdown">
+															<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<svg class="ico" width="17" height="4">
+																	<use xlink:href="assets/img/sprite-icons.svg#union" />
+																</svg>
+															</button>
+															<div class="dropdown-menu overview-drop-option">
+																<ul class="drop-option-list">
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="20">
+																					<use xlink:href="assets/img/sprite-icons.svg#house-sales" />
+																				</svg>
+																			</span>
+																			<span class="text">View Your Sales</span>
+																		</a>
+																	</li>
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="20">
+																					<use xlink:href="assets/img/sprite-icons.svg#pie-chart-right" />
+																				</svg>
+																			</span>
+																			<span class="text">View Rankings</span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="goals-holder__item">
+														<div class="goals-information goals-information__flex-wrap rectangle-bg">
+															<span class="goals-information__flex-wrap__icon">
+																<img src="assets/img/chart-icon.svg" alt="image description">
+															</span>
+															<div class="goals-information__flex-wrap__inner-info">
+																<span class="info-desc">You have sold a total of <strong class="text-primary">$1.4m</strong> houses which ranks <strong class="text-primary">21st</strong> in Metro Baltimore.</span>
+															</div>
+														</div>
+														<div class="dropdown-option dropdown">
+															<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																<svg class="ico" width="17" height="4">
+																	<use xlink:href="assets/img/sprite-icons.svg#union" />
+																</svg>
+															</button>
+															<div class="dropdown-menu overview-drop-option">
+																<ul class="drop-option-list">
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="20">
+																					<use xlink:href="assets/img/sprite-icons.svg#house-sales" />
+																				</svg>
+																			</span>
+																			<span class="text">View Your Sales</span>
+																		</a>
+																	</li>
+																	<li class="drop-option-list__item">
+																		<a href="#" class="drop-option-list__link">
+																			<span class="drop-option-list__drop-ico">
+																				<svg width="20" height="20">
+																					<use xlink:href="assets/img/sprite-icons.svg#pie-chart-right" />
+																				</svg>
+																			</span>
+																			<span class="text">View Rankings</span>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="widgets-items__item">
+										<div class="widget-holder overview-box-wrap">
+											<div class="widget-holder__desc">
+												<div class="widget-holder__text-wrap">
+													<h5 class="widget-holder__head-title text-nunito">People You May Know</h5>
+													<div class="text-block">
+														<p>Id autem quisquam culpa in sint a. Ut ea numquam harum. Atque quis minima quae atque. Est aliquid illum consequuntur mollitia distinctio accusamus ipsum quam. Id autem quisquam culpa in sint a.</p>
+													</div>
+													<div class="btn-holder">
+														<a href="#" class="link">See More Suggestions</a>
+													</div>
+												</div>
+											</div>
+											<div class="widget-holder__inner-wrap rectangle-bg">
+												<ul class="suggestions">
+													<li class="suggestions__item">
+														<div class="suggestions__visual-wrap">
+															<span class="suggestions__img thumb-cover">
+																<img src="assets/img/img13.jpg" srcset="assets/img/img13@2x.jpg 2x" width="50" alt>
+															</span>
+															<span class="position-label">Agent</span>
+														</div>
+														<div class="suggestions__info-inner">
+															<div class="text-wrap">
+																<h6 class="suggestions__title h7">James Allistair</h6>
+																<span class="position">The Don Jessup Team Of Long And Foster Real Estate</span>
+															</div>
+															<div class="actions-buttons">
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Invite To Join">
+																	<svg width="32" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#user-add" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Endorse">
+																	<svg width="16" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#endorse" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action btn-action__favorite  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Favorite">
+																	<svg width="24" height="21">
+																		<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Write A Review">
+																	<svg width="24" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#review-icon" />
+																	</svg>
+																</a>
+															</div>
+														</div>
+													</li>
+													<li class="suggestions__item">
+														<div class="suggestions__visual-wrap">
+															<span class="suggestions__img thumb-cover">
+																<img src="assets/img/img116.jpg" srcset="assets/img/img116@2x.jpg 2x" width="50" alt>
+															</span>
+															<span class="position-label">Broker</span>
+														</div>
+														<div class="suggestions__info-inner">
+															<div class="text-wrap">
+																<h6 class="suggestions__title h7">Tommy James Tubbervile</h6>
+																<span class="position">Cedar Real Estate</span>
+															</div>
+															<div class="actions-buttons">
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Invite To Join">
+																	<svg width="32" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#user-add" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Endorse">
+																	<svg width="16" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#endorse" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action btn-action__favorite  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Favorite">
+																	<svg width="24" height="21">
+																		<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Write A Review">
+																	<svg width="24" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#review-icon" />
+																	</svg>
+																</a>
+															</div>
+														</div>
+													</li>
+													<li class="suggestions__item">
+														<div class="suggestions__visual-wrap">
+															<span class="suggestions__img thumb-cover">
+																<img src="assets/img/img124.jpg" srcset="assets/img/img124@2x.jpg 2x" width="50" alt>
+															</span>
+															<span class="position-label">Vendor</span>
+														</div>
+														<div class="suggestions__info-inner">
+															<div class="text-wrap">
+																<h6 class="suggestions__title h7">Tommy James Tubbervile</h6>
+																<span class="position">The Don Jessup Team Of Long And Foster Real Estate</span>
+															</div>
+															<div class="actions-buttons">
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Invite To Join">
+																	<svg width="32" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#user-add" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Endorse">
+																	<svg width="16" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#endorse" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action btn-action__favorite  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Favorite">
+																	<svg width="24" height="21">
+																		<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Write A Review">
+																	<svg width="24" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#review-icon" />
+																	</svg>
+																</a>
+															</div>
+														</div>
+													</li>
+													<li class="suggestions__item">
+														<div class="suggestions__visual-wrap">
+															<span class="suggestions__img thumb-cover">
+																<img src="assets/img/img125.jpg" srcset="assets/img/img125@2x.jpg 2x" width="50" alt>
+															</span>
+															<span class="position-label">Staff</span>
+														</div>
+														<div class="suggestions__info-inner">
+															<div class="text-wrap">
+																<h6 class="suggestions__title h7">James Allistair</h6>
+																<span class="position">The Don Jessup Team Of Long And Foster Real Estate</span>
+															</div>
+															<div class="actions-buttons">
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Invite To Join">
+																	<svg width="32" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#user-add" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Endorse">
+																	<svg width="16" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#endorse" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action btn-action__favorite  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Favorite">
+																	<svg width="24" height="21">
+																		<use xlink:href="assets/img/sprite-icons.svg#favorite-icon" />
+																	</svg>
+																</a>
+																<a href="#" class="btn-action  tooltip-secondary" data-toggle="tooltip" data-placement="top" title="Write A Review">
+																	<svg width="24" height="24">
+																		<use xlink:href="assets/img/sprite-icons.svg#review-icon" />
+																	</svg>
+																</a>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="top-footer-wrap">
+				<div class="top-footer">
+					<div class="bg-footer">
+						<img src="assets/img/bg-footer.svg" alt="image description">
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container container__container-flexibly">
+					<div class="footer-wrap">
+						<div class="footer-wrap__item">
+							<strong class="footer-wrap__logo logo">
+								<a href="#" class="logo__link footer-decor">
+									<img class="logo__img" src="assets/img/logo.svg" width="158" alt="image description">
+								</a>
+							</strong>
+							<span class="footer-wrap__desc">Everynook is a community-lead effort to provide cutting edge collaboration
+								tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real
+								estate agents that will allow them previously unseen access to data to better serve their clients.</span>
+							<ul class="social">
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="12" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="24" height="23">
+											<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+										</svg>
+									</a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link" target="_blank">
+										<svg class="social__ico" width="20" height="21">
+											<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer-wrap__item">
+							<div class="row">
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Useful Links</h6>
+									<ul class="footer-list">
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Register</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Privacy Policy</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">Terms of Services</a>
+										</li>
+										<li class="footer-list__item">
+											<a href="#" class="footer-list__link">About us</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<h6 class="h7 footer-decor">Get in Touch</h6>
+									<div class="relations">
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tour-blue.svg" width="20" alt="image description">
+											</span>
+											<address>
+												<strong class="title d-block mb-1">Everynook</strong>
+												9175 Guilford Road, Suite 209,<br> Columbia, Maryland 21046
+											</address>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-tel.svg" width="20" alt="image description">
+											</span>
+											<span class="relations__text">(888) 502-6080</span>
+										</div>
+										<div class="relations__item">
+											<span class="relations__ico">
+												<img src="assets/img/ico-mail-blue.svg" width="21" alt="image description">
+											</span>
+											<span class="relations__text">info@everynook.com</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="additional-info">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data
+							Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate
+							brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The
+							information provided by this website is for the personal, non-commercial use of consumers and may not be used
+							for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some
+							properties which appear for sale on this website may no longer be available because they are under contract,
+							have Closed or are no longer being offered for sale. &copy; 2020 BRIGHT, All Rights Reserved Information
+							Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+					</div>
+					<span class="copyright">&copy; 2020 EveryNook, LLC. All Rights Reserved</span>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datatables.min.js"></script>
+		<script src="assets/js/select2.full.min.js"></script>
+		<script src="assets/js/nouislider.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/mmenu.js"></script>
+		<script src="assets/js/dataTables.bootstrap4.min.js"></script>
+		<script src="assets/js/cropper.min.js"></script>
+		<script src="assets/js/jquery-cropper.min.js"></script>
+		<script src="assets/js/dotdotdot.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/jquery.inputmask.min.js"></script>
+		<script src="assets/js/jcf.js"></script>
+		<script src="assets/js/jcf.checkbox.js"></script>
+		<script src="assets/js/jcf.radio.js"></script>
+		<script src="assets/js/tooltipster.bundle.min.js"></script>
+		<script src="assets/js/jquery.main.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	</div>
+</body>
+
+</html>

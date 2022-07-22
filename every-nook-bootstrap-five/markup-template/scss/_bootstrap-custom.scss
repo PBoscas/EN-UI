@@ -1,0 +1,290 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #fff;
+$body-color: #2F344C;
+$black:  #000;
+$white:  #fff;
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+// $gray-300: #D1D2D7;
+$gray-400: #F7F8F9;
+$gray-500: #E6E7EC;
+$gray-600: #DFE2E7;
+$gray-700: #495057;
+$gray-800: #AAB0BB;
+$gray-900: #6f7d89;
+
+$blue:    #1AACFF;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #FA4B5F;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #1ACA8E;
+$teal:    #20c997;
+$cyan:    #D1E6FF;
+
+$blue-900: #31B4FF;
+$blue-800: #5FC5FF;
+$blue-700: #A3DEFF;
+$blue-600: #D1EEFF;
+$blue-500: #7BABF1;
+
+$dark-900: #2F354D;
+$dark-800: #5D6174;
+$dark-700: #A3A5B0;
+$dark-600: #D1D2D7;
+
+$red-900: #FF5F71;
+$red-800: #FF8290;
+$red-700: #FFB8C0;
+$red-600: #FFDBDF;
+
+$danger-900: #FF4D61;
+
+$gray-dark-900: #61667B;
+$gray-dark-800: #848898;
+$gray-dark-700: #B9BBC4;
+$gray-dark-600: #DCDDE2;
+
+$cyan-900: #D6E8FF;
+$cyan-700: #DFEEFF;
+$cyan-600: #EDF5FF;
+$cyan-500: #F6FAFF;
+$cyan-400: #F6F7FC;
+
+$theme-colors: (
+  "primary":    #1AACFF,
+  "secondary":  $gray-600,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger-900,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$primary:       #1AACFF;
+$secondary:     #181E39;
+$success:       #1ACA8E;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         rgba(#fff, 0.76);
+$dark:          #2F344C;
+
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.5),
+	5: ($spacer * 3),
+	6: ($spacer * 4.5),
+	7: ($spacer * 6),
+	8: ($spacer * 7.5),
+	9: ($spacer * 9),
+	10: ($spacer * 10.5)
+), $spacers);
+
+$base-min-width: 320px;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 14px;
+
+$font-size-base: .89rem;
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$container-max-widths: (
+  sm: 740px,
+  md: 940px,
+  lg: 940px,
+  xl: 1140px,
+  xxl: 1250px
+);
+
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 680px,
+//   lg: 840px,
+//   xl: 1140px,
+//   xxl: 1250px
+// );
+
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
+}
+
+$text-muted: $gray-dark-700;
+
+$h1-font-size:                $font-size-base * 2.8;
+$h2-font-size:                $font-size-base * 1.7;
+$h3-font-size:                $font-size-base * 1.19;
+$h4-font-size:                $font-size-base * 1.1;
+$h5-font-size:                $font-size-base * 1;
+$h6-font-size:                $font-size-base * .85;
+
+$h3-title-size:                $font-size-base * 1.265;
+
+
+$headings-color: #181E39;
+$headings-line-height: 1.4;
+$paragraph-margin-bottom: 10px;
+
+$input-border-color: #DFE2E7;
+$input-border-width: 2px;
+$input-border-radius: 5px;
+$input-padding-y: 11px;
+$input-padding-x: 20px;
+$input-placeholder-color: #DFE2E7;
+$input-color: $dark-800;
+$input-group-addon-bg: #F7F8F9;
+$input-group-addon-color: #2F344C;
+$input-group-addon-padding-y: 5px;
+$input-group-addon-padding-x: 18px;
+$input-btn-focus-color-opacity: .20;
+$input-btn-focus-width: .20rem;
+$input-group-addon-border-color: #DFE2E7;
+
+$form-select-color: #DFE2E7;
+$form-select-padding-y: .78rem;
+$form-select-padding-x: 1rem;
+$form-select-border-color: #DFE2E7;
+
+$link-color: $primary;
+$link-hover-color: $primary;
+
+$btn-font-size: 12px;
+$btn-padding-y-lg: 18px;
+$btn-font-size-lg: 16px;
+$btn-border-radius: 5px;
+$btn-padding-x: 62px;
+$btn-padding-y: 14px;
+$btn-border-width: 2px;
+
+$btn-padding-x-lg: 4.7rem;
+
+$btn-close-padding-y: 7px;
+$btn-close-padding-x: 7px;
+$btn-close-height: 14px;
+$btn-close-width: 14px;
+$btn-link-color: #7BABF1;
+$btn-link-hover-color: #1278B3;
+
+$alert-border-width: 2px;
+
+$component-active-bg:         $blue;
+$input-focus-border-color: $blue;
+$input-btn-focus-color: rgba($blue, $input-btn-focus-color-opacity);
+
+$form-label-font-size: 12px;
+$form-label-font-weight: 700;
+$form-label-margin-bottom: 5px;
+$form-label-color: $secondary;
+$input-disabled-bg: #F6F7FC;
+$input-height: add($input-line-height * 1em, add($input-padding-y * 6.8, $input-height-border, false));
+
+$form-feedback-font-size: 10px;
+
+$form-switch-width: 4.9em;
+$form-switch-padding-start: 5em;
+$form-check-input-width: 1.879rem;
+$form-check-input-checked-bg-color: $primary;
+$form-check-input-checked-border-color: $primary;
+$form-check-input-bg: #fff;
+$form-check-input-border: 2px solid #EFF1F3;
+
+$form-select-indicator-color: $primary;
+$form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='#{$form-select-indicator-color}' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5.2 6.933 1.2 1.6A1 1 0 0 1 2 0h8a1 1 0 0 1 .8 1.6l-4 5.333a1 1 0 0 1-1.6 0Z'/></svg>");
+
+$form-feedback-margin-top: 5px;
+
+$form-check-input-checked-bg-color: $primary;
+$form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$white}'/></svg>");
+$form-switch-focus-bg-image:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$white}'/></svg>");
+$form-check-input-checked-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='2 2 16 16'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-2.5 -2.46 5 5'><circle r='2' fill='#{$primary}'/></svg>");
+
+
+$ellipse-border-radius: 50%;
+
+$dropdown-padding-y: .625rem;
+$dropdown-padding-x: .625rem;
+$dropdown-link-hover-bg: $cyan-500;
+
+$hr-color: #DFE2E7;
+$hr-height: 2px;
+$hr-opacity: 1;
+
+$pagination-color: $dark-700;
+$pagination-border-color: #F6F7F8;
+$pagination-bg: #F6F7F8;
+$pagination-padding-y-lg: 0.566rem;
+$pagination-padding-x-lg: 1.2rem;
+
+$pagination-hover-color: $white;
+$pagination-hover-bg: $secondary;
+$pagination-hover-border-color: $secondary;
+$pagination-active-color: $white;
+$pagination-active-border-color: $primary;
+$pagination-active-bg: $primary;
+
+$modal-md: 586px;
+$modal-lg: 786px;
+$modal-xl: 886px;
+
+
+$modal-backdrop-bg: #181E39;
+$modal-backdrop-opacity: .7;
+
+$tooltip-bg: $secondary;
+$tooltip-max-width: 250px;
+$tooltip-opacity: 1;
+$tooltip-padding-x: $spacer * .8;
+$tooltip-padding-y: $spacer * .8;
+$tooltip-arrow-width: 2rem;
+$tooltip-arrow-height: 1rem;
+$tooltip-arrow-color: $secondary;
+
+@mixin make-col-offset-end($size, $columns: $grid-columns) {
+  $num: divide($size, $columns);
+  margin-right: if($num == 0, 0, percentage($num));
+}
+
+@mixin make-grid-offset-end($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      @if $columns > 0 {
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        @for $i from 0 through ($columns - 1) {
+          @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
+            .offset-end#{$infix}-#{$i} {
+              @include make-col-offset-end($i, $columns);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include make-grid-offset-end();

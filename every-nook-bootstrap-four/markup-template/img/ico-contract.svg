@@ -1,0 +1,13 @@
+<svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 9H9V8V1H26V33H1V9H8ZM7 7H2.41421L7 2.41421V7Z" fill="white" stroke="#1AACFF" stroke-width="2"/>
+<path d="M26.3137 15.2426L30.5563 19.4853L23.071 26.9706H18.8284V22.7279L26.3137 15.2426Z" fill="white" stroke="#1AACFF" stroke-width="2"/>
+<path d="M29.1421 12.4142L33.3847 16.6569L30.5563 19.4853L26.3137 15.2426L29.1421 12.4142Z" fill="white" stroke="#1AACFF" stroke-width="2"/>
+<path d="M27.7279 17.364L28.435 18.0711L25.6066 20.8995L24.8994 20.1924L27.7279 17.364Z" fill="#5D6174" stroke="#1AACFF"/>
+<path d="M6.5 11.5H20.5V12.5H6.5V11.5Z" fill="#5D6174" stroke="#1AACFF"/>
+<path d="M15.5 7.5H20.5V8.5H15.5V7.5Z" fill="#5D6174" stroke="#1AACFF"/>
+<path d="M6.5 15.5H20.5V16.5H6.5V15.5Z" fill="#5D6174" stroke="#1AACFF"/>
+<path d="M6.5 19.5H20.7929L19.7929 20.5H6.5V19.5Z" fill="#5D6174" stroke="#1AACFF"/>
+<rect x="6.5" y="26.5" width="1" height="1" fill="#5D6174" stroke="#1AACFF"/>
+<rect x="10.5" y="26.5" width="1" height="1" fill="#5D6174" stroke="#1AACFF"/>
+<rect x="14.5" y="26.5" width="1" height="1" fill="#5D6174" stroke="#1AACFF"/>
+</svg>

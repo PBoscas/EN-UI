@@ -1,0 +1,1455 @@
+//= template/head-meta.html
+	<title>Every Nook</title>
+//= template/head-link.html
+<body class="bg-light">
+	<div id="wrapper">
+		<header class="header header__main-header header__fixed">
+			<div class="container-fluid">
+				<div class="header__nav-holder">
+					<strong class="logo">
+						<a href="#" class="logo__link">
+							<img class="logo__img desktop" src="img/logo.svg" width="158" alt="image description">
+							<img class="logo__img mobile" src="img/logo-mobile.svg" width="42" alt="image description">
+						</a>
+					</strong>
+					<nav class="navbar">
+						<ul class="nav-list">
+							<li>
+								<a class="nav-link active" href="#">
+									<span class="nav-ico">
+										<svg width="23" height="22">
+											<use xlink:href="img/sprite-icons.svg#home-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Home</span>
+								</a>
+							</li>
+							<li class="has-drop">
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#users-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Clients</span>
+								</a>
+								<div class="drop-hover-menu">
+									<ul class="drop-menu-list">
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-users.svg" alt="image description">
+													<img class="ico active" src="img/ico-users-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Your Clients</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-managment.svg" alt="image description">
+													<img class="ico active" src="img/ico-managment-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Transaction Managment</span>
+											</a>
+											<div class="drop-options">
+												<ul>
+													<li><a href="#">Archived Transactions</a></li>
+													<li class="active"><a href="#">Manage Current</a></li>
+													<li><a href="#">Preferences</a></li>
+													<li><a href="#">Other Options</a></li>
+												</ul>
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-financial.svg" alt="image description">
+													<img class="ico active" src="img/ico-financial-active.svg" alt="image description">
+												</span>
+												<span class="drop-text">Financial</span>
+											</a>
+										</li>
+										<li class="has-subdrop">
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-listing-active.svg" alt="image description">
+													<img class="ico active" src="img/ico-listing.svg" alt="image description">
+												</span>
+												<span class="drop-text">Listing & Contract Prep</span>
+											</a>
+											<div class="drop-options">
+												<div class="drop-info">
+													<div class="drop-description">
+														<span class="title">Info</span>
+														<p>Some information will go here about transaction managment. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum.</p>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="drop-link">
+												<span class="drop-ico">
+													<img class="ico inactive" src="img/ico-tours.svg" alt="image description">
+													<img class="ico active" src="img/ico-tours-hover.svg" alt="image description">
+												</span>
+												<span class="drop-text">Tour Itinerary</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="20">
+											<use xlink:href="img/sprite-icons.svg#new-tour"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Tours</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="22" height="20">
+											<use xlink:href="img/sprite-icons.svg#statistics-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Statistics</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#">
+									<span class="nav-ico">
+										<svg width="20" height="24">
+											<use xlink:href="img/sprite-icons.svg#pages-ico"></use>
+										</svg>
+									</span>
+									<span class="nav-text">Pages</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<ul class="navbar-users">
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="18" height="18">
+									<use xlink:href="img/sprite-icons.svg#search-icon"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="badge new-badge bg-danger">2</span>
+									<svg class="navbar-ico message-ico" width="23" height="22">
+										<use xlink:href="img/sprite-icons.svg#message-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown message-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messaging settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all messages (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<svg class="navbar-ico" width="17" height="18">
+										<use xlink:href="img/sprite-icons.svg#notification-ico"></use>
+									</svg>
+								</a>
+								<div class="dropdown-menu header-dropdown notifications-position">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-head">
+											<span class="label-text">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="img/img13.jpg" srcset="img/img13@2x.jpg" alt="image description">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in <strong class="text-dark">4 hours</strong></span>
+												</div>
+												<span class="notifications-list__time">12:08 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#group-tours"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">upcoming itinerary</span>
+													<span>You have an upcoming tour in 5 hours</span>
+												</div>
+												<span class="notifications-list__time">5:18 PM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico ellipse-ico">
+													<svg width="20" height="20">
+														<use xlink:href="img/sprite-icons.svg#layers"></use>
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title">system update</span>
+													<span>Everynook will be undergoing maintenance in 2 hours, system will be offline at this time.</span>
+												</div>
+												<span class="notifications-list__time">8:25 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item-bottom">
+											<a href="#" class="notifications-list__btn-message">See all notifications (8)</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide-on-tablet">
+							<a href="#">
+								<svg class="navbar-ico" width="20" height="20">
+									<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li>
+							<div class="dropdown profile-dropdown">
+								<a href="#" class="dropdown-toggle thumb-cover" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="img/img14.jpg" srcset="img/img14@2x.jpg" height="42" width="42" alt="image description">
+								</a>
+								<div class="dropdown-menu header-dropdown user-position">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option__userpic thumb-cover">
+												<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="50" width="50" alt="image description">
+											</div>
+											<div class="profile-option__info">
+												<h6 class="h7">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li class="team-switch">
+												<a href="#" class="team-switch__link">
+													<span class="team-switch__inner">
+														<span class="team-switch__userpic thumb-cover">
+															<img src="img/img118.jpg" srcset="img/img118@2x.jpg" height="35" width="35" alt="image description">
+														</span>
+														<span>The Greg Smith Real Estate Team</span>
+													</span>
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#share"></use>
+														</svg>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+														</svg>
+													</span>
+													<span>Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20">
+															<use xlink:href="img/sprite-icons.svg#logout"></use>
+														</svg>
+													</span>
+													<span>Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main id="main">
+			<section class="overview-hero-section">
+				<div class="container">
+					<div class="client-overview-wrap">
+						<div class="client-overview-wrap__visual">
+							<img class="client-overview-wrap__img" src="img/img61.jpg" srcset="img/img61@2x.jpg" height="276" width="276" alt="image description">
+							<a class="client-overview-wrap__upload-photo" href="#">
+								<img src="img/ico75.svg" width="40" alt="image description">
+							</a>
+						</div>
+						<div class="client-overview-wrap__decription">
+							<h4 class="client-overview-wrap__title">Sarah McDonald</h4>
+							<ul class="overview-menu">
+								<li class="overview-menu__item has-drop">
+									<a href="#" class="overview-menu__link">
+										<span class="overview-menu__link-text">
+											<span class="overview-menu__ico">
+												<img class="ico inactive" src="img/ico63-active.svg" width="23" alt="image description">
+												<img class="ico active" src="img/ico63.svg" width="23" alt="image description">
+											</span>
+											<span class="overview-menu__text">Overview</span>
+										</span>
+									</a>
+									<div class="drop-menu-wrap">
+										<ul class="drop-overview-menu">
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico63-active.svg" width="23" alt="image description">
+														<img class="ico active" src="img/ico63.svg" width="23" alt="image description">
+													</span>
+													<span class="text">Overview</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico64-active.svg" width="27" alt="image description">
+														<img class="ico active" src="img/ico64.svg" width="27" alt="image description">
+													</span>
+													<span class="text">Properties</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico65-active.svg" width="29" alt="image description">
+														<img class="ico active" src="img/ico65.svg" width="29" alt="image description">
+													</span>
+													<span class="text">Team</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico66-active.svg" width="30" alt="image description">
+														<img class="ico active" src="img/ico66.svg" width="30" alt="image description">
+													</span>
+													<span class="text">Financial</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="overview-menu__item">
+									<a href="#" class="overview-menu__link">
+										<span class="overview-menu__link-text">
+											<span class="overview-menu__ico">
+												<img class="ico inactive" src="img/ico64-active.svg" width="27" alt="image description">
+												<img class="ico active" src="img/ico64.svg" width="27" alt="image description">
+											</span>
+											<span class="overview-menu__text">Properties</span>
+										</span>
+									</a>
+								</li>
+								<li class="overview-menu__item has-drop">
+									<a href="#" class="overview-menu__link">
+										<span class="overview-menu__link-text">
+											<span class="overview-menu__ico">
+												<img class="ico inactive" src="img/ico65-active.svg" width="29" alt="image description">
+												<img class="ico active" src="img/ico65.svg" width="29" alt="image description">
+											</span>
+											<span class="overview-menu__text">Team</span>
+										</span>
+									</a>
+									<div class="drop-menu-wrap">
+										<ul class="drop-overview-menu">
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico63-active.svg" width="23" alt="image description">
+														<img class="ico active" src="img/ico63.svg" width="23" alt="image description">
+													</span>
+													<span class="text">Overview</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico64-active.svg" width="27" alt="image description">
+														<img class="ico active" src="img/ico64.svg" width="27" alt="image description">
+													</span>
+													<span class="text">Properties</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico65-active.svg" width="29" alt="image description">
+														<img class="ico active" src="img/ico65.svg" width="29" alt="image description">
+													</span>
+													<span class="text">Team</span>
+												</a>
+											</li>
+											<li class="drop-overview-menu__item">
+												<a href="#" class="drop-overview-menu__link">
+													<span class="drop-overview-menu__ico">
+														<img class="ico inactive" src="img/ico66-active.svg" width="30" alt="image description">
+														<img class="ico active" src="img/ico66.svg" width="30" alt="image description">
+													</span>
+													<span class="text">Financial</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="overview-menu__item">
+									<a href="#" class="overview-menu__link">
+										<span class="overview-menu__link-text">
+											<span class="overview-menu__ico">
+												<img class="ico inactive" src="img/ico66-active.svg" width="30" alt="image description">
+												<img class="ico active" src="img/ico66.svg" width="30" alt="image description">
+											</span>
+											<span class="overview-menu__text">Financial</span>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bg-stretch">
+					<img src="img/bg04.svg" alt="image description">
+				</div>
+			</section>
+			<section class="info-section">
+				<div class="container">
+					<div class="main-content-wrap">
+						<aside class="sidebar profile-overview-sidebar">
+							<div class="current-transaction-wrap">
+								<div class="current-transaction-wrap__dropdown dropdown">
+									<button class="btn-current-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Current Transaction
+									</button>
+									<div class="dropdown-menu dropdown-menu-full">
+										<ul class="drop-option-list">
+											<li class="drop-option-list__item">
+												<a href="#" class="drop-option-list__link">
+													<span class="drop-option-list__drop-ico">
+														<svg width="20" height="20" class="light-ico">
+															<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+														</svg>
+													</span>
+													<span class="text">Change</span>
+												</a>
+											</li>
+											<li class="drop-option-list__item">
+												<a href="#" class="drop-option-list__link">
+													<span class="drop-option-list__drop-ico">
+														<svg width="20" height="21" class="light-ico">
+															<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+														</svg>
+													</span>
+													<span class="text">Add New</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="transaction-card">
+									<div class="transaction-card__item overview-box-wrap">
+										<span class="transaction-card__address">1728 New Hampshire Ave NW #301 Washington, DC 20009</span>
+										<a href="#" class="transaction-card__link-inner">
+											<span class="transaction-card__img">
+												<img src="img/img31.jpg" srcset="img/img31@2x.jpg" width="79" alt="image description">
+											</span>
+											<span class="transaction-card__info">
+												<span class="transaction-card__title h5">Contract</span>
+												<span class="transaction-card__date">December 2020</span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="accociated-clients-wrap">
+								<div class="dashboard-wrap">
+									<div class="dashboard-wrap__item">
+										<span class="dashboard-wrap__title">Accociated Clients</span>
+									</div>
+									<div class="dashboard-wrap__btn-holder">
+										<a href="#" class="btn-add btn-add__add-new">
+											<svg class="ico" width="22" height="22" fill="#1AACFF">
+												<use xlink:href="img/sprite-icons.svg#add"></use>
+											</svg>
+											<span>Add New</span>
+										</a>
+									</div>
+								</div>
+								<ul class="accociated-clients-list">
+									<li class="accociated-clients-list__item overview-box-wrap">
+										<div class="accociated-clients-list__img-client thumb-cover">
+											<img src="img/img62.jpg" width="55" srcset="img/img62@2x.jpg" alt="image description">
+										</div>
+										<a href="#" class="accociated-clients-list__link-info">
+											<span class="accociated-clients-list__position">Family / Wife</span>
+											<span class="accociated-clients-list__title">Emily  McDonalds</span>
+										</a>
+										<div class="dropdown-option dropdown">
+											<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg class="ico" width="17" height="4">
+													<use xlink:href="img/sprite-icons.svg#union"></use>
+												</svg>
+											</button>
+											<div class="dropdown-menu overview-drop-option">
+												<ul class="drop-option-list">
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="20" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																</svg>
+															</span>
+															<span class="text">Edit</span>
+														</a>
+													</li>
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="24" height="20" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#users-ico"></use>
+																</svg>
+															</span>
+															<span class="text">View Profile</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li class="accociated-clients-list__item overview-box-wrap">
+										<div class="accociated-clients-list__img-client thumb-cover">
+											<img src="img/img63.jpg" width="55" srcset="img/img63@2x.jpg" alt="image description">
+										</div>
+										<a href="#" class="accociated-clients-list__link-info">
+											<span class="accociated-clients-list__position">Family / Wife</span>
+											<span class="accociated-clients-list__title">Jeffrey Higgenbottoms</span>
+										</a>
+										<div class="dropdown-option dropdown">
+											<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg class="ico" width="17" height="4">
+													<use xlink:href="img/sprite-icons.svg#union"></use>
+												</svg>
+											</button>
+											<div class="dropdown-menu overview-drop-option">
+												<ul class="drop-option-list">
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="20" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																</svg>
+															</span>
+															<span class="text">Edit</span>
+														</a>
+													</li>
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<img class="ico inactive" src="img/ico-users-active.svg" width="22" alt="image description">
+																<img class="ico active" src="img/ico-users.svg" width="22" alt="image description">
+															</span>
+															<span class="text">View Profile</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</aside>
+						<div class="main-content">
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Contact Information</h6>
+										</div>
+									</div>
+									<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+										<div class="section-title-wrap__btn-holder">
+											<a href="#" class="btn-add btn-add__update">
+												<svg class="ico mr-0" width="13" height="13" fill="#1AACFF">
+													<use xlink:href="img/sprite-icons.svg#update"></use>
+												</svg>
+												<span>Update</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="contact-information-wrap overview-box-wrap">
+									<div class="contact-status-line waves-warning" style="width:50%;">&nbsp;</div>
+									<ul class="contact-info">
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-tours01.svg" width="20" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Address</span>
+												<span class="contact-info__text">1601 John Smith Blvd, Harrisonburg, PA 19103</span>
+											</div>
+										</li>
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-phone.svg" width="18" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Phone</span>
+												<a href="tel:5417543010" class="contact-info__text">(541) 754-3010</a>
+											</div>
+										</li>
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-email.svg" width="21" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Email</span>
+												<a href="mailto:Peter@redagency.com" class="contact-info__text">Peter@redagency.com</a>
+											</div>
+										</li>
+									</ul>
+									<div class="dropdown-option dropdown">
+										<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<svg class="ico" width="17" height="4">
+												<use xlink:href="img/sprite-icons.svg#union"></use>
+											</svg>
+										</button>
+										<div class="dropdown-menu overview-drop-option">
+											<ul class="drop-option-list">
+											<!-- 	<li class="drop-option-list__item">
+													<div class="status-information success">
+														<span class="status-information__num">82%</span>
+														<h5 class="status-information__title h5">Complete</h5>
+													</div>
+												</li> -->
+												<li class="drop-option-list__item">
+													<a href="#" class="drop-option-list__link">
+														<span class="drop-option-list__drop-ico">
+															<svg width="20" height="20" class="light-ico">
+																<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+															</svg>
+														</span>
+														<span class="text">Edit</span>
+													</a>
+												</li>
+												<li class="drop-option-list__item">
+													<a href="#" class="drop-option-list__link">
+														<span class="drop-option-list__drop-ico">
+															<svg width="20" height="21" class="light-ico">
+																<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+															</svg>
+														</span>
+														<span class="text">View All</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Contact Information</h6>
+										</div>
+									</div>
+									<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+										<div class="section-title-wrap__btn-holder">
+											<a href="#" class="btn-add btn-add__update">
+												<svg class="ico mr-0" width="13" height="13" fill="#1AACFF">
+													<use xlink:href="img/sprite-icons.svg#update"></use>
+												</svg>
+												<span>Update</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="contact-information-wrap overview-box-wrap">
+									<div class="contact-status-line waves-success" style="width:81.4%;">&nbsp;</div>
+									<ul class="contact-info">
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-tours01.svg" width="20" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Address</span>
+												<span class="contact-info__text">1601 John Smith Blvd, Harrisonburg, PA 19103</span>
+											</div>
+										</li>
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-phone.svg" width="18" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Phone</span>
+												<a href="tel:5417543010" class="contact-info__text">(541) 754-3010</a>
+											</div>
+										</li>
+										<li class="contact-info__item">
+											<span class="contact-info__ico">
+												<img src="img/ico-email.svg" width="21" alt="image description">
+											</span>
+											<div class="contact-info__info-inner">
+												<span class="contact-info__title">Email</span>
+												<a href="mailto:Peter@redagency.com" class="contact-info__text">Peter@redagency.com</a>
+											</div>
+										</li>
+									</ul>
+									<div class="dropdown-option dropdown">
+										<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<svg class="ico" width="17" height="4">
+												<use xlink:href="img/sprite-icons.svg#union"></use>
+											</svg>
+										</button>
+										<div class="dropdown-menu overview-drop-option">
+											<ul class="drop-option-list">
+												<li class="drop-option-list__item">
+													<div class="status-information success">
+														<span class="status-information__num">82%</span>
+														<h5 class="status-information__title h5">Complete</h5>
+													</div>
+												</li>
+												<li class="drop-option-list__item">
+													<a href="#" class="drop-option-list__link">
+														<span class="drop-option-list__drop-ico">
+															<svg width="20" height="20" class="light-ico">
+																<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+															</svg>
+														</span>
+														<span class="text">Edit</span>
+													</a>
+												</li>
+												<li class="drop-option-list__item">
+													<a href="#" class="drop-option-list__link">
+														<span class="drop-option-list__drop-ico">
+															<svg width="20" height="21" class="light-ico">
+																<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+															</svg>
+														</span>
+														<span class="text">View All</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Current Status</h6>
+										</div>
+									</div>
+									<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+										<div class="section-title-wrap__btn-holder">
+											<a href="#" class="btn-add btn-add__update">
+												<svg class="ico mr-0" width="13" height="13" fill="#1AACFF">
+													<use xlink:href="img/sprite-icons.svg#update"></use>
+												</svg>
+												<span>Update</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="current-status-wrap overview-box-wrap">
+									<div class="current-status-wrap__stepper">
+										<div class="progress-responsive">
+											<div class="progress-graph">
+												<div class="progress">
+													<div class="progress-bar bg-progress-gradient" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<ul class="progress-step-list">
+													<li class="completed">
+														<span class="icon-wrap">
+															<svg class="icon" width="46" height="46">
+																<use xlink:href="img/sprite-icons.svg#handshake"></use>
+															</svg>
+														</span>
+														<span class="icon-dots">&nbsp;</span>
+														<span class="text">Prospect</span>
+													</li>
+													<li class="completed">
+														<span class="icon-wrap">
+															<svg class="icon" width="35" height="34">
+																<use xlink:href="img/sprite-icons.svg#touring"></use>
+															</svg>
+														</span>
+														<span class="icon-dots">&nbsp;</span>
+														<span class="text">Touring</span>
+													</li>
+													<li class="offering">
+														<span class="icon-wrap">
+															<svg class="icon" width="30" height="37">
+																<use xlink:href="img/sprite-icons.svg#offer-icon"></use>
+															</svg>
+														</span>
+														<span class="icon-dots">&nbsp;</span>
+														<span class="text">Offering</span>
+													</li>
+													<li>
+														<span class="icon-wrap">
+															<svg class="icon" width="35" height="34">
+																<use xlink:href="img/sprite-icons.svg#contract-letter"></use>
+															</svg>
+														</span>
+														<span class="icon-dots">&nbsp;</span>
+														<span class="text">Under Contract</span>
+													</li>
+													<li>
+														<span class="icon-wrap">
+															<svg class="icon" width="36" height="35">
+																<use xlink:href="img/sprite-icons.svg#house-settled"></use>
+															</svg>
+														</span>
+														<span class="icon-dots">&nbsp;</span>
+														<span class="text">Settled</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="current-status-wrap__info-card">
+										<div class="about-direction-wrap">
+											<span class="about-direction-wrap__img">
+												<img src="img/img19.jpg" srcset="img/img19@2x.jpg" width="85" alt="image description">
+											</span>
+											<span class="about-direction-wrap__address">1728 New Hampshire Ave NW #301 Washington, DC 20009</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Wish List</h6>
+										</div>
+									</div>
+								</div>
+								<div class="about-house-list">
+									<div class="about-house-list__item overview-box-wrap">
+										<div class="about-house-list__house-img">
+											<img src="img/img67.svg" width="175" alt="image description">
+										</div>
+										<div class="about-house-list__description">
+											<h5 class="about-house-list__title">Single Family Home, Townhouse</h5>
+											<div class="about-house-list__search-wrap">
+												<div class="search-tag-item">
+													<div class="search-tag-item__item">
+														<a href="#" class="search-tag-item__link label-title">Cedar Park</a>
+													</div>
+													<div class="search-tag-item__item">
+														<a href="#" class="search-tag-item__link label-title">Baltimore</a>
+													</div>
+													<div class="search-tag-item__item">
+														<a href="#" class="search-tag-item__link label-title">North Porth</a>
+													</div>
+													<div class="search-tag-item__item">
+														<a href="#" class="search-tag-item__link-more label-title">+3 More</a>
+													</div>
+												</div>
+											</div>
+											<ul class="feature-list feature-list__feature-secondary">
+												<li>
+													<div class="feature-inner feature-inner__row-inner">
+														<svg class="feature-list__ico" width="30" height="24">
+															<use xlink:href="img/sprite-icons.svg#couch"></use>
+														</svg>
+														<div class="feature-list__info">
+															<span class="count">3</span>
+															<span class="property-title">Beds</span>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="feature-inner feature-inner__row-inner">
+														<svg class="feature-list__ico" width="26" height="30">
+															<use xlink:href="img/sprite-icons.svg#bathroom"></use>
+														</svg>
+														<div class="feature-list__info">
+															<span class="count">2</span>
+															<span class="property-title">Baths</span>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="feature-inner feature-inner__row-inner">
+														<svg class="feature-list__ico" width="22" height="24">
+															<use xlink:href="img/sprite-icons.svg#square"></use>
+														</svg>
+														<div class="feature-list__info">
+															<span class="count">1,500</span>
+															<span class="property-title">Garage</span>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="feature-inner feature-inner__row-inner">
+														<svg class="feature-list__ico" width="31" height="30">
+															<use xlink:href="img/sprite-icons.svg#garage-second"></use>
+														</svg>
+														<div class="feature-list__info">
+															<span class="count">2</span>
+															<span class="property-title">Levels</span>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown-option dropdown">
+											<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg class="ico" width="17" height="4">
+													<use xlink:href="img/sprite-icons.svg#union"></use>
+												</svg>
+											</button>
+											<div class="dropdown-menu overview-drop-option">
+												<ul class="drop-option-list">
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="20" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																</svg>
+															</span>
+															<span class="text">Edit</span>
+														</a>
+													</li>
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="21" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#ico-plus"></use>
+																</svg>
+															</span>
+															<span class="text">Add New</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Current Living Situation</h6>
+										</div>
+									</div>
+								</div>
+								<div class="about-house-list">
+									<div class="about-house-list__item overview-box-wrap">
+										<div class="about-house-list__house-img">
+											<img src="img/img66.svg" width="175" alt="image description">
+										</div>
+										<div class="about-house-list__description">
+											<h5 class="about-house-list__title">Own Current Home</h5>
+											<div class="address-info">
+												<span class="address-info__ico">
+													<img src="img/ico-tours.svg" width="20" alt="image description">
+												</span>
+												<h6 class="address-info__title h7">45 Plumber Street, Saraosta, FL, 34287</h6>
+											</div>
+										</div>
+										<div class="dropdown-option dropdown">
+											<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<svg class="ico" width="17" height="4">
+													<use xlink:href="img/sprite-icons.svg#union"></use>
+												</svg>
+											</button>
+											<div class="dropdown-menu overview-drop-option">
+												<ul class="drop-option-list">
+													<li class="drop-option-list__item">
+														<a href="#" class="drop-option-list__link">
+															<span class="drop-option-list__drop-ico">
+																<svg width="20" height="20" class="light-ico">
+																	<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																</svg>
+															</span>
+															<span class="text">Edit</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="slider-overview-wrap">
+									<div class="section-title-wrap mb-0">
+										<div class="section-title-wrap__item">
+											<div class="section-title-wrap__title-wrap">
+												<span class="section-title-wrap__num-badge">3</span>
+												<h6 class="section-title-wrap__title h7">Characteristics</h6>
+												<div class="navigation-dots">
+													<button class="btn-arrow-circle arrow-prev">
+														<svg width="29" height="29">
+															<use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+														</svg>
+													</button>
+													<button class="btn-arrow-circle arrow-next">
+														<svg width="29" height="29">
+															<use xlink:href="img/sprite-icons.svg#arrow-right"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-slider card-items">
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="img/img26.svg" width="56" alt="image description">
+												</span>
+												<h6 class="card-items__title h7">First Time Buyer</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="img/sprite-icons.svg#union"></use>
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="25" height="25" class="light-ico">
+																			<use xlink:href="img/sprite-icons.svg#ico-remove"></use>
+																		</svg>
+																	</span>
+																	<span class="text">Remove</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="img/img26.svg" width="56" alt="image description">
+												</span>
+												<h6 class="card-items__title h7">Cash Buyer</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="img/sprite-icons.svg#union"></use>
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="25" height="25" class="light-ico">
+																			<use xlink:href="img/sprite-icons.svg#ico-remove"></use>
+																		</svg>
+																	</span>
+																	<span class="text">Remove</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="img/img26.svg" width="56" alt="image description">
+												</span>
+												<h6 class="card-items__title h7">Military</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="img/sprite-icons.svg#union"></use>
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="25" height="25" class="light-ico">
+																			<use xlink:href="img/sprite-icons.svg#ico-remove"></use>
+																		</svg>
+																	</span>
+																	<span class="text">Remove</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-items__item">
+											<div class="card-items__inner overview-box-wrap">
+												<span class="card-items__ico">
+													<img src="img/img26.svg" width="56" alt="image description">
+												</span>
+												<h6 class="card-items__title h7">First Time Buyer</h6>
+												<div class="card-items__text-content">
+													<p>Totam corrupti sed voluptatem. Tenetur amet officiis rem tulu occaecati. Dolor sit amet </p>
+												</div>
+												<div class="dropdown-option dropdown">
+													<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<svg class="ico" width="17" height="4">
+															<use xlink:href="img/sprite-icons.svg#union"></use>
+														</svg>
+													</button>
+													<div class="dropdown-menu overview-drop-option">
+														<ul class="drop-option-list">
+															<li class="drop-option-list__item">
+																<a href="#" class="drop-option-list__link">
+																	<span class="drop-option-list__drop-ico">
+																		<svg width="25" height="25" class="light-ico">
+																			<use xlink:href="img/sprite-icons.svg#ico-remove"></use>
+																		</svg>
+																	</span>
+																	<span class="text">Remove</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="info-section__overview-wrap">
+								<div class="section-title-wrap">
+									<div class="section-title-wrap__item">
+										<div class="section-title-wrap__title-wrap">
+											<h6 class="section-title-wrap__title h7">Event Feed</h6>
+										</div>
+									</div>
+									<div class="section-title-wrap__item section-title-wrap__buttons-holder">
+										<div class="section-title-wrap__btn-holder">
+											<a href="#" class="btn-add btn-add__add-new">
+												<svg class="ico" width="22" height="22" fill="#1AACFF">
+													<use xlink:href="img/sprite-icons.svg#add"></use>
+												</svg>
+												<span>Add New</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="event-feed-wrap">
+									<div class="event-feed-item">
+										<div class="event-feed-item__item overview-box-wrap">
+											<div class="event-feed-item__visual">
+												<img src="img/img64.svg" alt="image description">
+											</div>
+											<div class="event-feed-item__description">
+												<h5 class="event-feed-item__title">Meeting</h5>
+												<div class="meeting-wrap">
+													<div class="meeting-wrap__item">
+														<svg class="meeting-wrap__ico" width="16" height="18" fill="#A3A5B0">
+															<use xlink:href="img/sprite-icons.svg#ico-calendar"></use>
+														</svg>
+														<span class="meeting-wrap__label label-title">05.14.2018</span>
+													</div>
+													<div class="meeting-wrap__item">
+														<svg class="meeting-wrap__ico" width="19" height="19" fill="#A3A5B0">
+															<use xlink:href="img/sprite-icons.svg#clock"></use>
+														</svg>
+														<span class="meeting-wrap__label label-title">13:45 PM</span>
+													</div>
+												</div>
+												<p>Meeting up with John and Emily Smith about the potential apartment in Baltimore, NY.</p>
+												<ul class="client-list">
+													<li class="client-list__item">
+														<span class="client-list__img">
+															<img src="img/img55.jpg" width="46" srcset="img/img55@2x.jpg" alt="image description">
+														</span>
+														<div class="client-list__info">
+															<h6 class="client-list__title h7">John Smith</h6>
+															<span class="client-list__position">Family / Husband</span>
+														</div>
+													</li>
+													<li class="client-list__item">
+														<span class="client-list__img">
+															<img src="img/img58.jpg" width="46" srcset="img/img58@2x.jpg" alt="image description">
+														</span>
+														<div class="client-list__info">
+															<h6 class="client-list__title h7">Emily Smith</h6>
+															<span class="client-list__position">Family / Wife</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="img/sprite-icons.svg#union"></use>
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20" class="light-ico">
+																		<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																	</svg>
+																</span>
+																<span class="text">Edit</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="event-feed-item__item overview-box-wrap">
+											<div class="event-feed-item__visual">
+												<img src="img/img65.svg" alt="image description">
+											</div>
+											<div class="event-feed-item__description">
+												<h5 class="event-feed-item__title">Meeting</h5>
+												<div class="meeting-wrap">
+													<div class="meeting-wrap__item">
+														<svg class="meeting-wrap__ico" width="16" height="18" fill="#A3A5B0">
+															<use xlink:href="img/sprite-icons.svg#ico-calendar"></use>
+														</svg>
+														<span class="meeting-wrap__label label-title">05.14.2018</span>
+													</div>
+													<div class="meeting-wrap__item">
+														<svg class="meeting-wrap__ico" width="19" height="19" fill="#A3A5B0">
+															<use xlink:href="img/sprite-icons.svg#clock"></use>
+														</svg>
+														<span class="meeting-wrap__label label-title">13:45 PM</span>
+													</div>
+												</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dapibus lectus non tincidunt ornare. Duis gravida, ex eu efficitur sagittis, metus tellus placerat lectus, sed condimentum neque est eget metus. Nam lorem ligula, commodo vitae lectus eu, venenatis semper sapien. Vivamus maximus tortor ut tellus mattis gravida. Vestibulum in tortor ac sem lacinia blandit. Fusce scelerisque consequat ante, et porttitor felis laoreet eget. </p>
+												<ul class="client-list">
+													<li class="client-list__item">
+														<span class="client-list__img">
+															<img src="img/img55.jpg" width="46" srcset="img/img55@2x.jpg" alt="image description">
+														</span>
+														<div class="client-list__info">
+															<h6 class="client-list__title h7">John Smith</h6>
+															<span class="client-list__position">Family / Husband</span>
+														</div>
+													</li>
+													<li class="client-list__item">
+														<span class="client-list__img">
+															<img src="img/img58.jpg" width="46" srcset="img/img58@2x.jpg" alt="image description">
+														</span>
+														<div class="client-list__info">
+															<h6 class="client-list__title h7">Emily Smith</h6>
+															<span class="client-list__position">Family / Wife</span>
+														</div>
+													</li>
+													<li class="client-list__item">
+														<span class="client-list__img">
+															<img src="img/img55.jpg" width="46" srcset="img/img55@2x.jpg" alt="image description">
+														</span>
+														<div class="client-list__info">
+															<h6 class="client-list__title h7">John Smith</h6>
+															<span class="client-list__position">Family / Husband</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="dropdown-option dropdown">
+												<button class="btn-drop dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<svg class="ico" width="17" height="4">
+														<use xlink:href="img/sprite-icons.svg#union"></use>
+													</svg>
+												</button>
+												<div class="dropdown-menu overview-drop-option">
+													<ul class="drop-option-list">
+														<li class="drop-option-list__item">
+															<a href="#" class="drop-option-list__link">
+																<span class="drop-option-list__drop-ico">
+																	<svg width="20" height="20" class="light-ico">
+																		<use xlink:href="img/sprite-icons.svg#ico-settings"></use>
+																	</svg>
+																</span>
+																<span class="text">Edit</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="event-feed-wrap__btn-expand link-title">Expand List (5)</a>
+								</div>
+							</div>
+							<div class="quick-add-modal">
+								<ul class="modal-option-list">
+									<li class="modal-option-list__item">
+										<a href="#" class="modal-option-list__link">
+											<span class="modal-option-list__ico">
+												<img src="img/ico69.svg" width="35" alt="image description">
+											</span>
+											<span>Add An Expense</span>
+										</a>
+									</li>
+									<li class="modal-option-list__item">
+										<a href="#" class="modal-option-list__link">
+											<span class="modal-option-list__ico">
+												<img src="img/ico70.svg" width="35" alt="image description">
+											</span>
+											<span>Add A Note</span>
+										</a>
+									</li>
+									<li class="modal-option-list__item">
+										<a href="#" class="modal-option-list__link">
+											<span class="modal-option-list__ico">
+												<img src="img/ico71.svg" width="35" alt="image description">
+											</span>
+											<span>Start A Tour</span>
+										</a>
+									</li>
+									<li class="modal-option-list__item">
+										<a href="#" class="modal-option-list__link">
+											<span class="modal-option-list__ico">
+												<img src="img/ico72.svg" width="35" alt="image description">
+											</span>
+											<span>Add An Event</span>
+										</a>
+									</li>
+								</ul>
+								<a href="#" class="quick-add-modal__button-modal quick-add-modal__close-modal">
+									<span class="quick-add-modal__ico-button">
+										<svg width="44" height="44">
+											<use xlink:href="img/sprite-icons.svg#close-ico"></use>
+										</svg>
+									</span>
+									<span>Close</span>
+								</a>
+							</div>
+							<div class="btn-quick-add">
+								<a href="#" class="quick-add-modal__button-modal quick-add-modal__quick-add">
+									<span class="quick-add-modal__ico-button">
+										<svg width="60" height="55">
+											<use xlink:href="img/sprite-icons.svg#quick-add"></use>
+										</svg>
+									</span>
+									<span>Quick add</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		//= template/footer.html
+	</body>
+</html>

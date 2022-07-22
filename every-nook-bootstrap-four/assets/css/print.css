@@ -1,0 +1,187 @@
+@page
+{
+    margin: 0;
+}
+
+.sheet,
+body
+{
+    margin: 0;
+}
+
+.sheet
+{
+    position: relative;
+
+    overflow: hidden;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    page-break-after: always;
+}
+
+body.A3 .sheet
+{
+    width: 297mm;
+    height: 419mm;
+}
+
+body.A3.landscape .sheet
+{
+    width: 420mm;
+    height: 296mm;
+}
+
+body.A4 .sheet
+{
+    width: 210mm;
+    height: 296mm;
+}
+
+body.A4.landscape .sheet
+{
+    width: 297mm;
+    height: 209mm;
+}
+
+body.A5 .sheet
+{
+    width: 148mm;
+    height: 209mm;
+}
+
+body.A5.landscape .sheet
+{
+    width: 210mm;
+    height: 147mm;
+}
+
+.sheet.padding-10mm
+{
+    padding: 10mm;
+}
+
+.sheet.padding-15mm
+{
+    padding: 15mm;
+}
+
+.sheet.padding-20mm
+{
+    padding: 20mm;
+}
+
+.sheet.padding-25mm
+{
+    padding: 25mm;
+}
+
+@media screen
+{
+    .sheet
+    {
+        margin: 5mm;
+
+        background: #fff;
+    }
+}
+
+@media print
+{
+    body.A3.landscape
+    {
+        width: 420mm;
+    }
+
+    body.A3,
+    body.A4.landscape
+    {
+        width: 297mm;
+    }
+
+    body.A4,
+    body.A5.landscape
+    {
+        width: 210mm;
+    }
+
+    body.A5
+    {
+        width: 148mm;
+    }
+
+    .wrapper-print
+    {
+        max-width: none;
+        padding: 10mm 15mm;
+    }
+
+    a[href^=http]:not([href*='mywebsite.com']):after
+    {
+        content: ' (' attr(href) ')';
+    }
+
+    abbr[title]:after
+    {
+        content: ' (' attr(title) ')';
+    }
+
+    .offer-summary-container
+    {
+        padding-bottom: 10mm;
+    }
+
+    .offer-summary-container .details-table.secondary-table .details-table__col,
+    .offer-summary-container .details-table.secondary-table .details-table__item
+    {
+            flex-direction: row;
+
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+    }
+
+    .offer-summary-container .details-table.secondary-table .details-table__col
+    {
+        width: 50%;
+    }
+
+    .offer-summary-container .container
+    {
+        max-width: none;
+    }
+
+    .avatar-block__avatar
+    {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer-print
+    {
+        position: fixed;
+        right: 15mm;
+        bottom: 10mm;
+        left: 15mm;
+
+        max-width: none;
+    }
+
+    .details-holder .text-wrap
+    {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    ul
+    {
+        page-break-inside: avoid;
+    }
+
+    p
+    {
+        widows: 4;
+        orphans: 2;
+    }
+}

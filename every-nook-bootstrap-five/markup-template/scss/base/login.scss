@@ -1,0 +1,129 @@
+@import "vendors/include-media";
+
+.login-module{
+    display: flex;
+    flex-direction: column;
+    max-width: 582px;
+    margin-left: auto;
+    margin-right: auto;
+    &-logo{
+		margin: 0 auto 30px;
+		max-width: 180px;
+		@include media(">=phone") {
+			max-width: 260px;
+		}
+        img{
+            display: block;
+			width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.login-form{
+	.btn{
+		padding: 8px 16px;
+		min-width: 128px;
+	}
+}
+
+.login-tabset{
+	.tab-content{
+		background: $white;
+		padding: 20px;
+		border: 2px solid #DFE2E7;
+		box-shadow: 0 0 20px $black;
+		border-radius: 5px;
+		@include media(">=phone") {
+			padding: 30px 40px;
+		}
+	}
+
+	.nav{
+		text-align: center;
+	}
+
+	.nav-item{
+		width: percentage(1/2);
+		
+	}
+
+	.nav-tabs{
+		align-items: flex-end;
+		border: none;
+
+		.nav-item{
+			&:first-child{
+				.nav-link{
+					&:not(.active){
+						margin-left: 5px;
+						@include media(">=phone") {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+			&:last-of-type{
+				.nav-link{
+					&:not(.active){
+						margin-right: 5px;
+						@include media(">=phone") {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.nav-link{
+
+			&.active{
+				margin-bottom: -3px;
+			}
+
+			&:not(.active){
+				color: $white;
+				min-height: 47px;
+				background-color: #FA4B5F;
+				border: none;
+				@include media(">=phone") {
+					font-size: 18px;
+				}
+				&::before{
+					box-shadow: 0 0 20px #000000;
+				}
+			}
+		}
+
+		.nav-link{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $secondary;
+			font-weight: 700;
+			min-height: 55px;
+			text-transform: uppercase;
+			position: relative;
+			margin: 0;
+			padding-left: 5px;
+			padding-right: 5px;
+			overflow: hidden;
+			border: 2px solid #DFE2E7;
+			border-bottom-color: transparent;
+			@include media(">=phone") {
+				font-size: 16px;
+				align-items: flex-end;
+			}
+
+			&::before{
+				position: absolute;
+				content: '';
+				bottom: -25px;
+				left: 0;
+				right: 0;
+				height: 25px;
+			}
+		}
+	}
+}

@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<title>Individual Single Goal View</title>
+	<link media="all" rel="stylesheet" href="assets/css/bootstrap.css">
+	<link media="all" rel="stylesheet" href="assets/css/timepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/datepicker.min.css">
+	<link media="all" rel="stylesheet" href="assets/css/select.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;500&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link media="all" rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header-wrapper">
+					<a href="#" class="logo">
+						<img class="logo__desktop" src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+						<img class="logo__mobile" src="assets/img/logo-mobile.svg" width="34" height="33" alt="EveryNook">
+					</a>
+					<div class="main-menu">
+						<nav class="nav">
+							<ul>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#wrench" />
+										</svg>
+										<span>Tools</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community" />
+														</svg>
+													</span>
+													<span>Manage Your Goals</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up" />
+														</svg>
+													</span>
+													<span>Shared Goals</span>
+													<span class="subtitle">View goals shared in the community, your brokerage or your team, if applicable.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#community2" />
+																	</svg>
+																</span>
+																<span>Community Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#building2" />
+																	</svg>
+																</span>
+																<span>Brokerage Goals</span>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<span class="ellipse-icon">
+																	<svg width="16" height="16">
+																		<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up" />
+																	</svg>
+																</span>
+																<span>Team Goals</span>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#plus" />
+														</svg>
+													</span>
+													<span>Add A New Goal</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="20" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#pie-chart2" />
+										</svg>
+										<span>Insights</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#statistics-going-up" />
+														</svg>
+													</span>
+													<span>Your Business Insights</span>
+													<span class="subtitle">Analytical breakdown of your sales trends, achievments and forecast of your future performance.</span>
+												</a>
+												<div class="nav-second-drop">
+													<ul class="sub-list">
+														<li>
+															<a href="#">Production Insights</a>
+														</li>
+														<li>
+															<a href="#">Your Awards</a>
+														</li>
+														<li>
+															<a href="#">Ranking</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#building2" />
+														</svg>
+													</span>
+													<span>Brokerage Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community2" />
+														</svg>
+													</span>
+													<span>Team Insights</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#pin" />
+														</svg>
+													</span>
+													<span>Area Insights</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<svg class="icon" width="22" height="20">
+											<use xlink:href="assets/img/sprite-icons.svg#social-media" />
+										</svg>
+										<span>Collaboration</span>
+									</a>
+									<div class="nav-drop">
+										<ul>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community" />
+														</svg>
+													</span>
+													<span>Agent Collaboration</span>
+													<span class="subtitle">Share your experiences with other agents in the community and showcase your favorite peers.</span>
+												</a>
+												<ul class="sub-list">
+													<li>
+														<a href="#">Reviews</a>
+													</li>
+													<li>
+														<a href="#">Endorsements</a>
+													</li>
+													<li>
+														<a href="#">Favorites</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-icon">
+														<svg width="16" height="16">
+															<use xlink:href="assets/img/sprite-icons.svg#community" />
+														</svg>
+													</span>
+													<span>Invite Other Agents</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<ul class="navbar-users">
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="23" height="23" viewbox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 4C1 2.34315 2.34315 1 4 1H19C20.6569 1 22 2.34315 22 4V16H4C2.34315 16 1 14.6569 1 13V4Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path class="fill" d="M14.3308 20.9979L10.9998 18C9.79981 16.92 13.8331 15.55 15.9998 15V20.2546C15.9998 21.1204 14.9744 21.5771 14.3308 20.9979Z" fill="#AAB0BB" />
+										<rect x="5" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB" />
+										<rect x="10" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB" />
+										<rect x="15" y="7" width="3" height="3" rx="1.5" fill="#AAB0BB" />
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Messages</span>
+											<a href="#" class="notifications-list__link-head">Messages settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL Messages (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Messages</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<svg width="17" height="18" viewbox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="path-1-inside-1_1127_15913" fill="white">
+											<path d="M8.5 18C9.875 18 11 17.1 11 16H6C6 17.1 7.125 18 8.5 18Z" />
+										</mask>
+										<path class="fill" d="M11 16H14C14 14.3431 12.6569 13 11 13V16ZM6 16V13C4.34315 13 3 14.3431 3 16H6ZM8.5 21C10.8726 21 14 19.347 14 16H8C8 15.468 8.27792 15.1608 8.39154 15.0699C8.50218 14.9814 8.54819 15 8.5 15V21ZM11 13H6V19H11V13ZM3 16C3 19.347 6.12744 21 8.5 21V15C8.45181 15 8.49782 14.9814 8.60846 15.0699C8.72208 15.1608 9 15.468 9 16H3Z" fill="#AAB0BB" mask="url(#path-1-inside-1_1127_15913)" />
+										<path d="M14 6.50018V9.58596C14 10.1164 14.2107 10.6251 14.5858 11.0002L15.2286 10.3574L14.5858 11.0002L16 12.4144L16 14.0002H1V12.4144L2.41421 11.0002C2.78929 10.6251 3 10.1164 3 9.58596V6.50018C3 3.8889 4.75475 1.77958 7.21551 1.17691C8.07302 1.00807 8.92691 1.0081 9.78451 1.17691C12.2453 1.77959 14 3.8889 14 6.50018Z" stroke="#AAB0BB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<div class="dropdown-menu">
+									<ul class="notifications-list">
+										<li class="notifications-list__item notifications-list__item-top">
+											<span class="label-text f-ubuntu">Notifications</span>
+											<a href="#" class="notifications-list__link-head">notifications settings</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<img src="assets/img/img-user.jpg" alt="image description" srcset="assets/img/img-user@2x.jpg 2x">
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">Staff request</span>
+													<span>David Wittingham wants to join your staff</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item">
+											<a href="#" class="notifications-list__link-message">
+												<span class="notifications-list__ico">
+													<svg class="icon" width="20" height="20" fill="#1AACFF">
+														<use xlink:href="assets/img/sprite-icons.svg#database-storage" />
+													</svg>
+												</span>
+												<div class="notifications-list__content">
+													<span class="label-title f-ubuntu">System Update</span>
+													<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+														amet euismod eros, a dapibus erat. Praesent ut erat dignissim nulla
+														mollis tincidunt non vitae leo.</span>
+												</div>
+												<span class="notifications-list__time f-ubuntu">8:45 AM</span>
+											</a>
+										</li>
+										<li class="notifications-list__item notifications-list__item-bottom">
+											<a href="#" class="label-text f-ubuntu">SEE ALL NOTIFICATIONS (8)</a>
+											<a href="#" class="notifications-list__link-bottom">Clear All Notifications</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="navbar-users__item burger-item">
+							<a href="#" class="burger"><span></span></a>
+						</li>
+						<li class="navbar-users__item">
+							<div class="dropdown">
+								<button class="btn-users dropdown-toggle bg-transparent border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									<img src="assets/img/img-user02.png" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+								</button>
+								<div class="dropdown-menu">
+									<div class="profile-menu">
+										<div class="profile-option">
+											<div class="profile-option-userpic">
+												<img src="assets/img/img-user02.png" height="40" width="40" alt="image description" srcset="assets/img/img-user02@2x.png 2x">
+											</div>
+											<div class="profile-option-info">
+												<h6 class="fw-bold f-ubuntu">Tommy Wilson</h6>
+												<a href="#">See your public profile</a>
+											</div>
+										</div>
+										<ul class="profile-list">
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#dashboard" />
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Dashboard</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#settings" />
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Settings</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="ellipse-ico">
+														<svg width="20" height="20" fill="#1AACFF">
+															<use xlink:href="assets/img/sprite-icons.svg#log-out" />
+														</svg>
+													</span>
+													<span class="f-ubuntu fw-bold text-dark">Log Out</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="head-section">
+				<div class="container">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="#">Goals</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Goal Details</li>
+						</ol>
+					</nav>
+					<div class="profile-row">
+						<div class="profile-row-description">
+							<div class="profile-block">
+								<div class="profile-block-img">
+									<img class="scroll-cover" src="assets/img/userpic-05.jpg" width="110" alt="image description" srcset="assets/img/userpic-05@2x.jpg 2x">
+								</div>
+								<div class="profile-block-info text-dark-70">
+									<h1 class="f-ubuntu fw-bold mb-0">
+										This is my big goal
+									</h1>
+									<p>50 Total Units Sold | Full Year | 2022</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="section-nav">
+				<div class="navigation-menu">
+					<div class="container">
+						<div class="dropdown">
+							<button class="btn-menu" data-bs-toggle="dropdown">
+								<svg class="icon" width="20" height="20">
+									<use xlink:href="assets/img/sprite-icons.svg#menu" />
+								</svg>
+							</button>
+							<ul class="navigation-dropdown dropdown-menu">
+								<li><a href="#">Roadmap</a></li>
+								<li><a href="#">Progress</a></li>
+								<li><a href="#">Performance</a></li>
+								<li><a href="#">Sales</a></li>
+								<li><a href="#">Ranking</a></li>
+								<li><a href="#">Updated Roadmap</a></li>
+								<li><a href="#">Commissions</a></li>
+								<li><a href="#">Units</a></li>
+								<li><a href="#">Activity Log</a></li>
+							</ul>
+						</div>
+						<div class="scroll-cover">
+							<ul class="navigation-list">
+								<li>
+									<a href="#roadmap">Roadmap</a>
+								</li>
+								<li>
+									<a href="#progress">Progress</a>
+								</li>
+								<li>
+									<a href="#performance">Performance</a>
+								</li>
+								<li>
+									<a href="#sales">Sales</a>
+								</li>
+								<li>
+									<a href="#ranking">Ranking</a>
+								</li>
+								<li>
+									<a href="#updated-roadmap">Updated Roadmap</a>
+								</li>
+								<li>
+									<a href="#historic">Historic</a>
+								</li>
+								<li>
+									<a href="#commissions">Commissions</a>
+								</li>
+								<li>
+									<a href="#units">Units</a>
+								</li>
+								<li>
+									<a href="#">Activity</a>
+								</li>
+							</ul>
+							<button class="next">
+								<svg width="12" height="20">
+									<use xlink:href="assets/img/sprite-icons.svg#arrow-vector-next" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="section pt-4">
+				<div class="container">
+					<div class="content-unit" id="roadmap">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon fw-bold">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#roadmap2" />
+								</svg>
+								<span>Goal Roadmap</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">What do you have to do to achieve your goal?</h3>
+							<p class="text-secondary fs-6 mb-4">To achieve your goal of $20M sold over 12 months in 2022
+								you should average selling $5M per month. This represents an increase of $2,200,500 over
+								this same period in the previous year. You’ll need to sell an additional $183,375 per
+								month over your previous average.</p>
+							<h2 class="mb-4 fw-bold">Goal Criteria</h2>
+							<div class="row">
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Total Volume sold</span>
+											<span class="detail-table-col text-md-right">$20,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume needed per Quarter</span>
+											<span class="detail-table-col text-md-right">$5,000,000</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume needed per month</span>
+											<span class="detail-table-col text-md-right">$1,666,667</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume needed per Week</span>
+											<span class="detail-table-col text-md-right">$384,615</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="fw-bold">Volume Needed Per Month</h2>
+							<p class="text-secondary fs-6 mb-4">Below is a visual breakdown of your goal roadmap over
+								time per month. The solid line indicates a static or consistent game plan to achieve
+								your goal. The dotted line represents the seasonality fluctuation of sales in the area.
+							</p>
+							<div class="btn-actions mb-4">
+								<a href="#" class="btn-actions-btn active">Cumulative Volume Sold</a>
+								<a href="#" class="btn-actions-btn">Monthly Volume Sold</a>
+							</div>
+							<img class="img-fluid" src="assets/img/img-placeholder-02.svg" width="1094" alt="image description">
+						</div>
+					</div>
+					<div class="module-unit section-unit">
+						<div class="module-unit-head">
+							<h4 class="mb-0">Snapshot</h4>
+							<div class="slider-pagination">
+								<!-- navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						</div>
+						<div class="module-unit-content">
+							<div class="swiper snapshot-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="51" height="57" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#destination" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">70%</span>
+											<span class="snapshot-card-text text-xs f-nunito">Of Total Goal Volume
+												Sold</span>
+											<span class="text-xs text-danger-90 f-nunito">30% Lower Than goal</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="51" height="51" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#graph" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">$18.67M</span>
+											<span class="snapshot-card-text text-xs f-nunito">Your Current Pace</span>
+											<span class="text-xs text-danger-90 f-nunito">6.67% Lower Than goal</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="39" height="43" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#calendar" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">$1.333M</span>
+											<span class="snapshot-card-text text-xs f-nunito">volume sold per
+												month</span>
+											<span class="text-xs text-danger-90 f-nunito">20% Lower Than game plan</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="49" height="45" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#arrows" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">$1.333M</span>
+											<span class="snapshot-card-text text-xs f-nunito">updated goal per
+												month</span>
+											<span class="text-xs text-danger-90 f-nunito">20% Lower Than game plan</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="51" height="51" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#clock" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">75%</span>
+											<span class="snapshot-card-text text-xs f-nunito">of goal time frame
+												passed</span>
+											<span class="text-xs text-danger-90 f-nunito">3 months left</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="51" height="51" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#clock" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">75%</span>
+											<span class="snapshot-card-text text-xs f-nunito">of goal time frame
+												passed</span>
+											<span class="text-xs text-danger-90 f-nunito">3 months left</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="snapshot-card card-tile">
+											<span class="snapshot-card-icon icon-tile">
+												<svg width="51" height="57" fill="#1AACFF">
+													<use xlink:href="assets/img/sprite-icons.svg#destination" />
+												</svg>
+											</span>
+											<span class="snapshot-card-title">70%</span>
+											<span class="snapshot-card-text text-xs f-nunito">Of Total Goal Volume
+												Sold</span>
+											<span class="text-xs text-danger-90 f-nunito">30% Lower Than goal</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-unit" id="progress">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon fw-bold">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#progress2" />
+								</svg>
+								<span>Goal Progress To Date</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">How close are you to achieving your goal?</h3>
+							<p class="text-secondary fs-6 mb-4">To date, you have sold $14,280,000 or 74% of your goal.
+								You will need to sell another $5,720,000 to achieve your goal of $20,000,000.</p>
+							<div class="row">
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume sold Goal</span>
+											<span class="detail-table-col text-md-right">$20,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Goal Completion to date</span>
+											<span class="detail-table-col text-md-right">74%</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume Still Needed</span>
+											<span class="detail-table-col text-md-right">$14,280,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume needed per Week</span>
+											<span class="detail-table-col text-md-right">$384,615</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="fw-bold">Goal versus Current progress</h2>
+							<p class="text-secondary fs-6 mb-4">Below is a visual breakdown of your goal compared to
+								your progress so far. The bars represent your actual volume sold to date. The line
+								represents the original goal road map.
+							</p>
+							<div class="btn-actions mb-4">
+								<a href="#" class="btn-actions-btn active">Cumulative Volume Sold</a>
+								<a href="#" class="btn-actions-btn">Monthly Volume Sold</a>
+							</div>
+							<img class="img-fluid" src="assets/img/img-placeholder-02.svg" width="1094" alt="image description">
+						</div>
+					</div>
+					<div class="content-unit" id="performance">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon fw-bold">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#performance" />
+								</svg>
+								<span>Goal Performance</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">How have you been performing month to month to achieve
+								your goal?</h3>
+							<p class="text-secondary fs-6 mb-4">To date, you have sold $14,280,000 or 74% of your goal.
+								You will need to sell another $5,720,000 to achieve your goal of $20,000,000.”</p>
+							<div class="row">
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume Monthly Goal</span>
+											<span class="detail-table-col text-md-right">$1,666,667</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Current Avg. versus Road Map</span>
+											<span class="detail-table-col text-md-right">60%</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Avg. Volume PEr Month So Far</span>
+											<span class="detail-table-col text-md-right">$1,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Difference from goal</span>
+											<span class="detail-table-col text-md-right">$666,667</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="fw-bold">Goal versus Current progress</h2>
+							<p class="text-secondary fs-6 mb-4">The chart below shows how you have performed each month
+								compared to your original road map. Curves pointing upwards indicate you performed
+								better than the game plan. Curves pointing down indicate you missed your benchmark for
+								that particular month.
+							</p>
+							<img class="img-fluid" src="assets/img/img-placeholder-02.svg" width="1094" alt="image description">
+						</div>
+					</div>
+					<div class="content-unit" id="sales">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#mortgage-loan" />
+								</svg>
+								<span>Sales Breakdown</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">What does your sales </h3>
+							<p class="text-secondary fs-6 mb-4">Mauris rhoncus est finibus, pulvinar lorem eget, dapibus
+								neque. Vestibulum tempus dictum hendrerit. Cras vel pellentesque dolor. Aliquam egestas
+								fringilla mollis. Proin imperdiet vel ex sit amet eleifend. Mauris massa massa, congue
+								eget quam eu, vehicula varius ex. Vestibulum felis augue, blandit vitae lacus et,
+								consectetur dictum enim.</p>
+							<div class="row">
+								<div class="col-xl-6 mb-4">
+									<h2 class="mb-3">Transaction Profile</h2>
+									<ul class="detail-table text-uppercase h6">
+										<li class="detail-table-row">
+											<span class="detail-table-col">homes sold</span>
+											<span class="detail-table-col text-md-right">100</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">average price per home</span>
+											<span class="detail-table-col text-md-right">$500,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Listings sold</span>
+											<span class="detail-table-col text-md-right">60</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">average price per listing</span>
+											<span class="detail-table-col text-md-right">$400,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Buyers represented</span>
+											<span class="detail-table-col text-md-right">40</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">average price per buyer</span>
+											<span class="detail-table-col text-md-right">$550,000</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 pt-xl-5">
+									<img class="img-fluid" src="assets/img/img-placeholder-05.svg" width="438" alt="image description">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-unit" id="ranking">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#progress" />
+								</svg>
+								<span>Ranking And Market Share</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">How would you impact the local real estate market if
+								you achieve your goal?</h3>
+							<p class="text-secondary fs-6 mb-4">Mauris rhoncus est finibus, pulvinar lorem eget, dapibus
+								neque. Vestibulum tempus dictum hendrerit. Cras vel pellentesque dolor. Aliquam egestas
+								fringilla mollis. Proin imperdiet vel ex sit amet eleifend. Mauris massa massa, congue
+								eget quam eu, vehicula varius ex. Vestibulum felis augue, blandit vitae lacus et,
+								consectetur dictum enim. Mauris rhoncus est finibus, pulvinar lorem eget, dapibus neque.
+								Vestibulum tempus dictum hendrerit.</p>
+							<div class="row">
+								<div class="col-xl-2 mb-xl-0 mb-5">
+									<img class="img-fluid" src="assets/img/medal-icon.svg" width="157" alt="image description">
+								</div>
+								<div class="col-xl-10">
+									<h2>Quick Hits</h2>
+									<div class="row">
+										<div class="col-xl-6 mb-4">
+											<ul class="detail-table three-col text-uppercase">
+												<li class="detail-table-head">
+													<strong class="detail-table-col">Ranking</strong>
+													<span class="detail-table-col text-md-center text-secondary h6">Goal</span>
+													<span class="detail-table-col text-md-center text-secondary h6">Currently</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Maryland</span>
+													<span class="detail-table-col text-md-center">5</span>
+													<span class="detail-table-col text-md-center">5</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Baltimore Metro</span>
+													<span class="detail-table-col text-md-center">60</span>
+													<span class="detail-table-col text-md-center">60</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Howard County</span>
+													<span class="detail-table-col text-md-center">5</span>
+													<span class="detail-table-col text-md-center">5</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-6 mb-4">
+											<ul class="detail-table three-col text-uppercase">
+												<li class="detail-table-head">
+													<strong class="detail-table-col">Market Share</strong>
+													<span class="detail-table-col text-md-center text-secondary d-md-block d-none h6">Goal</span>
+													<span class="detail-table-col text-md-center text-secondary d-md-block d-none h6">Currently</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Maryland</span>
+													<span class="detail-table-col text-md-center">.22%</span>
+													<span class="detail-table-col text-md-center">.22%</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Howard County</span>
+													<span class="detail-table-col text-md-center">.80%</span>
+													<span class="detail-table-col text-md-center">.80%</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Baltimore Metro</span>
+													<span class="detail-table-col text-md-center">.22%</span>
+													<span class="detail-table-col text-md-center">.22%</span>
+												</li>
+											</ul>
+										</div>
+										<div class="col-xl-6">
+											<ul class="detail-table three-col text-uppercase">
+												<li class="detail-table-head">
+													<strong class="detail-table-col">Percentile</strong>
+													<span class="detail-table-col text-md-center text-secondary d-md-block d-none h6">Goal</span>
+													<span class="detail-table-col text-md-center text-secondary d-md-block d-none h6">Currently</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Maryland</span>
+													<span class="detail-table-col text-md-center">Top 5%</span>
+													<span class="detail-table-col text-md-center">Top 5%</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Baltimore Metro</span>
+													<span class="detail-table-col text-md-center">Top 60%</span>
+													<span class="detail-table-col text-md-center">Top 60%</span>
+												</li>
+												<li class="detail-table-row">
+													<span class="detail-table-col">Howard County</span>
+													<span class="detail-table-col text-md-center">Top 5%</span>
+													<span class="detail-table-col text-md-center">Top 5%</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-unit" id="updated-roadmap">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon fw-bold">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#roadmap" />
+								</svg>
+								<span>Updated Roadmap</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">What do you have to do to stay on track based on your
+								progress so far?</h3>
+							<p class="text-secondary fs-6 mb-4">To date, you have sold an average of $1,000,000 per
+								month compared to your original gameplan of $1,666,667. Your monthly average will need
+								to be adjusted to $2,222,222 to stay on track.</p>
+							<div class="row">
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume sold Goal</span>
+											<span class="detail-table-col text-md-right">$20,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Original Monthly Volume Needed</span>
+											<span class="detail-table-col text-md-right">$1,666,667</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 mb-5">
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Avg. Monthly Volume So Far</span>
+											<span class="detail-table-col text-md-right">$1,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">New Monthly volume needed</span>
+											<span class="detail-table-col text-md-right">$2,222,222</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="fw-bold">Updated Road Map based on Progress</h2>
+							<p class="text-secondary fs-6 mb-4">Below you will see your current progress on a monthly
+								basis compared to your adjusted game plan. The bars represent your current volume sold
+								to date. The line represents your monthly game plan.
+							</p>
+							<img class="img-fluid" src="assets/img/img-placeholder-02.svg" width="1094" alt="image description">
+						</div>
+					</div>
+					<div class="content-unit" id="historic">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon fw-bold">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#book" />
+								</svg>
+								<span>Historic Performance</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">How does your current progress compare to your
+								previous performance?</h3>
+							<p class="text-secondary fs-6 mb-4">During this same period in 2020 you sold $18,000,000 of
+								real estate. So far you have sold $10,000,000 or 55% less than last year.</p>
+							<div class="row">
+								<div class="col-xl-6 mb-5">
+									<h2 class="fw-bold">Current Performance</h2>
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume sold</span>
+											<span class="detail-table-col text-md-right">$10,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume PEr Month</span>
+											<span class="detail-table-col text-md-right">$850,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Average Volume Per Sale</span>
+											<span class="detail-table-col text-md-right">$425,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Average Units Sold Per Month</span>
+											<span class="detail-table-col text-md-right">2</span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-6 mb-5">
+									<h2 class="fw-bold">2020 Performance</h2>
+									<ul class="detail-table text-uppercase">
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume sold</span>
+											<span class="detail-table-col text-md-right">$18,000,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Volume PEr Month</span>
+											<span class="detail-table-col text-md-right">$1,500,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Average Volume Per Sale</span>
+											<span class="detail-table-col text-md-right">$500,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">Average Units Sold Per Month</span>
+											<span class="detail-table-col text-md-right">3</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<h2 class="fw-bold">Current Versus Previous Performance</h2>
+							<p class="text-secondary fs-6 mb-4">Here you find your current perfromance compared to the
+								same period last year. The wide bars indicate your performance for 2020. The narrow bars
+								represent your current performance.
+							</p>
+							<div class="btn-actions mb-4">
+								<a href="#" class="btn-actions-btn active">Cumulative Volume Sold</a>
+								<a href="#" class="btn-actions-btn">Monthly Volume Sold</a>
+							</div>
+							<img class="img-fluid" src="assets/img/img-placeholder-02.svg" width="1094" alt="image description">
+						</div>
+					</div>
+					<div class="content-unit" id="commissions">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#dollar-fill" />
+								</svg>
+								<span>Commissions</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<h3 class="text-dark title-3 fw-bold">What would your commissions look like if you achieved
+								your goal?</h3>
+							<p class="text-secondary fs-6 mb-4">Mauris rhoncus est finibus, pulvinar lorem eget, dapibus
+								neque. Vestibulum tempus dictum hendrerit. Cras vel pellentesque dolor. Aliquam egestas
+								fringilla mollis. Proin imperdiet vel ex sit amet eleifend. Mauris massa massa, congue
+								eget quam eu, vehicula varius ex. Vestibulum felis augue, blandit vitae lacus et,
+								consectetur dictum enim.</p>
+							<div class="row mb-5">
+								<div class="col-xl-7 mb-4 mb-xl-0 d-flex flex-column">
+									<h2 class="mb-3">Commission Breakdown</h2>
+									<ul class="detail-table text-uppercase h6 mb-4 mb-xl-0">
+										<li class="detail-table-row">
+											<span class="detail-table-col">homes sold</span>
+											<span class="detail-table-col text-md-right">100</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col">average price per home</span>
+											<span class="detail-table-col text-md-right">$500,000</span>
+										</li>
+										<li class="detail-table-row">
+											<span class="detail-table-col link-primary">total gross commissions</span>
+											<span class="detail-table-col text-md-right link-primary">$1,250,000</span>
+										</li>
+									</ul>
+									<h6 class="mb-0 mt-auto fw-bold">
+										Gross commissions are based on 2.5% commission side per transaction. To change
+										this, <a href="#!" class="link-primary text-decoration-none">click here</a>.
+									</h6>
+								</div>
+								<div class="col-xl-5 pt-xl-5">
+									<img class="img-fluid float-xl-end" src="assets/img/img-placeholder-04.svg" width="438" alt="image description">
+								</div>
+							</div>
+							<form action="#">
+								<div class="row">
+									<div class="col-xl-4 mb-4">
+										<label class="form-label">Average Price point for listings</label>
+										<input type="text" class="form-control" placeholder="Please Select">
+									</div>
+									<div class="col-xl-4 mb-4">
+										<label class="form-label">Average commission for listings</label>
+										<input type="text" class="form-control" placeholder="Please Select">
+									</div>
+									<div class="col-xl-4 mb-4">
+										<label class="form-label">what percentage of your sales are listings?</label>
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="User input">
+											<span class="input-group-text is-icon">
+												<svg class="icon" width="20" height="20">
+													<use xlink:href="assets/img/sprite-icons.svg#percentage" />
+												</svg>
+											</span>
+										</div>
+									</div>
+									<div class="col-xl-4 mb-4">
+										<label class="form-label">Average Price point for buyers</label>
+										<input type="text" class="form-control" placeholder="Please Select">
+									</div>
+									<div class="col-xl-4 mb-4">
+										<label class="form-label">Average commission for buyers</label>
+										<input type="text" class="form-control" placeholder="Please Select">
+									</div>
+									<div class="col-xl-3 mb-4">
+										<span class="form-label d-lg-block d-none">&nbsp;</span>
+										<button type="button" class="btn btn-primary px-4 w-100">Update Your Assumptions</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="section-unit" id="units">
+						<h3 class="fw-bold text-body">Unit Visualization</h3>
+						<div class="grid-card">
+							<div class="item">
+								<div class="card-visual">
+									<div class="card-visual-img">
+										<img class="img-cover" src="assets/img/img-card-sm-02.jpg" srcset="assets/img/img-card-sm-02@2x.jpg 2x" width="109" alt="image description">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Seller</span>
+									</div>
+									<div class="progress progress-sm">
+										<div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<a data-bs-toggle="modal" data-bs-target="#transaction-summary" class="link-view">&nbsp;</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual">
+									<div class="card-visual-img">
+										<img class="img-cover" src="assets/img/img-card-sm-02.jpg" srcset="assets/img/img-card-sm-02@2x.jpg 2x" width="109" alt="image description">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Seller</span>
+									</div>
+									<div class="progress progress-sm">
+										<div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<a data-bs-toggle="modal" data-bs-target="#transaction-summary" class="link-view">&nbsp;</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual">
+									<div class="card-visual-img">
+										<img class="img-cover" src="assets/img/img-card-sm-02.jpg" srcset="assets/img/img-card-sm-02@2x.jpg 2x" width="109" alt="image description">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Seller</span>
+									</div>
+									<div class="progress progress-sm">
+										<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<a data-bs-toggle="modal" data-bs-target="#transaction-summary" class="link-view">&nbsp;</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual">
+									<div class="card-visual-img">
+										<img class="img-cover" src="assets/img/img-card-sm-02.jpg" srcset="assets/img/img-card-sm-02@2x.jpg 2x" width="109" alt="image description">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Seller</span>
+									</div>
+									<div class="progress progress-sm">
+										<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<a data-bs-toggle="modal" data-bs-target="#transaction-summary" class="link-view">&nbsp;</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="status-divider">
+							<div class="process-status checked">
+								<svg class="process-status-icon" width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#circle-check" />
+								</svg>
+								<span>25% Completed</span>
+							</div>
+						</div>
+						<div class="grid-card">
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="status-divider">
+							<div class="process-status">
+								<svg class="process-status-icon" width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#circle-check" />
+								</svg>
+								<span>50% Completed</span>
+							</div>
+						</div>
+						<div class="grid-card">
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="status-divider">
+							<div class="process-status">
+								<svg class="process-status-icon" width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#circle-check" />
+								</svg>
+								<span>75% Completed</span>
+							</div>
+						</div>
+						<div class="grid-card">
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="card-visual inactive">
+									<div class="card-visual-img">
+									</div>
+									<div class="card-visual-content">
+										<span class="fw-medium">$250,000</span>
+										<span class="card-visual-text">Buyer</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="status-divider">
+							<div class="process-status">
+								<svg class="process-status-icon" width="23" height="23">
+									<use xlink:href="assets/img/sprite-icons.svg#circle-check" />
+								</svg>
+								<span>Goal Achieved</span>
+							</div>
+						</div>
+					</div>
+					<div class="content-unit" id="sharing">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon">
+								<svg class="icon" width="30" height="30" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#share-fill" />
+								</svg>
+								<span>Share Your Goal</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<div class="row">
+								<div class="col-xl-10 mb-5 mb-lg-0">
+									<h3 class="text-dark title-3 fw-bold">Choose who can view your goal and progress.
+									</h3>
+									<p class="text-secondary fs-6 mb-5">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Ut eleifend commodo varius. Quisque et tincidunt erat.
+										Phasellus vitae nibh eros.</p>
+									<div class="team-members">
+										<div class="team-members-tile" data-bs-custom-class="tooltip-card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title=" <img class='tooltip-card-img' src='assets/img/userpic-07.jpg' alt='image'> <span class='tooltip-card-inner'> <span class='tooltip-card-title'>Ann J Greenwald</span> <span>Real Estate Agent</span> <a href='#'>Click for details</a> </span>">
+											<img class="img-cover" src="assets/img/userpic-07.jpg" srcset="assets/img/userpic-07@2x.jpg 2x" width="70" alt="image description">
+										</div>
+										<div class="team-members-tile" data-bs-custom-class="tooltip-card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title=" <img class='tooltip-card-img' src='assets/img/userpic-08.jpg' alt='image'> <span class='tooltip-card-inner'> <span class='tooltip-card-title'>Ann J Greenwald</span> <span>Real Estate Agent</span> <a href='#'>Click for details</a> </span>">
+											<img class="img-cover" src="assets/img/userpic-08.jpg" srcset="assets/img/userpic-08@2x.jpg 2x" width="70" alt="image description">
+										</div>
+										<div class="team-members-tile" data-bs-custom-class="tooltip-card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title=" <img class='tooltip-card-img' src='assets/img/userpic-09.jpg' alt='image'> <span class='tooltip-card-inner'> <span class='tooltip-card-title'>Ann J Greenwald</span> <span>Real Estate Agent</span> <a href='#'>Click for details</a> </span>">
+											<img class="img-cover" src="assets/img/userpic-09.jpg" srcset="assets/img/userpic-09@2x.jpg 2x" width="70" alt="image description">
+										</div>
+										<div class="team-members-tile" data-bs-custom-class="tooltip-card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title=" <img class='tooltip-card-img' src='assets/img/userpic-10.jpg' alt='image'> <span class='tooltip-card-inner'> <span class='tooltip-card-title'>Ann J Greenwald</span> <span>Real Estate Agent</span> <a href='#'>Click for details</a> </span>">
+											<img class="img-cover" src="assets/img/userpic-10.jpg" srcset="assets/img/userpic-10@2x.jpg 2x" width="70" alt="image description">
+										</div>
+										<div class="team-members-tile" data-bs-custom-class="tooltip-card" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" title=" <img class='tooltip-card-img' src='assets/img/userpic-08.jpg' alt='image'> <span class='tooltip-card-inner'> <span class='tooltip-card-title'>Ann J Greenwald</span> <span>Real Estate Agent</span> <a href='#'>Click for details</a> </span>">
+											<img class="img-cover" src="assets/img/userpic-08.jpg" srcset="assets/img/userpic-08@2x.jpg 2x" width="70" alt="image description">
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-2 text-lg-end">
+									<button type="button" class="btn btn-outline-secondary px-4 w-100">Share Settings</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-unit">
+						<div class="content-unit-head px-xl-5">
+							<h2 class="content-title mb-0 is-icon">
+								<svg class="icon" width="26" height="24" fill="#181E39">
+									<use xlink:href="assets/img/sprite-icons.svg#history" />
+								</svg>
+								<span>Activity Log</span>
+							</h2>
+						</div>
+						<div class="content-unit-body px-xl-5">
+							<p class="text-secondary mb-3"><strong class="text-dark">Nulla vitae dolor non qzuam
+									pellentesque ornare vel ac dolor.</strong> Duis condimentum imperdiet pharetra.
+								Vivamus vel lobortis metus, sit amet feugiat neque. Fusce eu convallis nisl. Cras
+								vestibulum, risus at aliquam gravida, nibh lorem tincidunt nunc, ullamcorper consequat
+								lacus risus non sapien. Fusce venenatis sodales metus id viverra. Donec finibus
+								vulputate facilisis. Aliquam porta mi fringilla mattis convallis.</p>
+							<ul class="timeline-list">
+								<li>
+									<div class="timeline-item">
+										<div class="timeline-inner">
+											<span class="timeline-inner-logo">
+												<img src="assets/img/en-logo-sm.svg" width="35" alt="image description">
+											</span>
+											<div class="timeline-inner-content">
+												<strong class="timeline-inner-title">Monthly Goal Roadmap was
+													updated</strong>
+												<p>The monthly roadmap was revised from the previous mark of $1,866,667
+													to $2,100,00</p>
+											</div>
+										</div>
+										<span class="timeline-item-date h6">July 13th, 2021 at 2:31 pm EST</span>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-item">
+										<div class="timeline-inner">
+											<span class="timeline-inner-logo">
+												<img class="img-fluid" src="assets/img/userpic-01.jpg" srcset="assets/img/userpic-01@2x.jpg 2x" width="50" alt="image description">
+											</span>
+											<div class="timeline-inner-content">
+												<strong class="timeline-inner-title">Monthly Goal Roadmap was
+													updated</strong>
+												<p>Duis condimentum imperdiet pharetra. Vivamus vel lobortis metus, sit
+													amet feugiat neque. Fusce eu convallis nisl. Cras vestibulum, risus
+													at aliquam gravida, nibh lorem tincidunt nunc, ullamcorper consequat
+													lacus risus non sapien. Fusce venenatis sodales metus id viverra.
+													Donec finibus vulputate facilisis. Aliquam porta mi fringilla mattis
+													convallis.</p>
+											</div>
+										</div>
+										<span class="timeline-item-date h6">July 13th, 2021 at 2:31 pm EST</span>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-item">
+										<div class="timeline-inner">
+											<span class="timeline-inner-logo">
+												<img src="assets/img/en-logo-sm.svg" width="35" alt="image description">
+											</span>
+											<div class="timeline-inner-content">
+												<strong class="timeline-inner-title">Monthly Goal Roadmap was
+													updated</strong>
+												<p>The monthly roadmap was revised from the previous mark of $1,866,667
+													to $2,100,00</p>
+											</div>
+										</div>
+										<span class="timeline-item-date h6">July 13th, 2021 at 2:31 pm EST</span>
+									</div>
+								</li>
+							</ul>
+							<div class="btn-l-space">
+								<button type="button" class="btn btn-outline-secondary px-6">Load More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer-bg">
+				<img src="assets/img/footer-bg.svg" alt="image description">
+			</div>
+			<div class="footer-tile bg-white">
+				<div class="container">
+					<div class="row upper-footer">
+						<div class="col-xl-6 col-lg-5">
+							<div class="footer-block">
+								<a href="#" class="footer-logo">
+									<img src="assets/img/en-logo.svg" width="158" height="43" alt="EveryNook">
+								</a>
+								<p>Everynook is a community-lead effort to provide cutting edge collaboration tools for local, professional real estate agents. Our goal is to create an eco-system and tool set for real estate agents that will allow them previously unseen access to data to better serve their clients.</p>
+								<ul class="socials">
+									<li>
+										<a href="#" target="_blank">
+											<svg width="12" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#facebook" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="24" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#twitter" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="23" height="23">
+												<use xlink:href="assets/img/sprite-icons.svg#linkedin" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank">
+											<svg width="20" height="21">
+												<use xlink:href="assets/img/sprite-icons.svg#instagram" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-7">
+							<div class="row">
+								<div class="col-lg-6 col-md-5 mb-md-0 mb-5">
+									<h4 class="footer-title">Useful Links</h4>
+									<ul class="footer-list">
+										<li><a href="#">Register</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms of Services</a></li>
+										<li><a href="#">About us</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-7">
+									<h4 class="footer-title">Get in Touch</h4>
+									<ul class="footer-contact">
+										<li>
+											<svg class="icon" width="20" height="20">
+												<use xlink:href="assets/img/sprite-icons.svg#subtract" />
+											</svg>
+											<div>
+												<span class="d-block fw-medium text-muted">Everynook</span>
+												<a href="https://goo.gl/maps/gSfNiLD9kwhipUn26" target="_blank">9175 Guilford Road, Suite 209, <br> Columbia, Maryland 21046</a>
+											</div>
+										</li>
+										<li>
+											<svg class="icon" width="22" height="22">
+												<use xlink:href="assets/img/sprite-icons.svg#phone" />
+											</svg>
+											<a href="tel:8885026080">(888) 502-6080</a>
+										</li>
+										<li>
+											<svg class="icon" width="21" height="16">
+												<use xlink:href="assets/img/sprite-icons.svg#mail" />
+											</svg>
+											<a href="mailto:info@everynook.com">info@everynook.com</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="under-footer">
+						<p>The data relating to real estate for sale on this website appears in part through the BRIGHT Internet Data Exchange program, a voluntary cooperative exchange of property listing data between licensed real estate brokerage firms in which Everynook participates, and is provided by BRIGHT through a licensing agreement. The information provided by this website is for the personal, non-commercial use of consumers and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing. Some properties which appear for sale on this website may no longer be available because they are under contract, have Closed or are no longer being offered for sale. © 2020 BRIGHT, All Rights Reserved Information Deemed Reliable But Not Guaranteed. Data last updated: April 24, 2020 9 AM.</p>
+						<span class="copyright">&copy; 2021 EveryNook, LLC. All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal fade" id="transaction-summary" tabindex="-1" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title mb-0">Transaction Summary</h2>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<form action="#">
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-12 mb-4">
+									<div class="property-card single-card card-tile">
+										<div class="property-card-visual">
+											<strong class="price-label fs-4 text-white">$300,000</strong>
+											<img class="img-cover" src="assets/img/img-property-07.jpg" alt="image description" srcset="assets/img/img-property-07@2x.jpg 2x">
+										</div>
+										<div class="property-card-content">
+											<div class="property-card-header justify-content-start flex-wrap">
+												<span class="tag-tile bg-danger text-capitalize text-white">Pre-Market
+													Exclusive</span>
+												<span class="tag-tile">Single family home</span>
+												<span class="tag-tile">1987</span>
+											</div>
+											<div class="text-facts text-dark title-3">
+												<a href="#" class="link fw-bold">2258 Del Dew Drive</a>
+												<span class="fs-6">Lanham, MD 20706</span>
+											</div>
+											<div class="mb-3 limited-text">
+												<p class="text-secondary">This 3 bedroom 1 bathroom home has new siding,
+													windows and roof. Interior featurers large rooms and a pellet stove
+													that heats the entire house. Kitchen has new cabinets, countertop
+													and floors. Boiler, water heater and washer/dryer are 1 year</p>
+											</div>
+											<div class="quick-fact justify-content-between flex-wrap">
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="25" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#double-bed" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">3</strong>
+													<span>Beds</span>
+												</div>
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="25" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#bathtub" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">3.2</strong>
+													<span>Baths</span>
+												</div>
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="23" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#house-plan" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">1,650</strong>
+													<span>Sq. Ft.</span>
+												</div>
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="25" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#hammer" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">1984</strong>
+													<span>Yr. Blt.</span>
+												</div>
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="23" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#land" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">0.0</strong>
+													<span>Acres</span>
+												</div>
+												<div class="quick-fact-item">
+													<span class="quick-fact-icon">
+														<svg width="25" height="23" fill="#A3A5B0">
+															<use xlink:href="assets/img/sprite-icons.svg#stairs" />
+														</svg>
+													</span>
+													<strong class="quick-fact-num fs-6">3</strong>
+													<span>Levels</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<h3 class="fs-5 text-dark fw-bold mb-3">Transaction Agents</h3>
+									<div class="row">
+										<div class="col-lg-6 mb-4">
+											<h4 class="text-gray-80 fw-medium mb-1">Listing Agent</h4>
+											<div class="suggestions-holder">
+												<div class="suggestions-info">
+													<div class="profile-option align-items-start">
+														<div class="profile-option-userpic">
+															<img src="assets/img/userpic-22.jpg" height="70" width="70" alt="image description" srcset="assets/img/userpic-22@2x.jpg 2x">
+														</div>
+														<div class="profile-option-info">
+															<h6 class="fw-bold text-body">James Allistair</h6>
+															<a href="#" class="fw-normal">Long And Foster Real
+																Estate</a>
+															<ul class="actions-btns pt-4">
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Invite This Agent To Joine</strong> <span class='title-6'>This agent is not currently a member of Everynook.  Let them know they should join.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Endorse This Agent</strong> <span class='title-6'>Let everyone know you recommend this agent highly.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#award" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" class="red" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Favorite This Agent</strong>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#heart" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Review This Agent</strong>" ">
+																	<svg width=" 30" height="30" fill="#DFE2E7">
+																		<use xlink:href="assets/img/sprite-icons.svg#review" />
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 mb-4">
+											<h4 class="text-gray-80 fw-medium mb-1">Buyer Agent</h4>
+											<div class="suggestions-holder">
+												<div class="suggestions-info">
+													<div class="profile-option align-items-start">
+														<div class="profile-option-userpic">
+															<img src="assets/img/userpic-30.jpg" height="70" width="70" alt="image description" srcset="assets/img/userpic-30@2x.jpg 2x">
+														</div>
+														<div class="profile-option-info">
+															<h6 class="fw-bold text-body">James Allistair</h6>
+															<a href="#" class="fw-normal">Long And Foster Real
+																Estate</a>
+															<ul class="actions-btns pt-4">
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Invite This Agent To Joine</strong> <span class='title-6'>This agent is not currently a member of Everynook.  Let them know they should join.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Endorse This Agent</strong> <span class='title-6'>Let everyone know you recommend this agent highly.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#award" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" class="red" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Favorite This Agent</strong>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#heart" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Review This Agent</strong>" ">
+																	<svg width=" 30" height="30" fill="#DFE2E7">
+																		<use xlink:href="assets/img/sprite-icons.svg#review" />
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 mb-4">
+											<h4 class="text-gray-80 fw-medium mb-1">Co-Listing Agent</h4>
+											<div class="suggestions-holder">
+												<div class="suggestions-info">
+													<div class="profile-option align-items-start">
+														<div class="profile-option-userpic">
+															<img src="assets/img/userpic-04.jpg" height="70" width="70" alt="image description" srcset="assets/img/userpic-04@2x.jpg 2x">
+														</div>
+														<div class="profile-option-info">
+															<h6 class="fw-bold text-body">James Allistair</h6>
+															<a href="#" class="fw-normal">Long And Foster Real
+																Estate</a>
+															<ul class="actions-btns pt-4">
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Invite This Agent To Joine</strong> <span class='title-6'>This agent is not currently a member of Everynook.  Let them know they should join.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Endorse This Agent</strong> <span class='title-6'>Let everyone know you recommend this agent highly.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#award" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" class="red" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Favorite This Agent</strong>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#heart" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Review This Agent</strong>" ">
+																	<svg width=" 30" height="30" fill="#DFE2E7">
+																		<use xlink:href="assets/img/sprite-icons.svg#review" />
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 mb-4">
+											<h4 class="text-gray-80 fw-medium mb-1">Co-Buyer Agent</h4>
+											<div class="suggestions-holder">
+												<div class="suggestions-info">
+													<div class="profile-option align-items-start">
+														<div class="profile-option-userpic">
+															<img src="assets/img/userpic-31.jpg" height="70" width="70" alt="image description" srcset="assets/img/userpic-31@2x.jpg 2x">
+														</div>
+														<div class="profile-option-info">
+															<h6 class="fw-bold text-body">James Allistair</h6>
+															<a href="#" class="fw-normal">Long And Foster Real
+																Estate</a>
+															<ul class="actions-btns pt-4">
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Invite This Agent To Joine</strong> <span class='title-6'>This agent is not currently a member of Everynook.  Let them know they should join.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#add-user" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Endorse This Agent</strong> <span class='title-6'>Let everyone know you recommend this agent highly.</span>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#award" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" class="red" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Favorite This Agent</strong>">
+																		<svg width="30" height="30" fill="#DFE2E7">
+																			<use xlink:href="assets/img/sprite-icons.svg#heart" />
+																		</svg>
+																	</a>
+																</li>
+																<li>
+																	<a href="#!" data-bs-toggle="tooltip" data-bs-html="true" title data-bs-offset="0,10" data-bs-original-title=" <strong class='d-block text-left mb-1'>Review This Agent</strong>" ">
+																	<svg width=" 30" height="30" fill="#DFE2E7">
+																		<use xlink:href="assets/img/sprite-icons.svg#review" />
+																		</svg>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/jquery-3.6.0.min.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAOlflhHpYtWDqOu6o9yp4N3CNFwtOEP8"></script>
+	<script src="assets/js/jquery.main.js" defer></script>
+</body>
+
+</html>

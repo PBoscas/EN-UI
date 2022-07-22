@@ -1,0 +1,158 @@
+.modal{
+    &-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: $gray-400;
+        padding: 20px;
+        @include media(">=phone") {
+            padding-right: 45px;
+            align-items: flex-start;
+        }
+        @include media(">=tablet") {
+			padding: 26px 90px 26px 50px;
+        }
+
+        .btn-close{
+            position: absolute;
+            margin: 0;
+            top: -37px;
+            right: 0;
+            opacity: 1;
+            background-color: #DFE2E7;
+            @include media(">=phone") {
+                top: 15px;
+                right: 15px;
+            }
+            @include media(">=tablet") {
+				top: 28px;
+				right: 49px;
+            }
+        }
+    }
+
+    &-content{
+        &.rounded-5{
+            border-radius: 10px !important;
+        }
+        p{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-body{
+        padding: 20px;
+        @include media(">=tablet") {
+			padding: 25px 50px 30px;
+        }
+        &.img {
+            min-height: 400px;
+            background-color: #848898;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -0.5px;
+            img {   
+                max-width: 650px;
+                @include media("<=desktop") {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    &-footer{
+        padding: 16px;
+        @include media(">=tablet") {
+			padding: 28px 26px;
+        }
+        @include media("<tablet") {
+            justify-content: center;
+        }
+
+        .btn{
+            @include media("<phone") {
+                width: 100%;
+            }
+        }
+    }
+
+    .rating {
+        margin-top: -6px;
+        svg {
+            fill: #A3A5B0;
+        }
+    }
+}
+
+.modal-footer{
+    > *{
+        @include media(">=desktop") {
+            margin: 0 1.5em;
+        }
+    }
+}
+
+.modal-dialog-centered{
+    @include media("<desktop") {
+        min-height: calc(100% - 2.5rem);
+    }
+}
+
+.modal-dialog{
+    @include media("<desktop") {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .modal-content{
+        box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.2);
+        @include media(">=desktop") {
+            box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.example-modal{
+    .modal{
+        position: static;
+        display: block;
+        overflow: visible;
+        margin-bottom: 50px;
+    }
+}
+
+.modal-body{
+    overflow: hidden;
+	.search-input {
+		.form-control {
+			&::placeholder {
+				color: #C8CCD6;
+			}
+		}
+	}
+}
+
+.modal-form-button{
+    padding-top: 30px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        right: -50px;
+        border-top: 2px solid #DFE2E7;
+    }
+}
+
+#submit-a-flag {
+    .form-control.placeholder-active {
+        color: $gray-600;
+    }
+}
